@@ -1,0 +1,15 @@
+@import "variables";
+.navbar {
+  background-color: $primary-color;
+  .nav-link {
+    text-transform: uppercase;
+    color: white;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: -0.04px;
+    line-height: 18px;
+    &:hover {
+      color: $gold
+    }
+  }
+}

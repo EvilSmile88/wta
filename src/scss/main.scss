@@ -1,2 +1,14 @@
 @import "variables";
 @import "buttons";
+@import "header";
+html,
+body {
+  min-width: 100%;
+  margin: 0px;
+  font-family: 'Open Sans', sans-serif;
+}
+.dropdown-toggle::after {
+  width: 10px;
+  height: 10px;
+  border: 2px solid;
+}

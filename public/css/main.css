@@ -1,2 +1,5 @@
+html,
 body {
-  background: #dff0d8; }
+  min-width: 100%;
+  margin: 0px;
+  font-family: 'Open Sans', sans-serif; }

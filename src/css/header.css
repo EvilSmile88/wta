@@ -9,14 +9,3 @@
     line-height: 18px; }
     .navbar .nav-link:hover {
       color: #ffe42e; }
-
-html,
-body {
-  min-width: 100%;
-  margin: 0px;
-  font-family: 'Open Sans', sans-serif; }
-
-.dropdown-toggle::after {
-  width: 10px;
-  height: 10px;
-  border: 2px solid; }
