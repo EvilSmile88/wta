@@ -1,0 +1,13 @@
+.dropdown-toggle::after {
+  top: 0px;
+  margin-left: 7px;
+  margin-top: -2px;
+  width: 8px;
+  height: 8px;
+  border-radius: 2px;
+  border: 2px solid;
+  opacity: 0.6;
+  border-left-color: transparent;
+  border-top-color: transparent;
+  transform: rotate(45deg);
+}

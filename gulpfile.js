@@ -1,6 +1,5 @@
 var gulp = require('gulp'),
     prefix = require('gulp-autoprefixer'),
-    watchSass = require("gulp-watch-sass"),
     server = require("gulp-server-livereload"),
     sass = require('gulp-sass');
 
@@ -11,20 +10,17 @@ gulp.task('sass', function() {
     .pipe(gulp.dest("src/css"))
 });
 
-
-
-// default task
-gulp.task('sass:watch', ['sass'], function () {
-  return watchSass([
-    "./src/scss/*.{scss,css}",
-  ])
-    .pipe(sass())
-    .pipe(gulp.dest("./src/css"))
+gulp.task('sass:watch', function () {
+  gulp.watch('src/scss/*.scss', ['sass'])
 });
 
 // Move the javascript files into our /src/js folder
 gulp.task('js', function() {
-  return gulp.src(['node_modules/bootstrap/dist/js/bootstrap.min.js', 'node_modules/jquery/dist/jquery.min.js', 'node_modules/tether/dist/js/tether.min.js'])
+  return gulp.src([
+    'node_modules/bootstrap/dist/js/bootstrap.min.js',
+    'node_modules/bootstrap/dist/js/bootstrap.bundle.js',
+    'node_modules/popper.js/dist/umd/popper.js'
+  ])
     .pipe(gulp.dest("src/js"))
 });
 
@@ -43,11 +39,11 @@ gulp.task('build', function () {
     .pipe(prefix({
       browsers: ['last 3 versions']
     }))
-    .pipe(gulp.dest('public/css'));
+    .pipe(gulp.dest('build/css'));
   gulp.src('src/js/**/*.js')
-    .pipe(gulp.dest('public/js'));
+    .pipe(gulp.dest('build/js'));
   return gulp.src('src/*.html')
-    .pipe(gulp.dest('public'));
+    .pipe(gulp.dest('build'));
 });
 
 gulp.task('start', ['js', 'sass:watch', 'serve']);

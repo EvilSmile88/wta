@@ -1,5 +1,6 @@
 @import "variables";
 @import "buttons";
+@import "drop-down";
 @import "header";
 html,
 body {
@@ -7,8 +8,6 @@ body {
   margin: 0px;
   font-family: 'Open Sans', sans-serif;
 }
-.dropdown-toggle::after {
-  width: 10px;
-  height: 10px;
-  border: 2px solid;
+.popover-body {
+  padding: 3px;
 }
