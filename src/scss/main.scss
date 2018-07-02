@@ -1,2 +1,13 @@
 @import "variables";
 @import "buttons";
+@import "drop-down";
+@import "header";
+html,
+body {
+  min-width: 100%;
+  margin: 0px;
+  font-family: 'Open Sans', sans-serif;
+}
+.popover-body {
+  padding: 3px;
+}

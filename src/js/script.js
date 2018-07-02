@@ -170,6 +170,8 @@ window.onload = function () {
     }
     //----------Drop down end
 }
+
+
 // var image = new Image();
 // image.onload = function () {
 //     document.querySelector(".loading")._bootstrap-custom.scss.display = "none"
