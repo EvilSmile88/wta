@@ -18,7 +18,6 @@ gulp.task('sass:watch', function () {
 gulp.task('js', function() {
   return gulp.src([
     'node_modules/bootstrap/dist/js/bootstrap.min.js',
-    'node_modules/bootstrap/dist/js/bootstrap.bundle.js',
     'node_modules/popper.js/dist/umd/popper.js'
   ])
     .pipe(gulp.dest("src/js"))
@@ -42,6 +41,8 @@ gulp.task('build', function () {
     .pipe(gulp.dest('build/css'));
   gulp.src('src/js/**/*.js')
     .pipe(gulp.dest('build/js'));
+  gulp.src('src/img/**/*')
+    .pipe(gulp.dest('build/img'));
   return gulp.src('src/*.html')
     .pipe(gulp.dest('build'));
 });

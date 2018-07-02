@@ -1,0 +1,111 @@
+@import "variables";
+footer {
+  min-width: 100%;
+  box-sizing: border-box;
+  background-color: white;
+  min-height: 50px;
+  h5 {
+    font-weight: bold;
+    font-size: 14px;
+    color: $primary-color-light;
+    i {
+      font-size: 12px;
+    }
+  }
+  ul {
+    padding: 0px;
+    li {
+      list-style: none;
+      font-size: 14px;
+      line-height: 24px;
+      a {
+        color: #666666;
+        &:hover {
+          text-decoration: none;
+        }
+      }
+    }
+  }
+  .first-server {
+    h6 {
+      color: $primary-color-light;
+      font-size: 20px;
+      font-weight: bold;
+      font-family: "Myriad Pro";
+    }
+    ul {
+      padding-left: 20px;
+      li {
+        position: relative;
+        font-size: 12px;
+        line-height: 24px;
+        :before {
+          position: absolute;
+          display: block;
+          content: '';
+          width: 9px;
+          height: 9px;
+          border-radius: 2px;
+          top: 7px;
+          left: -20px;
+          border: 3px solid;
+          color: $primary-color-light;
+          border-left-color: transparent;
+          border-top-color: transparent;
+          transform: rotate(-45deg);
+        }
+      }
+    }
+  }
+  .social-pages {
+    border-top: 1px solid #E4E4E4;
+    margin: 0px;
+    margin-top: 25px;
+    padding-top: 18px;
+    color: $dark-gray;
+    font-size: 10px;
+    font-weight: bold;
+    letter-spacing: -0.03px;
+    line-height: 14px;
+    &>div {
+      padding-left: 0px;
+    }
+    ul {
+      display: inline-block;
+      li {
+        display: inline-block;
+        font-size: 10px;
+        letter-spacing: -0.03px;
+        line-height: 14px;
+      }
+    }
+    .social-pages__terms, .social-pages__app {
+      li:not(:last-of-type) {
+        position: relative;
+        &:not(:last-of-type) {
+          margin-right: 15px;
+          &:after{
+            right: -10px;
+            top: 0px;
+            position: absolute;
+            display: block;
+            content: '/';
+          }
+        }
+      }
+    }
+    .social-pages__app {
+      li:first-of-type {
+        margin-left: 5px;
+      }
+      li:not(:last-of-type) {
+        &:not(:last-of-type) {
+          &:after{
+            right: -12px;
+            content: '|';
+          }
+        }
+      }
+    }
+  }
+}
