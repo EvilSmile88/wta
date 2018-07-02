@@ -2,11 +2,22 @@
 @import "buttons";
 @import "drop-down";
 @import "header";
+@import "footer";
 html,
 body {
   min-width: 100%;
   margin: 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: $body-bg;
   font-family: 'Open Sans', sans-serif;
+}
+main {
+  min-height: 90vh;
+  width: 100%;
+  box-sizing: border-box;
+  max-width: 1400px;
 }
 .popover-body {
   padding: 3px;
