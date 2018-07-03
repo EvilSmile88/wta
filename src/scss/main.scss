@@ -1,5 +1,6 @@
 @import "variables";
 @import "buttons";
+@import "player-card";
 @import "drop-down";
 @import "header";
 @import "footer";
@@ -14,6 +15,7 @@ body {
   font-family: 'Open Sans', sans-serif;
 }
 main {
+  height: auto;
   min-height: 90vh;
   width: 100%;
   box-sizing: border-box;
