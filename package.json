@@ -1,5 +1,5 @@
 {
-  "name": "cbschat",
+  "name": "a",
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
@@ -7,12 +7,23 @@
   },
   "author": "",
   "license": "ISC",
-  "devDependencies": {
+  "dependencies": {
     "bootstrap": "^4.1.1",
-    "browser-sync": "^2.24.5",
     "gulp": "^3.9.1",
     "gulp-autoprefixer": "^4.0.0",
-    "gulp-sass": "^3.2.1"
+    "gulp-sass": "^3.2.1",
+    "gulp-server-livereload": "^1.9.2",
+    "popper.js": "^1.1"
   },
-  "description": ""
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/EvilSmile88/wta.git"
+  },
+  "bugs": {
+    "url": "https://github.com/EvilSmile88/wta/issues"
+  },
+  "homepage": "https://github.com/EvilSmile88/wta#readme",
+  "description": "",
+  "devDependencies": {
+  }
 }
