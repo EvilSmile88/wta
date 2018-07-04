@@ -158,7 +158,7 @@
 .dropdown-toggle::after {
   top: 0px;
   margin-left: 7px;
-  margin-top: -2px;
+  margin-top: -5px;
   width: 8px;
   height: 8px;
   border-radius: 2px;
@@ -265,6 +265,9 @@ footer {
   box-sizing: border-box;
   background-color: white;
   min-height: 50px; }
+  footer > .row {
+    width: 100%;
+    max-width: 1400px; }
   footer h5 {
     font-weight: bold;
     font-size: 14px;
