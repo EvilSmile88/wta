@@ -8,7 +8,7 @@
     <link rel='stylesheet' href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="./css/bootstrap.css">
     <link rel="stylesheet" href="./css/main.css">
-    <link rel="stylesheet" href="./css/flickity.css">
+    <link rel="stylesheet" href="./css/swiper.min.css">
 </head>
 <body>
 
@@ -205,14 +205,121 @@
 <!--main start-->
 <main>
     <section>
-        <div class="gallery js-flickity" data-flickity-options='{ "freeScroll": true, "wrapAround": true }'>
-            <div class="carousel-cell">12</div>
-            <div class="carousel-cell">123</div>
-            <div class="carousel-cell">3</div>
-            <div class="carousel-cell">4</div>
-            <div class="carousel-cell">5</div>
-            <div class="carousel-cell">6</div>
-            <div class="carousel-cell">7</div>
+        <div class="swiper-container swiper-container--score">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide score-cell">
+                    <div class="score-cell__round">
+                        <p>Round 2</p>
+                    </div>
+                    <div class="score-cell__group">
+                        <h6>Wimbledon</h6>
+                        <div>
+                            <div class="score-cell__group-row d-flex">
+                                <div class="score-cell__players">
+                                    <div class="score-cell__player">
+                                        <div>
+                                            <p><img src="img/german_flag.svg" width="15px"/> <sub>2</sub></p>
+                                            <h5>A. Kerber</h5>
+                                        </div>
+                                    </div>
+                                    <div class="score-cell__player">
+                                        <div>
+                                            <p><img src="img/german_flag.svg" width="15px"/> <sub>2</sub></p>
+                                            <h5>A. Kerber</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="score-cell__times">
+                                    <div>3</div>
+                                    <div>3</div>
+                                    <div>3</div>
+                                </div>
+                            </div>
+                            <div class="score-cell__group-row d-flex">
+                                <div class="score-cell__players">
+                                    <div class="score-cell__player">
+                                        <div>
+                                            <p><img src="img/german_flag.svg" width="15px"/> <sub>2</sub></p>
+                                            <h5>A. Kerber</h5>
+                                        </div>
+                                    </div>
+                                    <div class="score-cell__player">
+                                        <div>
+                                            <p><img src="img/german_flag.svg" width="15px"/> <sub>2</sub></p>
+                                            <h5>A. Kerber</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="score-cell__times">
+                                    <div>3</div>
+                                    <div>3</div>
+                                    <div>3</div>
+                                </div>
+                            </div>
+                            <div class="score-cell__stats d-flex align-items-center justify-content-between w-100 p-1">
+                                <div class="match-stats text-light rounded text-uppercase">Match stats</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide score-cell">
+                    <div class="score-cell__round">
+                        <p>Round 2</p>
+                    </div>
+                    <div class="score-cell__group">
+                        <h6>Brisbane</h6>
+                        <div>
+                            <div class="score-cell__group-row  score-cell__group-row--win d-flex">
+                                <div class="score-cell__players">
+                                    <div class="score-cell__player">
+                                        <div>
+                                            <p><img src="img/german_flag.svg" width="20px"/> <sub>2</sub></p>
+                                            <h5>A. Kerber</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="score-cell__times">
+                                    <div>3</div>
+                                    <div>3</div>
+                                    <div>3</div>
+                                </div>
+                            </div>
+                            <div class="score-cell__group-row d-flex">
+                                <div class="score-cell__players">
+                                    <div class="score-cell__player">
+                                        <div>
+                                            <p><img src="img/german_flag.svg" width="20px"/> <sub>2</sub></p>
+                                            <h5>A. Kerber</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="score-cell__times">
+                                    <div>3</div>
+                                    <div>3</div>
+                                    <div>3</div>
+                                </div>
+                            </div>
+                            <div class="score-cell__stats d-flex align-items-center justify-content-between w-100 p-1">
+                                <div class="match-stats text-light rounded text-uppercase">Match stats</div>
+                                <div class="d-flex align-items-center">
+                                    <span class="mx-2 match-time">20:12:23</span>
+                                    <div class="match-completed text-light rounded text-uppercase">Completed</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">Slide 3</div>
+                <div class="swiper-slide">Slide 4</div>
+                <div class="swiper-slide">Slide 5</div>
+                <div class="swiper-slide">Slide 6</div>
+                <div class="swiper-slide">Slide 7</div>
+                <div class="swiper-slide">Slide 8</div>
+                <div class="swiper-slide">Slide 9</div>
+                <div class="swiper-slide">Slide 10</div>
+            </div>
+            <div class="swiper-button-next"><div class="arrow"></div></div>
+            <div class="swiper-button-prev"><div class="arrow"></div></div>
         </div>
     </section>
 <section class="player-card w-100 container">
@@ -548,10 +655,12 @@
 <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
 <script src="js/popper.js"></script>
-<script src="./js/flickity.min.js"></script>
+
+<script src="./js/swiper.min.js"></script>
 <script src="./js/bootstrap.min.js"></script>
 <script src="./js/index.js"></script>
 <script src="./js/header.js"></script>
 <script src="./js/player-card.js"></script>
+<script src="js/score-carusel.js"></script>
 </body>
 </html>
