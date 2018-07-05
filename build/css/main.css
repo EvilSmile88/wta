@@ -170,9 +170,58 @@
 .player-flag {
   width: 140px; }
 
-.player-ranking__switcher button {
-  background-color: rgba(0, 0, 0, 0.6);
-  font-family: 'Open Sans'; }
+.player_ranking {
+  font-size: 15px; }
+  .player_ranking .ranking-number {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    line-height: normal;
+    vertical-align: middle;
+    min-height: 130px; }
+  .player_ranking .ranking-title {
+    position: absolute;
+    left: -10px;
+    -webkit-transform: rotate(-90deg);
+        -ms-transform: rotate(-90deg);
+            transform: rotate(-90deg);
+    text-transform: uppercase;
+    font-weight: bold; }
+    .player_ranking .ranking-title div:first-of-type {
+      line-height: 12px;
+      font-size: 12px; }
+    .player_ranking .ranking-title div:last-of-type {
+      line-height: 20px;
+      font-size: 20px; }
+  .player_ranking .singles-ranking, .player_ranking .doubles-ranking {
+    position: relative;
+    min-height: 100px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+  .player_ranking .doubles-ranking--hide, .player_ranking .singles-ranking--hide {
+    display: none; }
+  .player_ranking .player-ranking__switcher {
+    width: 150px;
+    border-radius: 0 15px 0 15px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    border: 1px solid white; }
+    .player_ranking .player-ranking__switcher button[id="singles-ranking__btn"] {
+      visibility: hidden; }
+    .player_ranking .player-ranking__switcher button {
+      font-size: 10px;
+      background-color: rgba(0, 0, 0, 0.6);
+      font-family: 'Open Sans'; }
 
 .player-card__info .info-title {
   color: rgba(255, 255, 255, 0.6);
@@ -210,6 +259,9 @@
     font-size: 3em; } }
 
 @media (max-width: 767.98px) {
+  .player-card__other > .row {
+    padding-bottom: 15px;
+    border-bottom: 1px solid white; }
   .player-card {
     font-size: 14px; }
     .player-card .info-title {
