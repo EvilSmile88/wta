@@ -363,3 +363,25 @@ main {
 
 .popover-body {
   padding: 3px; }
+
+.gallery {
+  background: #EEE; }
+
+.carousel-cell {
+  width: 500px;
+  height: 200px;
+  margin-right: 0px;
+  background: #8C8;
+  counter-increment: gallery-cell; }
+
+.carousel-cell.is-selected {
+  background: #ED2; }
+
+/* cell number */
+.gallery-cell:before {
+  display: block;
+  text-align: center;
+  content: counter(gallery-cell);
+  line-height: 200px;
+  font-size: 80px;
+  color: white; }
