@@ -26,8 +26,10 @@ $screen-xl-min-width: 1200px;
   font-style: normal;
 }
 
-$body-bg: #F0F0F0;
+$light-gray: #F0F0F0;
+$body-bg: $light-gray;
 $primary-color: #33145B !default;
 $gold: rgb(255, 228, 46);
 $primary-color-light: #502784;
+$success-color: #7ED321;
 $dark-gray: #666;
