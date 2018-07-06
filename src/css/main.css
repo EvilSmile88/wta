@@ -358,6 +358,10 @@
     justify-content: center;
     flex-basis: 50px;
     flex-grow: 1; }
+    .swiper-container--score .score-cell__players.score-cell__players--doubles {
+      font-size: 11px; }
+      .swiper-container--score .score-cell__players.score-cell__players--doubles img {
+        width: 13px; }
   .swiper-container--score .score-cell__group-row--win .score-cell__times:before {
     position: absolute;
     top: 30%;
@@ -400,6 +404,13 @@
     position: relative;
     box-sizing: border-box;
     display: flex; }
+    .swiper-container--score .score-cell__times .score-cell__game {
+      color: #33145B;
+      font-weight: bold;
+      border-right: 7px solid #F0F0F0;
+      background-color: white !important; }
+    .swiper-container--score .score-cell__times .score-cell__game--serve {
+      border-color: #ffe42e; }
     .swiper-container--score .score-cell__times div {
       color: #4A4A4A;
       display: flex;

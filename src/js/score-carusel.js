@@ -18,12 +18,3 @@ var swiper = new Swiper('.swiper-container', {
     prevEl: '.swiper-button-prev',
   },
 });
-var items = $(".swiper-container .score-cell__group" );
-for (i = 0; i < items.length; i++) {
-  var playersCount = $(items[i]).find('.score-cell__player').length;
-  if(playersCount === 4 ) {
-    $(items[i]).css("font-size","11px")
-    $(items[i]).find("img").css("width","13px")
-  }
-
-}

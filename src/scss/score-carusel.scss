@@ -106,6 +106,12 @@
     justify-content: center;
     flex-basis: 50px;
     flex-grow: 1;
+    &.score-cell__players--doubles {
+      font-size: 11px;
+      img {
+        width: 13px;
+      }
+    }
   }
   .score-cell__group-row--win {
     .score-cell__times:before{
@@ -116,7 +122,7 @@
       width: 16px;
       height: 8px;
       content: '';
-      border: 3px solid #7ED321;
+      border: 3px solid $success-color;
       transform: rotate(-45deg);
       border-top-width: 0px;
       border-right-width: 0px;
@@ -158,6 +164,15 @@
     position: relative;
     box-sizing: border-box;
     display: flex;
+    .score-cell__game {
+      color: $primary-color;
+      font-weight: bold;
+      border-right: 7px solid $light-gray;
+      background-color: white !important;
+    }
+    .score-cell__game--serve {
+      border-color: $gold;
+    }
     div {
       color: #4A4A4A;
       display: flex;
@@ -187,7 +202,7 @@
     .match-completed {
       font-size: 8px;
       padding: 2px 5px;
-      background-color: #7ED321;
+      background-color: $success-color;
     }
   }
 }
