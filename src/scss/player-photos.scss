@@ -53,6 +53,7 @@
   @media (max-width: $screen-md-max-width) {
     .player-photos__photo {
       min-height: 200px;
+      border-right: none;
       &:not(:last-of-type) {
         margin-bottom: 10px;
       }
