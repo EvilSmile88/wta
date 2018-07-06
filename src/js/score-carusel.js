@@ -1,4 +1,4 @@
-var swiper = new Swiper('.swiper-container', {
+var swiper = new Swiper('.swiper-container--score', {
   slidesPerView: 4,
   spaceBetween: 0,
   loop: true,
