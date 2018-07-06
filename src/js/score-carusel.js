@@ -1,7 +1,6 @@
 var swiper = new Swiper('.swiper-container--score', {
   slidesPerView: 4,
   spaceBetween: 0,
-  loop: true,
   breakpoints: {
     992: {
       slidesPerView: 3,

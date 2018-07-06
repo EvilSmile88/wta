@@ -2,7 +2,7 @@
 
 .swiper-container--videos {
   width: 100%;
-  max-width: 100vw;
+  max-width: 98.7vw;
   background-color: $primary-color;
   height: 360px;
   .swiper-slide {
@@ -26,7 +26,10 @@
     width: 100%;
     background-color: gray;
     height: 200px;
+    display: flex;
     img {
+      overflow: hidden;
+      max-height: 200px;
       object-fit: cover;
       object-position: top;
     }
