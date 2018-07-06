@@ -1,5 +1,9 @@
 @import "variables";
 footer {
+  &>.row {
+    width: 100%;
+    max-width: 1400px;
+  }
   min-width: 100%;
   box-sizing: border-box;
   background-color: white;
