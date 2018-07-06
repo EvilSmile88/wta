@@ -4,6 +4,9 @@
   width: 100%;
   max-width: 98.7vw;
   background-color: $primary-color;
+  a {
+    color: white;
+  }
   height: 360px;
   .swiper-slide {
     color: white;

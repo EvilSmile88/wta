@@ -453,6 +453,8 @@
   max-width: 98.7vw;
   background-color: #33145B;
   height: 360px; }
+  .swiper-container--videos a {
+    color: white; }
   .swiper-container--videos .swiper-slide {
     color: white;
     text-align: center;
