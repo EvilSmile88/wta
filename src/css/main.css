@@ -874,9 +874,9 @@ footer {
     color: white; }
   @media (max-width: 767.98px) {
     .player-photos .player-photos__photo {
-      min-height: 200px;
-      border-right-width: 0px; }
+      min-height: 200px; }
       .player-photos .player-photos__photo:not(:last-of-type) {
+        border-right-width: 0px;
         margin-bottom: 10px; } }
 
 @font-face {
@@ -1097,11 +1097,13 @@ footer {
       right: -50px !important; }
       .player-played-tournaments .swiper-container--played-tournaments .swiper-pagination .swiper-pagination-bullet {
         width: 17px;
+        opacity: 0.7;
+        transition: ease all 0.3s;
         border-radius: 2px;
-        height: 4px;
-        opacity: 1;
-        background-color: rgba(0, 0, 0, 0.18); }
+        height: 5px;
+        background-color: rgba(0, 0, 0, 0.4); }
         .player-played-tournaments .swiper-container--played-tournaments .swiper-pagination .swiper-pagination-bullet:hover {
+          opacity: 1;
           box-shadow: 0 0 0 1px white; }
       .player-played-tournaments .swiper-container--played-tournaments .swiper-pagination .swiper-pagination-bullet-active-next,
       .player-played-tournaments .swiper-container--played-tournaments .swiper-pagination .swiper-pagination-bullet-active-next,
@@ -1220,6 +1222,72 @@ footer {
           line-height: 30px;
           margin: 10px 0px;
           font-size: 30px; } }
+
+@font-face {
+  font-family: 'Open Sans';
+  src: url("../fonts/open-sans.regular.woff2") format("woff2"), url("../fonts/open-sans.regular.woff") format("woff"), url("../fonts/open-sans.regular.ttf") format("truetype"), url("../fonts/open-sans.regular.svg#open_sansregular") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Myriad Pro';
+  src: url("../fonts/myriad-pro.regular.otf") format("opentype"), url("../fonts/myriad-pro.regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+
+.player-tabs {
+  margin: 25px 0px;
+  background-color: white;
+  padding: 18px; }
+  .player-tabs nav {
+    margin: 0px 20px;
+    max-width: 95vw;
+    overflow-x: scroll;
+    /* Track */
+    /* Handle */
+    /* Handle on hover */ }
+    .player-tabs nav::-webkit-scrollbar {
+      height: 5px; }
+    .player-tabs nav::-webkit-scrollbar-track {
+      background: transparent; }
+    .player-tabs nav::-webkit-scrollbar-thumb {
+      border-radius: 5px;
+      background: rgba(0, 0, 0, 0.1); }
+    .player-tabs nav::-webkit-scrollbar-thumb:hover {
+      background: rgba(0, 0, 0, 0.3); }
+  .player-tabs nav ul {
+    border-bottom: 1px solid #D0D0D0;
+    min-width: 900px;
+    padding: 0px;
+    margin: 0px;
+    display: flex;
+    width: 100%; }
+    .player-tabs nav ul .player-tabs--active {
+      color: #33145B;
+      border-bottom: 3px solid #33145B; }
+    .player-tabs nav ul li {
+      font-size: 18px;
+      list-style: none;
+      color: #9B9B9B;
+      font-weight: bold;
+      text-transform: uppercase;
+      padding: 10px 0px;
+      display: flex;
+      justify-content: center;
+      flex-basis: 110px;
+      flex-grow: 1; }
+      .player-tabs nav ul li a {
+        color: #9B9B9B;
+        text-decoration: none; }
+  @media (max-width: 575.98px) {
+    .player-tabs {
+      padding: 18px 0px; }
+      .player-tabs nav ul {
+        min-width: 600px; }
+        .player-tabs nav ul li {
+          font-size: 12px;
+          flex-basis: 70px;
+          flex-grow: 1; } }
 
 html,
 body {
