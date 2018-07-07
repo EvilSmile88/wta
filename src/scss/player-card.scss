@@ -22,6 +22,9 @@
   }
 }
 .player-card__info {
+  &>.row>div {
+    min-width: 120px;
+  }
   .info-height {
     min-width: 250px;
   }
@@ -200,6 +203,9 @@
     .info-title {
       flex-grow: 1;
     }
+  }
+  .player-card__info .info-title {
+    margin-right: 10px;
   }
   .player-card__info .info-value {
     font-size: 15px;
