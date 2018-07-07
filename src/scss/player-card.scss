@@ -17,8 +17,14 @@
     display: flex;
     flex-grow: 1;
   }
+  .main-row {
+    height: 100%;
+  }
 }
 .player-card__info {
+  &>.row>div {
+    min-width: 120px;
+  }
   .info-height {
     min-width: 250px;
   }
@@ -83,6 +89,70 @@
     }
   }
 }
+.player-social {
+  .nav-item {
+    svg {
+      transition: opacity ease 0.3s;
+      fill: rgba(255,255,255, 1);
+      opacity: 0.6;
+      &:hover {
+        opacity: 1;
+      }
+    }
+  }
+}
+.player-flag {
+  width: 140px;
+}
+.player_ranking {
+  font-size: 15px;
+  .ranking-number {
+    display: flex;
+    align-items: center;
+    line-height: normal;
+    vertical-align: middle;
+    min-height: 130px;
+  }
+  .ranking-title {
+    position: absolute;
+    left: -10px;
+    transform: rotate(-90deg);
+    text-transform: uppercase;
+    font-weight: bold;
+    div:first-of-type {
+      line-height: 12px;
+      font-size: 12px;
+    }
+    div:last-of-type {
+      line-height: 20px;
+      font-size: 20px;
+    }
+  }
+  .singles-ranking, .doubles-ranking {
+    position: relative;
+    min-height: 100px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  .doubles-ranking--hide, .singles-ranking--hide {
+    display: none;
+  }
+  .player-ranking__switcher {
+    button[id="singles-ranking__btn"] {
+      visibility: hidden;
+    }
+    width: 150px;
+    border-radius: 0 15px 0 15px;
+    box-sizing: border-box;
+    border: 1px solid white;;
+    button {
+      font-size: 10px;
+      background-color: rgba(0,0,0,0.6);
+      font-family: 'Open Sans';
+    }
+  }
+}
 .player-card__info {
   .info-title {
     color: rgba(255,255,255,0.6);
@@ -124,11 +194,18 @@
   }
 }
 @media (max-width: $screen-md-max-width) {
+  .player-card__other > .row {
+    padding-bottom: 15px;
+    border-bottom: 1px solid white;
+  }
   .player-card {
     font-size: 14px;
     .info-title {
       flex-grow: 1;
     }
+  }
+  .player-card__info .info-title {
+    margin-right: 10px;
   }
   .player-card__info .info-value {
     font-size: 15px;
@@ -137,6 +214,15 @@
 }
 
 @media (max-width: $screen-sm-max-width) {
+  .player-social {
+    svg {
+      width: 17px;
+      height: 17px;
+    }
+  }
+  .player-flag {
+    width: 100px;
+  }
   .player-card__photo .player-card__official-site {
     margin: 0px;
   }
@@ -145,6 +231,9 @@
     flex-wrap: wrap !important;
   }
   .player-card {
+    .main-row {
+      height: auto;
+    }
     .info-title {
       border-bottom: none;
     }
@@ -153,6 +242,10 @@
     .row > div {
       padding-right: 5px;
       align-items: center;
+      &:last-of-type {
+        margin-bottom: 10px;
+        border-bottom: none !important;
+      }
     }
     h2 {
       font-size: 2em;

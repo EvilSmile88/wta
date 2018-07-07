@@ -1,0 +1,208 @@
+@import "variables";
+
+.swiper-container--score {
+  box-shadow: 0 0 15px 5px rgba(0, 0,0, 0.05);
+  padding: 0px 20px;
+  max-width: 96vw;
+  width: 100%;
+  height: 140px;
+  .swiper-slide {
+    border-right: 2px solid #ddd;
+    &:hover {
+      z-index: 1;
+      outline: 1px dotted black;
+    }
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+  }
+  .swiper-button-next, .swiper-button-prev {
+    top: 55%;
+    background-image: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: $light-gray;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 1px dotted transparent;
+    transition: all ease 0.3s;
+    &:hover {
+      border-color: black;
+      .arrow {
+        border-color: $primary-color;
+        border-left-color: transparent;
+        border-top-color: transparent;
+      }
+    }
+    .arrow {
+      margin-top: -4px;
+      width: 13px;
+      height: 13px;
+      border-radius: 4px;
+      border: 3px solid rgba(130, 130, 130, 0.9);
+      border-left-color: transparent;
+      border-top-color: transparent;
+      transform: rotate(45deg);
+    }
+  }
+  .swiper-button-prev {
+    left: -8px;
+    transform: rotate(90deg);
+  }
+  .swiper-button-next {
+    .arrow {
+      margin-top: -4px;
+    }
+    right: -8px;
+    transform: rotate(-90deg);
+  }
+  .score-cell {
+    display: flex;
+    padding: 15px 15px 15px 25px;
+  }
+  .score-cell__round {
+    writing-mode: vertical-rl;
+    height: 100%;
+    transform: rotate(180deg);
+    border-left: 1px solid #E4E4E4;
+    p {
+      font-size: 11px;
+      text-transform: uppercase;
+      font-weight: bold;
+      color: $dark-gray;
+      text-align: center;
+      margin: 0px;
+    }
+  }
+  .score-cell__group {
+    font-size: 14px;
+    color: $dark-gray;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-basis: 200px;
+    flex-grow: 1;
+    h6 {
+      padding: 0px 7px;
+      color: $primary-color;
+      text-align: left;
+      font-size: 13px;
+      font-weight: bold;
+      letter-spacing: -0.03px;
+    }
+  }
+  .score-cell__group-row:first-of-type {
+    border-bottom: 1px solid #E4E4E4;
+  }
+  .score-cell__players {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-basis: 50px;
+    flex-grow: 1;
+    &.score-cell__players--doubles {
+      font-size: 11px;
+      img {
+        width: 13px;
+      }
+    }
+  }
+  .score-cell__group-row--win {
+    .score-cell__times:before{
+      position: absolute;
+      top: 30%;
+      left: -15px;
+      display: block;
+      width: 16px;
+      height: 8px;
+      content: '';
+      border: 3px solid $success-color;
+      transform: rotate(-45deg);
+      border-top-width: 0px;
+      border-right-width: 0px;
+    }
+  }
+  .score-cell__player {
+    &:last-of-type {
+      padding-bottom: 4px;
+    }
+    padding-left: 5px;
+    p {
+      margin: 0px;
+      line-height: 3px;
+    }
+    &> div {
+      display: flex;
+      align-items: flex-end;
+    }
+    h5 {
+      text-align: left;
+      overflow: hidden;
+      max-width: 140px;
+      white-space: pre;
+      text-overflow: ellipsis;
+      margin: 0px;
+      margin-left: 5px;
+      color: #333333;
+      font-size: 100%;
+      font-style: italic;
+      font-weight: bold;
+      letter-spacing: -0.04px;
+    }
+    sub {
+      font-size: 0.7em;
+      color: #9B9B9B;
+    }
+  }
+  .score-cell__times {
+    position: relative;
+    box-sizing: border-box;
+    display: flex;
+    .score-cell__game {
+      color: $primary-color;
+      font-weight: bold;
+      border-right: 7px solid $light-gray;
+      background-color: white !important;
+    }
+    .score-cell__game--serve {
+      border-color: $gold;
+    }
+    div {
+      color: #4A4A4A;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1em;
+      letter-spacing: -0.04px;
+      height: 100%;
+      padding: 5px;
+      min-width: 27px;
+      box-sizing: border-box;
+      &:nth-of-type(even){
+        background-color: $light-gray;
+      }
+    }
+  }
+  .score-cell__stats {
+    .match-stats {
+      font-size: 8px;
+      padding: 2px 5px;
+      font-weight: bold;
+      background-color: #9B9B9B;
+    }
+    .match-time {
+      font-size: 11px;
+    }
+    .match-completed {
+      font-size: 8px;
+      padding: 2px 5px;
+      background-color: $success-color;
+    }
+  }
+}

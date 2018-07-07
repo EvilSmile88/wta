@@ -1,9 +1,21 @@
 @import "variables";
 @import "buttons";
 @import "player-card";
+@import "score-carusel";
+@import "player-videos";
 @import "drop-down";
 @import "header";
 @import "footer";
+@import "player_compare";
+@import "player-photos";
+
+@import "player-other";
+@import "player-twits";
+@import "player-gear";
+@import "player-played-tournaments";
+@import "player-story";
+@import "player-tabs";
+
 html,
 body {
   min-width: 100%;
@@ -14,7 +26,7 @@ body {
   background-color: $body-bg;
   font-family: 'Open Sans', sans-serif;
 }
-main {
+body > main {
   height: auto;
   min-height: 90vh;
   width: 100%;

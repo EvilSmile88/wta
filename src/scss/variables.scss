@@ -8,8 +8,28 @@ $screen-md-min-width: 768px;
 $screen-lg-min-width: 992px;
 $screen-xl-min-width: 1200px;
 
-$body-bg: #F0F0F0;
+@font-face {
+  font-family: 'Open Sans';
+  src: url('../fonts/open-sans.regular.woff2') format('woff2'),
+  url('../fonts/open-sans.regular.woff') format('woff'),
+  url('../fonts/open-sans.regular.ttf') format('truetype'),
+  url('../fonts/open-sans.regular.svg#open_sansregular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Myriad Pro';
+  src: url('../fonts/myriad-pro.regular.otf') format('opentype'),
+  url('../fonts/myriad-pro.regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+$light-gray: #F0F0F0;
+$body-bg: $light-gray;
 $primary-color: #33145B !default;
 $gold: rgb(255, 228, 46);
 $primary-color-light: #502784;
+$success-color: #7ED321;
 $dark-gray: #666;
