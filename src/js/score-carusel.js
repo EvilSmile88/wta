@@ -17,3 +17,5 @@ var swiper = new Swiper('.swiper-container--score', {
     prevEl: '.swiper-button-prev',
   },
 });
+$('.swiper-container--score .swiper-button-prev').attr('tabindex', -1);
+$('.swiper-container--score .swiper-button-next').attr('tabindex', -1);

@@ -69,12 +69,19 @@
           color: rgba(255,255,255,0.4);
           line-height: 17px;
           font-size: 14px;
+          .post_data__user {
+            word-break: break-all;
+          }
         }
         p {
           font-size: 14px;
           letter-spacing: -0.04px;
           margin: 0px;
           margin-top: 10px;
+        }
+        .post_data__tag {
+          color: rgba(255,255,255,0.4);
+          font-size: 14px;
         }
       }
     }

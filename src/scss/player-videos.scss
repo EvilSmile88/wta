@@ -19,6 +19,8 @@
   .swiper-slide__cell{
     height: 80%;
     width: 100%;
+    overflow: hidden;
+    padding-bottom: 10px;
     border-bottom: 3px solid rgba(255,255,255,0.4);
   }
   .swiper-slide__preview {
