@@ -10,18 +10,6 @@
   font-weight: normal;
   font-style: normal; }
 
-@font-face {
-  font-family: 'Open Sans';
-  src: url("../fonts/open-sans.regular.woff2") format("woff2"), url("../fonts/open-sans.regular.woff") format("woff"), url("../fonts/open-sans.regular.ttf") format("truetype"), url("../fonts/open-sans.regular.svg#open_sansregular") format("svg");
-  font-weight: normal;
-  font-style: normal; }
-
-@font-face {
-  font-family: 'Myriad Pro';
-  src: url("../fonts/myriad-pro.regular.otf") format("opentype"), url("../fonts/myriad-pro.regular.ttf") format("truetype");
-  font-weight: normal;
-  font-style: normal; }
-
 .wta-primary-button {
   height: auto;
   min-height: 20px;
@@ -37,6 +25,52 @@
   text-align: center; }
   .wta-primary-button:hover:not(:disabled) {
     background-color: #33145B; }
+
+.wta-default-button {
+  height: auto;
+  min-height: 20px;
+  padding: 1px 10px;
+  min-width: 70px;
+  border-radius: 0 15px 0 15px;
+  background-color: #F0F0F0;
+  font-family: "Myriad Pro", sans-serif;
+  font-size: 12px;
+  font-weight: 600;
+  color: #9B9B9B;
+  text-align: center; }
+  .wta-default-button:hover:not(:disabled) {
+    background-color: #e5e5e5; }
+
+@font-face {
+  font-family: 'Open Sans';
+  src: url("../fonts/open-sans.regular.woff2") format("woff2"), url("../fonts/open-sans.regular.woff") format("woff"), url("../fonts/open-sans.regular.ttf") format("truetype"), url("../fonts/open-sans.regular.svg#open_sansregular") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Myriad Pro';
+  src: url("../fonts/myriad-pro.regular.otf") format("opentype"), url("../fonts/myriad-pro.regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+
+select, .custom-select {
+  position: relative;
+  display: flex;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background-image: url("../img/arrow.svg");
+  background-repeat: no-repeat;
+  background-position-y: 65%;
+  background-size: 12px;
+  width: auto;
+  border: none;
+  font-family: "Open Sans";
+  font-size: 16px;
+  padding-bottom: 0px;
+  color: #4A4A4A;
+  border-radius: 0px; }
+  select:focus, .custom-select:focus {
+    box-shadow: 0px 2px 0 0 rgba(0, 123, 255, 0.25); }
 
 @font-face {
   font-family: 'Open Sans';
@@ -941,7 +975,7 @@ footer {
     flex-grow: 1;
     flex-direction: column;
     overflow-x: hidden;
-    overflow-y: scroll;
+    overflow-y: auto;
     padding: 8px;
     /* width */
     /* Track */
@@ -1242,7 +1276,7 @@ footer {
   .player-tabs nav {
     margin: 0px 20px;
     max-width: 95vw;
-    overflow-x: scroll;
+    overflow-x: auto;
     /* Track */
     /* Handle */
     /* Handle on hover */ }
@@ -1289,6 +1323,156 @@ footer {
           flex-basis: 70px;
           flex-grow: 1; } }
 
+@font-face {
+  font-family: 'Open Sans';
+  src: url("../fonts/open-sans.regular.woff2") format("woff2"), url("../fonts/open-sans.regular.woff") format("woff"), url("../fonts/open-sans.regular.ttf") format("truetype"), url("../fonts/open-sans.regular.svg#open_sansregular") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Myriad Pro';
+  src: url("../fonts/myriad-pro.regular.otf") format("opentype"), url("../fonts/myriad-pro.regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+
+.player-overview {
+  max-width: 99vw; }
+  .player-overview .player-overview__filters {
+    display: flex;
+    align-items: flex-end; }
+    .player-overview .player-overview__filters button {
+      height: 26.8px;
+      width: 135.48px; }
+      .player-overview .player-overview__filters button:disabled {
+        opacity: 1; }
+  .player-overview .player-overview__content {
+    height: 200px; }
+  .player-overview .player-overview__height-card {
+    padding: 20px; }
+
+@font-face {
+  font-family: 'Open Sans';
+  src: url("../fonts/open-sans.regular.woff2") format("woff2"), url("../fonts/open-sans.regular.woff") format("woff"), url("../fonts/open-sans.regular.ttf") format("truetype"), url("../fonts/open-sans.regular.svg#open_sansregular") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Myriad Pro';
+  src: url("../fonts/myriad-pro.regular.otf") format("opentype"), url("../fonts/myriad-pro.regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+
+.player-matches {
+  max-width: 99vw; }
+  .player-matches .row {
+    margin: 0px; }
+  .player-matches .player-matches__filters {
+    margin: 0px 20px;
+    max-width: 100%;
+    overflow-x: auto;
+    /* Track */
+    /* Handle */
+    /* Handle on hover */
+    border-bottom: 1px solid #D9D9D9;
+    display: flex;
+    align-items: flex-end; }
+    .player-matches .player-matches__filters::-webkit-scrollbar {
+      height: 5px; }
+    .player-matches .player-matches__filters::-webkit-scrollbar-track {
+      background: transparent; }
+    .player-matches .player-matches__filters::-webkit-scrollbar-thumb {
+      border-radius: 5px;
+      background: rgba(0, 0, 0, 0.1); }
+    .player-matches .player-matches__filters::-webkit-scrollbar-thumb:hover {
+      background: rgba(0, 0, 0, 0.3); }
+    .player-matches .player-matches__filters .row {
+      margin: 0px; }
+    .player-matches .player-matches__filters button {
+      height: 26.8px;
+      width: 135.48px; }
+      .player-matches .player-matches__filters button:disabled {
+        opacity: 1; }
+  .player-matches .player-matches__match-header {
+    background-color: #F0F0F0; }
+    .player-matches .player-matches__match-header h4 {
+      letter-spacing: -0.05px;
+      font-size: 20px;
+      font-weight: bold;
+      color: #502784; }
+  .player-matches .player-matches__match-header-description {
+    display: flex;
+    min-width: 120px;
+    color: gray;
+    font-family: "Open Sans";
+    letter-spacing: -0.05px;
+    font-size: 16px; }
+    .player-matches .player-matches__match-header-description:not(:last-of-type) {
+      margin-right: 10px; }
+    .player-matches .player-matches__match-header-description .label {
+      text-transform: uppercase;
+      font-weight: bold;
+      margin-right: 5px;
+      color: #502784; }
+    .player-matches .player-matches__match-header-description.player-matches__match-header-description--md {
+      min-width: 200px; }
+    .player-matches .player-matches__match-header-description.player-matches__match-header-description--lg {
+      min-width: 230px; }
+  .player-matches .table-responsive {
+    /* Track */
+    /* Handle */
+    /* Handle on hover */ }
+    .player-matches .table-responsive::-webkit-scrollbar {
+      height: 5px; }
+    .player-matches .table-responsive::-webkit-scrollbar-track {
+      background: transparent; }
+    .player-matches .table-responsive::-webkit-scrollbar-thumb {
+      border-radius: 5px;
+      background: rgba(0, 0, 0, 0.1); }
+    .player-matches .table-responsive::-webkit-scrollbar-thumb:hover {
+      background: rgba(0, 0, 0, 0.3); }
+  .player-matches table th {
+    color: #502784;
+    font-size: 16px;
+    letter-spacing: -0.05px;
+    text-transform: uppercase;
+    border: none;
+    font-weight: bold; }
+  .player-matches table tbody tr:first-of-type td {
+    border: none; }
+  .player-matches table tbody td {
+    min-width: 100px;
+    color: #4A4A4A;
+    font-size: 16px;
+    font-family: "Open Sans";
+    letter-spacing: -0.05px; }
+  .player-matches table tbody tr:hover {
+    background-color: rgba(80, 39, 132, 0.05); }
+  .player-matches table .td-md {
+    min-width: 200px; }
+  .player-matches table button {
+    font-style: italic; }
+  .player-matches .player-matches__more button {
+    font-style: italic;
+    font-size: 12px;
+    height: 25.39px;
+    width: 135.46px; }
+  @media (max-width: 575.98px) {
+    .player-matches .player-matches__match-header h4 {
+      font-size: 18px; }
+    .player-matches .player-matches__content .d-flex {
+      flex-direction: column; }
+    .player-matches .player-matches__match-header-description {
+      font-size: 14px; }
+    .player-matches table .td-md {
+      min-width: 170px; }
+    .player-matches table th {
+      font-size: 15px; }
+      .player-matches table th td {
+        padding: 10px; }
+    .player-matches table tbody td {
+      padding: 10px;
+      font-size: 13px; } }
+
 html,
 body {
   min-width: 100%;
@@ -1302,7 +1486,7 @@ body {
 body > main {
   height: auto;
   min-height: 90vh;
-  width: 100%;
+  width: 100vw;
   box-sizing: border-box;
   max-width: 1400px; }
 

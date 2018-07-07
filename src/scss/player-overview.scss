@@ -1,0 +1,21 @@
+@import "variables";
+.player-overview{
+  max-width: 99vw;
+  .player-overview__filters {
+    display: flex;
+    align-items: flex-end;
+    button {
+      height: 26.8px;
+      width: 135.48px;
+      &:disabled {
+        opacity: 1;
+      }
+    }
+  }
+  .player-overview__content {
+    height: 200px;
+  }
+  .player-overview__height-card {
+    padding: 20px;
+  }
+}
