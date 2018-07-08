@@ -67,6 +67,7 @@
   }
   @media (max-width: $screen-sm-max-width) {
     .player-story__content {
+      min-height: auto !important;
       padding: 10px;
       main {
         font-size: 15px;

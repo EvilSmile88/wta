@@ -18,6 +18,8 @@
 @import "player-tabs";
 @import "player-overview";
 @import "player-matches";
+@import "player-bio";
+
 
 html,
 body {
@@ -32,7 +34,7 @@ body {
 body > main {
   height: auto;
   min-height: 90vh;
-  width: 100vw;
+  width: 98.7vw;
   box-sizing: border-box;
   max-width: 1400px;
 }
