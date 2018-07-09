@@ -1347,10 +1347,131 @@ footer {
       width: 135.48px; }
       .player-overview .player-overview__filters button:disabled {
         opacity: 1; }
-  .player-overview .player-overview__content {
-    height: 200px; }
-  .player-overview .player-overview__height-card {
-    padding: 20px; }
+  .player-overview .player-ranking__high {
+    background-color: #F0F0F0;
+    font-size: 16px; }
+    .player-overview .player-ranking__high h2 {
+      text-transform: uppercase;
+      font-size: 2.5em;
+      color: #444;
+      letter-spacing: -0.05px;
+      font-style: italic;
+      font-weight: bold;
+      margin-bottom: 0px; }
+    .player-overview .player-ranking__high .player-ranking__high-singles, .player-overview .player-ranking__high .player-ranking__high-doubles {
+      min-width: 200px;
+      text-transform: uppercase;
+      font-size: 1em;
+      font-weight: bold;
+      letter-spacing: -0.05px;
+      color: #9B9B9B; }
+      .player-overview .player-ranking__high .player-ranking__high-singles h4, .player-overview .player-ranking__high .player-ranking__high-doubles h4 {
+        margin: 2px 10px;
+        writing-mode: vertical-rl;
+        font-size: 1em;
+        font-weight: bold;
+        transform: rotate(180deg); }
+    .player-overview .player-ranking__high .player-ranking__date {
+      line-height: 20px; }
+    .player-overview .player-ranking__high .player-ranking__number {
+      display: flex;
+      align-items: center;
+      line-height: 90px;
+      font-size: 6.25em;
+      font-weight: 700;
+      margin-right: 5px;
+      color: #502784; }
+  .player-overview .player-overview__height table {
+    color: #9b9b9b;
+    border-bottom: 1px solid #dee2e6;
+    font-size: 14px; }
+    .player-overview .player-overview__height table thead th {
+      text-transform: uppercase;
+      border: none;
+      font-size: 18px;
+      font-weight: bold;
+      color: #502784; }
+    .player-overview .player-overview__height table tbody tr:first-of-type td {
+      border-top: none; }
+    .player-overview .player-overview__height table tbody td {
+      font-weight: bold; }
+    .player-overview .player-overview__height table tbody tr:hover {
+      background-color: rgba(80, 39, 132, 0.05); }
+  .player-overview .player-overview__history {
+    color: #444;
+    font-size: 18px; }
+    .player-overview .player-overview__history .player-overview__history-header h3 {
+      font-weight: bold;
+      font-size: 18px;
+      margin-bottom: 0px;
+      color: #502784; }
+    .player-overview .player-overview__history .player-overview__history-table {
+      min-width: 100%;
+      overflow-x: auto;
+      margin: 0px;
+      /* Track */
+      /* Handle */
+      /* Handle on hover */ }
+      .player-overview .player-overview__history .player-overview__history-table::-webkit-scrollbar {
+        height: 5px; }
+      .player-overview .player-overview__history .player-overview__history-table::-webkit-scrollbar-track {
+        background: transparent; }
+      .player-overview .player-overview__history .player-overview__history-table::-webkit-scrollbar-thumb {
+        border-radius: 5px;
+        background: rgba(0, 0, 0, 0.1); }
+      .player-overview .player-overview__history .player-overview__history-table::-webkit-scrollbar-thumb:hover {
+        background: rgba(0, 0, 0, 0.3); }
+      .player-overview .player-overview__history .player-overview__history-table table {
+        color: #9b9b9b;
+        border-bottom: 1px solid #dee2e6;
+        font-size: 16px; }
+        .player-overview .player-overview__history .player-overview__history-table table thead th {
+          text-transform: uppercase;
+          border: none;
+          font-size: 13px;
+          font-weight: bold;
+          color: #502784; }
+        .player-overview .player-overview__history .player-overview__history-table table tbody {
+          margin-bottom: 20px; }
+          .player-overview .player-overview__history .player-overview__history-table table tbody tr:first-of-type td {
+            border-top: none; }
+          .player-overview .player-overview__history .player-overview__history-table table tbody td {
+            font-weight: bold; }
+          .player-overview .player-overview__history .player-overview__history-table table tbody tr:hover {
+            background-color: rgba(80, 39, 132, 0.05); }
+          .player-overview .player-overview__history .player-overview__history-table table tbody .final-cell {
+            padding-bottom: 0px;
+            padding-top: 0px;
+            font-weight: normal;
+            justify-content: center; }
+            .player-overview .player-overview__history .player-overview__history-table table tbody .final-cell > div {
+              display: inline-block;
+              color: white;
+              height: 100%;
+              min-width: 50px;
+              padding: 0.75rem;
+              background-color: #502784; }
+            .player-overview .player-overview__history .player-overview__history-table table tbody .final-cell .final-cell--final {
+              background-color: #6d5b85; }
+            .player-overview .player-overview__history .player-overview__history-table table tbody .final-cell .final-cell--semi-final {
+              background-color: #aba1ba; }
+            .player-overview .player-overview__history .player-overview__history-table table tbody .final-cell .final-cell--quarter-final {
+              color: #9B9B9B;
+              font-weight: bold;
+              background-color: #d4d0de; }
+  @media (max-width: 575.98px) {
+    .player-overview .player-ranking__high {
+      font-size: 10px; }
+      .player-overview .player-ranking__high .player-ranking__number {
+        line-height: 50px; }
+    .player-overview .player-overview__height table {
+      font-size: 12px; }
+      .player-overview .player-overview__height table thead th {
+        text-transform: uppercase;
+        border: none;
+        font-size: 15px;
+        font-weight: bold;
+        color: #502784; } }
 
 @font-face {
   font-family: 'Open Sans';
@@ -1655,8 +1776,6 @@ footer {
       background-color: #f0f0f0; }
     .player-ranking table tbody tr:first-of-type td {
       border-top: none; }
-    .player-ranking table tbody td {
-      width: 33,33%; }
     .player-ranking table tbody td:not(:last-of-type) {
       border-right: 1px solid #dee2e6; }
     .player-ranking table tbody tr:nth-of-type(even) {
@@ -1962,6 +2081,7 @@ footer {
       text-align: left;
       color: white; }
     .player-tab-videos .player-videos__content .player-videos__item {
+      border-bottom: 2px solid #666;
       color: #666; }
       .player-tab-videos .player-videos__content .player-videos__item:hover img {
         filter: none; }

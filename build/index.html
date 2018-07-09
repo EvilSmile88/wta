@@ -488,80 +488,830 @@
             </ul>
         </nav>
         <main>
-            <!--<section class="container player-overview">-->
-                <!--<div class="row w-100">-->
-                    <!--<div class="col player-overview__filters py-4">-->
-                        <!--<button type="button" class="btn wta-primary-button text-uppercase" disabled>Singles</button>-->
-                        <!--<button type="button" class="btn mx-2 wta-default-button text-uppercase">Doubles</button>-->
-                    <!--</div>-->
-                <!--</div>-->
-                <!--<div class="row player-overview__content">-->
-                    <!--<div class="col-12 col-lg-6 player-overview__height">-->
-                        <!--<div class=" w-100 mb-5 d-flex player-overview__height-card">-->
-                            <!--<div>-->
-                                <!--<h2>Career High</h2>-->
-                            <!--</div>-->
-                        <!--</div>-->
-                    <!--</div>-->
-                    <!--<div class="col-12 col-lg-6 player-overview__history"></div>-->
-                <!--</div>-->
-            <!--</section>-->
-            <section class="container player-matches px-1 px-md-3">
+
+            <!--Overview-->
+
+            <section class="container player-overview">
                 <div class="row w-100">
-                    <div class="col player-matches__filters mx-2 pb-2 pt-md-4 pb-md-2 ">
+                    <div class="col player-overview__filters py-4">
                         <button type="button" class="btn wta-primary-button text-uppercase" disabled>Singles</button>
                         <button type="button" class="btn mx-2 wta-default-button text-uppercase">Doubles</button>
-                        <select class="custom-select mx-3">
-                        <option value="" disabled selected>Year</option>
-                        <option value="2018">2018</option>
-                        <option value="2017">2017</option>
-                        <option value="2016">2016</option>
-                        </select>
-                        <select class="custom-select mx-3">
-                        <option value="" disabled selected>Tournament</option>
-                        <option value="usOpen">US Open</option>
-                        <option value="volvoCarOpen">Volvo Car Open</option>
-                        </select>
                     </div>
                 </div>
-                <div class="row player-matches__content">
-                    <div class="player-matches__match-header w-100 px-3 py-2 my-3">
-                        <h4>
-                            Internazionali BNL d’Italia - Rome, Italy
-                        </h4>
-                        <div class="w-100 d-flex flex-wrap justify-content-start">
-                            <div class="player-matches__match-header-description player-matches__match-header-description--lg">
-                                <span class="label">Date:</span>
-                                <span class="description">June 25 - July 1, 2017</span>
+                <div class="row player-overview__content">
+                    <div class="col-12 col-lg-6 player-overview__height mb-4 pr-3 pr-md-4">
+                        <div class="row w-100 player-ranking__high d-flex flex-wrap align-items-center py-3 px-2 px-md-5 mx-0">
+                            <div class="col-4 player-ranking__high-title px-0">
+                                <h2 class="mb-3 mb-md-0"><span>Career</span> <span>High</span></h2>
                             </div>
-                            <div class="player-matches__match-header-description player-matches__match-header-description--md">
-                                <span class="label">Level:</span>
-                                <span class="description">WTA Premier 5</span>
+                            <div class="col-8 px-0">
+                                <div class="row d-flex justify-content-center">
+                                    <div class="col player-ranking__high-singles d-flex justify-content-center align-items-end">
+                                        <h4>Singles <br> Ranking</h4>
+                                        <span id="tab-ranking-number--singles" class="player-ranking__number">1</span>
+                                        <span class="player-ranking__date">2017/06/12</span>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="player-matches__match-header-description  player-matches__match-header-description--lg">
-                                <span class="label">Prize money:</span>
-                                <span class="description">$2,775,745</span>
+                        </div>
+                        <div class="row">
+                            <div class="col-12">
+                                <table class="table table-hover mb-1 mt-3">
+                                    <thead>
+                                    <tr>
+                                        <th class="text-md-left" scope="col">Singles</th>
+                                        <th class="text-md-right" scope="col" >YTD</th>
+                                        <th class="text-md-right" scope="col" >Career</th>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                    <tr>
+                                        <td class="text-md-left text-uppercase"><b>WTA Titles</b></td>
+                                        <td class="text-md-right">0</td>
+                                        <td class="text-md-right">10</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-md-left text-uppercase"><b>WTA 125K Series Titles</b></td>
+                                        <td class="text-md-right">0</td>
+                                        <td class="text-md-right">10</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-md-left text-uppercase"><b>ITF Circuit Titles</b></td>
+                                        <td class="text-md-right">0</td>
+                                        <td class="text-md-right">5</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-md-left text-uppercase"><b>W-L</b></td>
+                                        <td class="text-md-right">19 - 13</td>
+                                        <td class="text-md-right">539 - 281</td>
+                                    </tr>
+                                    </tbody>
+                                </table>
                             </div>
-                            <div class="player-matches__match-header-description">
-                                <span class="label">Surface:</span>
-                                <span class="description">Clay</span>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-6 player-overview__history pl-3 pl-md-4">
+                        <div class="row w-100">
+                            <div class="col-12 player-overview__history-header">
+                                <h3 class="text-uppercase">Grad Slam History</h3>
+                                <span><i><b>Singles Record: <span>74 - 34</span></b></i></span>
                             </div>
-                            <div class="player-matches__match-header-description  player-matches__match-header-description--md">
-                                <span class="label">Draw:</span>
-                                <span class="description">64M/32Q/32D</span>
-                            </div>
-                            <div class="player-matches__match-header-description">
-                                <span class="label">Rank:</span>
-                                <span class="description">1</span>
-                            </div>
-                            <div class="player-matches__match-header-description">
-                                <span class="label">Seed entry:</span>
-                                <span class="description">1</span>
+                        </div>
+                        <div class="row w-100 player-overview__history-table">
+                            <div class="col-12 px-0">
+                                <table class="table table-hover mb-3 mt-3">
+                                    <thead>
+                                    <tr>
+                                        <th scope="col">Year</th>
+                                        <th class="text-center" scope="col">Australian Open</th>
+                                        <th class="text-center" scope="col" >Roland Garos</th>
+                                        <th class="text-center" scope="col" >Wimbledon</th>
+                                        <th class="text-center" scope="col" >US Open</th>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                    <tr>
+                                        <td><b>W-L</b></td>
+                                        <td class="text-center"><b>18-8</b></td>
+                                        <td class="text-center"><b>13-9</b></td>
+                                        <td class="text-center"><b>20-9</b></td>
+                                        <td class="text-center"><b>23-8</b></td>
+                                    </tr>
+                                    <tr>
+                                        <td>2017</td>
+                                        <td class="text-center">4R</td>
+                                        <td class="text-center">1R</td>
+                                        <td class="text-center"></td>
+                                        <td class="text-center"></td>
+                                    </tr>
+                                    <tr>
+                                        <td>2016</td>
+                                        <td class="text-center final-cell"><div class="final-cell final-cell--win">W</div></td>
+                                        <td class="text-center">1R</td>
+                                        <td class="text-center final-cell"><div class="final-cell--final">F</div></td>
+                                        <td class="text-center final-cell"><div class="final-cell final-cell--semi-final">SF</div></td>
+                                    </tr>
+                                    <tr>
+                                        <td>2015</td>
+                                        <td class="text-center final-cell"><div class="final-cell final-cell--win">W</div></td>
+                                        <td class="text-center">1R</td>
+                                        <td class="text-center">-</td>
+                                        <td class="text-center final-cell"><div class="final-cell final-cell--quarter-final">QF</div></td>
+                                    </tr>
+                                    </tbody>
+                                </table>
                             </div>
                         </div>
                     </div>
                 </div>
             </section>
+
+            <!--Matches-->
+
+
+            <!--<section class="container player-matches px-1 px-md-3">-->
+                <!--<div class="row w-100">-->
+                    <!--<div class="col player-matches__filters mx-2 pb-2 pt-md-4 pb-md-2 ">-->
+                        <!--<button type="button" class="btn wta-primary-button text-uppercase" disabled>Singles</button>-->
+                        <!--<button type="button" class="btn mx-2 wta-default-button text-uppercase">Doubles</button>-->
+                        <!--<select class="custom-select mx-3">-->
+                        <!--<option value="" disabled selected>Year</option>-->
+                        <!--<option value="2018">2018</option>-->
+                        <!--<option value="2017">2017</option>-->
+                        <!--<option value="2016">2016</option>-->
+                        <!--</select>-->
+                        <!--<select class="custom-select mx-3">-->
+                        <!--<option value="" disabled selected>Tournament</option>-->
+                        <!--<option value="usOpen">US Open</option>-->
+                        <!--<option value="volvoCarOpen">Volvo Car Open</option>-->
+                        <!--</select>-->
+                    <!--</div>-->
+                <!--</div>-->
+                <!--<div class="row player-matches__content my-2">-->
+                    <!--<div class="player-matches__match-header w-100 px-3 py-2 my-3">-->
+                        <!--<h4>-->
+                            <!--Internazionali BNL d’Italia - Rome, Italy-->
+                        <!--</h4>-->
+                        <!--<div class="w-100 d-flex flex-wrap justify-content-start">-->
+                            <!--<div class="player-matches__match-header-description player-matches__match-header-description&#45;&#45;lg">-->
+                                <!--<span class="label">Date:</span>-->
+                                <!--<span class="description">June 25 - July 1, 2017</span>-->
+                            <!--</div>-->
+                            <!--<div class="player-matches__match-header-description player-matches__match-header-description&#45;&#45;md">-->
+                                <!--<span class="label">Level:</span>-->
+                                <!--<span class="description">WTA Premier 5</span>-->
+                            <!--</div>-->
+                            <!--<div class="player-matches__match-header-description  player-matches__match-header-description&#45;&#45;lg">-->
+                                <!--<span class="label">Prize money:</span>-->
+                                <!--<span class="description">$2,775,745</span>-->
+                            <!--</div>-->
+                            <!--<div class="player-matches__match-header-description">-->
+                                <!--<span class="label">Surface:</span>-->
+                                <!--<span class="description">Clay</span>-->
+                            <!--</div>-->
+                            <!--<div class="player-matches__match-header-description  player-matches__match-header-description&#45;&#45;md">-->
+                                <!--<span class="label">Draw:</span>-->
+                                <!--<span class="description">64M/32Q/32D</span>-->
+                            <!--</div>-->
+                            <!--<div class="player-matches__match-header-description">-->
+                                <!--<span class="label">Rank:</span>-->
+                                <!--<span class="description">1</span>-->
+                            <!--</div>-->
+                            <!--<div class="player-matches__match-header-description">-->
+                                <!--<span class="label">Seed entry:</span>-->
+                                <!--<span class="description">1</span>-->
+                            <!--</div>-->
+                        <!--</div>-->
+                    <!--</div>-->
+                    <!--<div class="w-100 table-responsive mx-2">-->
+                        <!--<table class="table table-hover mb-1">-->
+                            <!--<thead>-->
+                            <!--<tr>-->
+                                <!--<th scope="col" class="td-md">Round</th>-->
+                                <!--<th scope="col">Result</th>-->
+                                <!--<th scope="col" class="td-md">Opponent</th>-->
+                                <!--<th scope="col">Rank</th>-->
+                                <!--<th scope="col" class="td-md">Scores</th>-->
+                                <!--<th scope="col"></th>-->
+                            <!--</tr>-->
+                            <!--</thead>-->
+                            <!--<tbody>-->
+                            <!--<tr>-->
+                                <!--<td class="td-md">Round 64</td>-->
+                                <!--<td><b class="pl-4">W</b></td>-->
+                                <!--<td class="td-md">Timea Bacsinszky (SUI)</td>-->
+                                <!--<td>29</td>-->
+                                <!--<td class="td-md">6 - 4  6 - 1</td>-->
+                                <!--<td class="text-right">-->
+                                    <!--<button type="button" class="btn wta-primary-button">Match Details</button>-->
+                                <!--</td>-->
+                            <!--</tr>-->
+                            <!--<tr>-->
+                                <!--<td class="td-md">Round 32</td>-->
+                                <!--<td><b class="pl-4">L</b></td>-->
+                                <!--<td class="td-md">Julia Goerges (8) (GER)</td>-->
+                                <!--<td>44</td>-->
+                                <!--<td class="td-md">6 - 4  6 - 1  7 - 6</td>-->
+                                <!--<td class="text-right">-->
+                                    <!--<button type="button" class="btn wta-primary-button">Match Details</button>-->
+                                <!--</td>-->
+                            <!--</tr>-->
+                            <!--</tbody>-->
+                        <!--</table>-->
+                    <!--</div>-->
+                    <!--<div class="player-matches__match-footer d-flex p-2 w-100">-->
+                        <!--<div class="d-flex">WTA Ranking Points: +1</div>-->
+                        <!--<div class="d-flex">Prize Money: $16,740 </div>-->
+                    <!--</div>-->
+                <!--</div>-->
+                <!--<div class="row player-matches__content my-2">-->
+                    <!--<div class="player-matches__match-header w-100 px-3 py-2 my-3">-->
+                        <!--<h4>-->
+                            <!--Internazionali BNL d’Italia - Rome, Italy-->
+                        <!--</h4>-->
+                        <!--<div class="w-100 d-flex flex-wrap justify-content-start">-->
+                            <!--<div class="player-matches__match-header-description player-matches__match-header-description&#45;&#45;lg">-->
+                                <!--<span class="label">Date:</span>-->
+                                <!--<span class="description">June 25 - July 1, 2017</span>-->
+                            <!--</div>-->
+                            <!--<div class="player-matches__match-header-description player-matches__match-header-description&#45;&#45;md">-->
+                                <!--<span class="label">Level:</span>-->
+                                <!--<span class="description">WTA Premier 5</span>-->
+                            <!--</div>-->
+                            <!--<div class="player-matches__match-header-description  player-matches__match-header-description&#45;&#45;lg">-->
+                                <!--<span class="label">Prize money:</span>-->
+                                <!--<span class="description">$2,775,745</span>-->
+                            <!--</div>-->
+                            <!--<div class="player-matches__match-header-description">-->
+                                <!--<span class="label">Surface:</span>-->
+                                <!--<span class="description">Clay</span>-->
+                            <!--</div>-->
+                            <!--<div class="player-matches__match-header-description  player-matches__match-header-description&#45;&#45;md">-->
+                                <!--<span class="label">Draw:</span>-->
+                                <!--<span class="description">64M/32Q/32D</span>-->
+                            <!--</div>-->
+                            <!--<div class="player-matches__match-header-description">-->
+                                <!--<span class="label">Rank:</span>-->
+                                <!--<span class="description">1</span>-->
+                            <!--</div>-->
+                            <!--<div class="player-matches__match-header-description">-->
+                                <!--<span class="label">Seed entry:</span>-->
+                                <!--<span class="description">1</span>-->
+                            <!--</div>-->
+                        <!--</div>-->
+                    <!--</div>-->
+                    <!--<div class="w-100 table-responsive mx-2">-->
+                        <!--<table class="table table-hover">-->
+                            <!--<thead>-->
+                            <!--<tr>-->
+                                <!--<th scope="col" class="td-md">Round</th>-->
+                                <!--<th scope="col">Result</th>-->
+                                <!--<th scope="col" class="td-md">Opponent</th>-->
+                                <!--<th scope="col">Rank</th>-->
+                                <!--<th scope="col" class="td-md">Scores</th>-->
+                                <!--<th scope="col"></th>-->
+                            <!--</tr>-->
+                            <!--</thead>-->
+                            <!--<tbody>-->
+                            <!--<tr>-->
+                                <!--<td class="td-md">Round 64</td>-->
+                                <!--<td><b class="pl-4">W</b></td>-->
+                                <!--<td class="td-md">Timea Bacsinszky (SUI)</td>-->
+                                <!--<td>29</td>-->
+                                <!--<td class="td-md">6 - 4  6 - 1</td>-->
+                                <!--<td class="text-right">-->
+                                    <!--<button type="button" class="btn wta-primary-button">Match Details</button>-->
+                                <!--</td>-->
+                            <!--</tr>-->
+                            <!--<tr>-->
+                                <!--<td class="td-md">Round 32</td>-->
+                                <!--<td><b class="pl-4">L</b></td>-->
+                                <!--<td class="td-md">Julia Goerges (8) (GER)</td>-->
+                                <!--<td>44</td>-->
+                                <!--<td class="td-md">6 - 4  6 - 1  7 - 6</td>-->
+                                <!--<td class="text-right">-->
+                                    <!--<button type="button" class="btn wta-primary-button">Match Details</button>-->
+                                <!--</td>-->
+                            <!--</tr>-->
+                            <!--</tbody>-->
+                        <!--</table>-->
+                    <!--</div>-->
+                    <!--<div class="player-matches__match-footer d-flex p-2 w-100">-->
+                        <!--<div class="d-flex">WTA Ranking Points: +1</div>-->
+                        <!--<div class="d-flex">Prize Money: $16,740 </div>-->
+                    <!--</div>-->
+                <!--</div>-->
+                <!--<div class="row mx-3 player-matches__more py-3">-->
+                    <!--<div class="col d-flex justify-content-center justify-content-sm-start">-->
+                        <!--<button type="button" class="btn wta-primary-button">See all results</button>-->
+                    <!--</div>-->
+                <!--</div>-->
+            <!--</section>-->
+
+
+            <!--&lt;!&ndash;Bio&ndash;&gt;-->
+
+            <!--<section class="container player-bio">-->
+                <!--<div class="row w-100">-->
+                    <!--<div class="col-12 col-md-4 pl-0">-->
+                        <!--<div class="row mb-3">-->
+                            <!--<div class="col-12 col-md-3 player-bio__label">Coach</div>-->
+                            <!--<div class="col-12 col-md-9 d-flex flex-column player-bio__value"><span>Darren Cahill</span></div>-->
+                        <!--</div>-->
+                        <!--<div class="row mb-3">-->
+                            <!--<div class="col-12 col-md-3 player-bio__label">Trainer</div>-->
+                            <!--<div class="col-12 col-md-9 d-flex flex-column player-bio__value"><span>Darren Cahill</span></div>-->
+                        <!--</div>-->
+                        <!--<div class="row mb-3">-->
+                            <!--<div class="col-12 col-md-3 player-bio__label">Family</div>-->
+                            <!--<div class="col-12 col-md-9 d-flex player-bio__value">-->
+                                <!--<span>Darren Cahill</span>-->
+                                <!--<span>Darren Cahill</span>-->
+                                <!--<span>Darren Cahill</span>-->
+                            <!--</div>-->
+                        <!--</div>-->
+                    <!--</div>-->
+                    <!--<div class="col-12 col-md-8 pl-0">-->
+                        <!--<div class="row mb-3 d-flex">-->
+                            <!--<div class="col-12 col-md-2 player-bio__label">Summary</div>-->
+                            <!--<div class="col-12 col-md-10 d-flex flex-column player-bio__value">-->
+                                <!--<p>-->
+                                    <!--2017 - First No.1 season; won one WTA title, defending Madrid (d. Mladenovic in final); runner-up four times at Rome (l. to Svitolina), Roland Garros (l. Ostapenko), Cincinnati (l. Muguruza) and Beijing (l. Garcia); SF twice at Stuttgart (l. to Siegemund) and Toronto (l. Svitolina); QF five times (incl. Wimbledon); reached 3r once and 2r twice; fell 1r on two occasions at Australian Open an US Open; fell in RR stage at WTA Finals (went 1-2); rose to No.1 for first time on October 9 (after Beijing).-->
+                                <!--</p>-->
+                            <!--</div>-->
+                        <!--</div>-->
+                        <!--<div class="row">-->
+                            <!--<div class="col-12 col-md-2 player-bio__label">Interests</div>-->
+                            <!--<div class="col-12 col-md-10 d-flex flex-column player-bio__value">-->
+                                <!--<p>-->
+                                    <!--2017 - First No.1 season; won one WTA title, defending Madrid (d. Mladenovic in final); runner-up four times at Rome (l. to Svitolina), Roland Garros (l. Ostapenko), Cincinnati (l. Muguruza) and Beijing (l. Garcia); SF twice at Stuttgart (l. to Siegemund) and Toronto (l. Svitolina); QF five times (incl. Wimbledon); reached 3r once and 2r twice; fell 1r on two occasions at Australian Open an US Open; fell in RR stage at WTA Finals (went 1-2); rose to No.1 for first time on October 9 (after Beijing).-->
+                                <!--</p>-->
+                            <!--</div>-->
+                        <!--</div>-->
+                    <!--</div>-->
+                <!--</div>-->
+
+                <!--&lt;!&ndash;Stats&ndash;&gt;-->
+
+                <!--<section class="container player-stats py-4">-->
+                    <!--<div class="row w-100">-->
+                        <!--<div class="col-12 col-md-6 pl-0 pr-0 pr-md-4 mb-3 mb-md-0">-->
+                            <!--<h3 class="player-stats__title">Service record YTD</h3>-->
+                            <!--<div class="row d-flex justify-content-between player-stats__row">-->
+                                <!--<span>Aces</span>-->
+                                <!--<span>85</span>-->
+                            <!--</div>-->
+                            <!--<div class="row d-flex justify-content-between player-stats__row">-->
+                                <!--<span>Double Faults</span>-->
+                                <!--<span>95</span>-->
+                            <!--</div>-->
+                            <!--<div class="row d-flex justify-content-between player-stats__row">-->
+                                <!--<span>1st Serve %</span>-->
+                                <!--<span>65.2</span>-->
+                            <!--</div>-->
+                            <!--<div class="row d-flex justify-content-between player-stats__row">-->
+                                <!--<span>1st Serve Point Won %</span>-->
+                                <!--<span>65.4</span>-->
+                            <!--</div>-->
+                            <!--<div class="row d-flex justify-content-between player-stats__row">-->
+                                <!--<span>2nd Serve Point Won %</span>-->
+                                <!--<span>49.2</span>-->
+                            <!--</div>-->
+                            <!--<div class="row d-flex justify-content-between player-stats__row">-->
+                                <!--<span>Break Point Saved &</span>-->
+                                <!--<span>49.2</span>-->
+                            <!--</div>-->
+                            <!--<div class="row d-flex justify-content-between player-stats__row">-->
+                                <!--<span>Service Games Won %</span>-->
+                                <!--<span>49.2</span>-->
+                            <!--</div>-->
+                            <!--<div class="row d-flex justify-content-between player-stats__row">-->
+                                <!--<span>Service Points Won %</span>-->
+                                <!--<span>49.2</span>-->
+                            <!--</div>-->
+                        <!--</div>-->
+                        <!--<div class="col-12 col-md-6 pl-0 pl-md-4">-->
+                            <!--<h3 class="player-stats__title">Return record YTD</h3>-->
+                            <!--<div class="row d-flex justify-content-between player-stats__row">-->
+                                <!--<span>1st return point won %</span>-->
+                                <!--<span>43.8</span>-->
+                            <!--</div>-->
+                            <!--<div class="row d-flex justify-content-between player-stats__row">-->
+                                <!--<span>2st return point won %</span>-->
+                                <!--<span>61.3</span>-->
+                            <!--</div>-->
+                            <!--<div class="row d-flex justify-content-between player-stats__row">-->
+                                <!--<span>Break Points Converted %</span>-->
+                                <!--<span>61.3</span>-->
+                            <!--</div>-->
+                            <!--<div class="row d-flex justify-content-between player-stats__row">-->
+                                <!--<span>Return Games Won %</span>-->
+                                <!--<span>61.3</span>-->
+                            <!--</div>-->
+                            <!--<div class="row d-flex justify-content-between player-stats__row">-->
+                                <!--<span>Return Pints Won %</span>-->
+                                <!--<span>61.3</span>-->
+                            <!--</div>-->
+                        <!--</div>-->
+                    <!--</div>-->
+            <!--</section>-->
+
+            <!--&lt;!&ndash;Ranking&ndash;&gt;-->
+
+            <!--<section class="container player-ranking py-4 px-0 px-sm-2">-->
+                <!--<div class="row w-100 player-ranking__high d-flex flex-wrap align-items-center">-->
+                    <!--<div class="col-12 col-md-4 player-ranking__high-title px-0">-->
+                        <!--<h2 class="mb-3 mb-md-0"><span>Career</span> <span>High</span></h2>-->
+                    <!--</div>-->
+                    <!--<div class="col-12 col-md-8 px-0">-->
+                       <!--<div class="row d-flex justify-content-center">-->
+                           <!--<div class="col-6 player-ranking__high-singles d-flex align-items-end">-->
+                               <!--<h4>Singles <br> Ranking</h4>-->
+                               <!--<span id="tab-ranking-number&#45;&#45;singles" class="player-ranking__number">1</span>-->
+                               <!--<span class="player-ranking__date">2017/06/12</span>-->
+                           <!--</div>-->
+                           <!--<div class="col-6 player-ranking__high-doubles d-flex align-items-end">-->
+                               <!--<h4>Doubles <br> Ranking</h4>-->
+                               <!--<span id="tab-ranking-number&#45;&#45;doubles" class="player-ranking__number">50</span>-->
+                               <!--<span class="player-ranking__date">2017/06/12</span>-->
+                           <!--</div>-->
+                       <!--</div>-->
+                    <!--</div>-->
+                <!--</div>-->
+            <!--</section>-->
+            <!--<section class="container player-ranking py-4 pt-5 px-0 px-sm-2">-->
+                <!--<div class="row player-ranking__year">-->
+                    <!--<div class="col-12 px-2 player-ranking__year-header"><h2>Year End</h2></div>-->
+                    <!--<table class="table table-hover mb-1 mt-3">-->
+                        <!--<thead>-->
+                        <!--<tr>-->
+                            <!--<th scope="col" class="text-center">Year</th>-->
+                            <!--<th scope="col" class="text-center">Singles</th>-->
+                            <!--<th scope="col" class="text-center">Doubles</th>-->
+                        <!--</tr>-->
+                        <!--</thead>-->
+                        <!--<tbody>-->
+                        <!--<tr>-->
+                            <!--<td class="text-center"><b>2016</b></td>-->
+                            <!--<td class="text-center">1</td>-->
+                            <!--<td class="text-center">324</td>-->
+                        <!--</tr>-->
+                        <!--<tr>-->
+                            <!--<td class="text-center"><b>2015</b></td>-->
+                            <!--<td class="text-center">2</td>-->
+                            <!--<td class="text-center">4</td>-->
+                        <!--</tr>-->
+                        <!--<tr>-->
+                            <!--<td class="text-center"><b>2014</b></td>-->
+                            <!--<td class="text-center">2</td>-->
+                            <!--<td class="text-center">10</td>-->
+                        <!--</tr>-->
+                        <!--</tbody>-->
+                    <!--</table>-->
+                <!--</div>-->
+            <!--</section>-->
+
+            <!--<section class="container player-ranking py-4 pt-5 px-0 px-sm-2">-->
+                <!--<div class="row player-ranking__week">-->
+                    <!--<div class="col-12 px-2 player-ranking__week-header"><h2>Week by Week</h2>-->
+                        <!--<select class="custom-select mb-1">-->
+                            <!--<option value="" disabled selected>Year</option>-->
+                            <!--<option value="2018">2018</option>-->
+                            <!--<option value="2017">2017</option>-->
+                            <!--<option value="2016">2016</option>-->
+                        <!--</select>-->
+                    <!--</div>-->
+                    <!--</div>-->
+                    <!--<table class="table table-hover mb-1 mt-3">-->
+                        <!--<thead>-->
+                        <!--<tr>-->
+                            <!--<th scope="col" class="text-center">Date</th>-->
+                            <!--<th scope="col" class="text-center">Singles</th>-->
+                            <!--<th scope="col" class="text-center">Doubles</th>-->
+                        <!--</tr>-->
+                        <!--</thead>-->
+                        <!--<tbody>-->
+                        <!--<tr>-->
+                            <!--<td class="text-center"><b>10-18-2017</b></td>-->
+                            <!--<td class="text-center">1</td>-->
+                            <!--<td class="text-center">324</td>-->
+                        <!--</tr>-->
+                        <!--<tr>-->
+                            <!--<td class="text-center"><b>06-27-2017</b></td>-->
+                            <!--<td class="text-center">2</td>-->
+                            <!--<td class="text-center">4</td>-->
+                        <!--</tr>-->
+                        <!--<tr>-->
+                            <!--<td class="text-center"><b>05-10-2017</b></td>-->
+                            <!--<td class="text-center">2</td>-->
+                            <!--<td class="text-center">10</td>-->
+                        <!--</tr>-->
+                        <!--</tbody>-->
+                    <!--</table>-->
+                <!--</div>-->
+            <!--</section>-->
+
+            <!--&lt;!&ndash;News&ndash;&gt;-->
+
+
+            <!--<section class="container player-tab-news px-1 px-md-3 mt-2">-->
+                <!--<div class="row w-100">-->
+                    <!--<div class="col player-news__filters mx-2 px-0 pb-2 pt-md-4 pb-md-2 d-flex align-items-center">-->
+                        <!--<input type="text" class="form-control" aria-describedby="player_one" placeholder="Print...">-->
+                        <!--<select class="custom-select mx-3">-->
+                            <!--<option value="" disabled selected>Mounth</option>-->
+                            <!--<option value="1">1</option>-->
+                            <!--<option value="2">2</option>-->
+                            <!--<option value="3">3</option>-->
+                        <!--</select>-->
+                        <!--<select class="custom-select mx-3">-->
+                            <!--<option value="" disabled selected>Year</option>-->
+                            <!--<option value="2018">2018</option>-->
+                            <!--<option value="2017">2017</option>-->
+                            <!--<option value="2016">2016</option>-->
+                        <!--</select>-->
+                        <!--<select class="custom-select mx-3">-->
+                            <!--<option value="" disabled selected>Tournament</option>-->
+                            <!--<option value="usOpen">US Open</option>-->
+                            <!--<option value="volvoCarOpen">Volvo Car Open</option>-->
+                        <!--</select>-->
+                        <!--<button type="button" class="btn mx-3 mr-5 wta-primary-button text-uppercase">Search</button>-->
+                    <!--</div>-->
+                <!--</div>-->
+                <!--<div class="player-news__content px-4">-->
+                    <!--<div class="player-news__item">-->
+                        <!--<div class="player-news__item-image">-->
+                            <!--<img src="http://www.wtatennis.com/sites/default/files/styles/teaser_views_phone_1_77_1_2x/public/field/image/gettyimages-618571364.jpg" width="100%"/>-->
+                        <!--</div>-->
+                        <!--<div class="player-news__item-header">-->
+                            <!--<h4><a href="#">Halep withdraws from Eastbourne</a></h4>-->
+                        <!--</div>-->
+                        <!--<div class="player-news__item-description">-->
+                            <!--The World No.1 has been forced to withdraw from the Nature Valley International...-->
+                        <!--</div>-->
+                    <!--</div>-->
+                    <!--<div class="player-news__item">-->
+                        <!--<div class="player-news__item-image">-->
+                            <!--<img src="http://www.wtatennis.com/sites/default/files/styles/teaser_views_phone_1_77_1_2x/public/field/image/gettyimages-618571364.jpg" width="100%"/>-->
+                        <!--</div>-->
+                        <!--<div class="player-news__item-header">-->
+                            <!--<h4><a href="#">Halep withdraws from Eastbourne</a></h4>-->
+                        <!--</div>-->
+                        <!--<div class="player-news__item-description">-->
+                            <!--The World No.1 has been forced to withdraw from the Nature Valley International...-->
+                        <!--</div>-->
+                    <!--</div>-->
+                    <!--<div class="player-news__item">-->
+                        <!--<div class="player-news__item-image">-->
+                            <!--<img src="http://www.wtatennis.com/sites/default/files/styles/teaser_views_phone_1_77_1_2x/public/halep_rg_2018_qf_getty.jpg" width="100%"/>-->
+                        <!--</div>-->
+                        <!--<div class="player-news__item-header">-->
+                            <!--<h4><a href="#">Halep overhauls Kerber in Paris quarterfinal comeback</a></h4>-->
+                        <!--</div>-->
+                        <!--<div class="player-news__item-description">-->
+                            <!--The World No.1 has been forced to withdraw from the Nature Valley International... The World No.1 has been forced to withdraw from the Nature Valley International...-->
+                        <!--</div>-->
+                    <!--</div>-->
+                    <!--<div class="player-news__item">-->
+                        <!--<div class="player-news__item-image">-->
+                            <!--<img src="http://www.wtatennis.com/sites/default/files/styles/teaser_views_phone_1_77_1_2x/public/field/image/gettyimages-618571364.jpg" width="100%"/>-->
+                        <!--</div>-->
+                        <!--<div class="player-news__item-header">-->
+                            <!--<h4><a href="#">Halep withdraws from Eastbourne</a></h4>-->
+                        <!--</div>-->
+                        <!--<div class="player-news__item-description">-->
+                            <!--The World No.1 has been forced to withdraw from the Nature Valley International...-->
+                        <!--</div>-->
+                    <!--</div>-->
+                    <!--<div class="player-news__item">-->
+                        <!--<div class="player-news__item-image">-->
+                            <!--<img src="http://www.wtatennis.com/sites/default/files/styles/teaser_views_phone_1_77_1_2x/public/field/image/gettyimages-618571364.jpg" width="100%"/>-->
+                        <!--</div>-->
+                        <!--<div class="player-news__item-header">-->
+                            <!--<h4><a href="#">Halep withdraws from Eastbourne</a></h4>-->
+                        <!--</div>-->
+                        <!--<div class="player-news__item-description">-->
+                            <!--The World No.1 has been forced to withdraw from the Nature Valley International...-->
+                        <!--</div>-->
+                    <!--</div>-->
+                    <!--<div class="player-news__item">-->
+                        <!--<div class="player-news__item-image">-->
+                            <!--<img src="http://www.wtatennis.com/sites/default/files/styles/teaser_views_phone_1_77_1_2x/public/field/image/gettyimages-618571364.jpg" width="100%"/>-->
+                        <!--</div>-->
+                        <!--<div class="player-news__item-header">-->
+                            <!--<h4><a href="#">Halep withdraws from Eastbourne</a></h4>-->
+                        <!--</div>-->
+                        <!--<div class="player-news__item-description">-->
+                            <!--The World No.1 has been forced to withdraw from the Nature Valley International...-->
+                        <!--</div>-->
+                    <!--</div>-->
+                    <!--<div class="player-news__item">-->
+                        <!--<div class="player-news__item-image">-->
+                            <!--<img src="http://www.wtatennis.com/sites/default/files/styles/teaser_views_phone_1_77_1_2x/public/field/image/gettyimages-618571364.jpg" width="100%"/>-->
+                        <!--</div>-->
+                        <!--<div class="player-news__item-header">-->
+                            <!--<h4><a href="#">Halep withdraws from Eastbourne</a></h4>-->
+                        <!--</div>-->
+                        <!--<div class="player-news__item-description">-->
+                            <!--The World No.1 has been forced to withdraw from the Nature Valley International...-->
+                        <!--</div>-->
+                    <!--</div>-->
+                    <!--<div class="player-news__item">-->
+                        <!--<div class="player-news__item-image">-->
+                            <!--<img src="http://www.wtatennis.com/sites/default/files/styles/teaser_views_phone_1_77_1_2x/public/field/image/gettyimages-618571364.jpg" width="100%"/>-->
+                        <!--</div>-->
+                        <!--<div class="player-news__item-header">-->
+                            <!--<h4><a href="#">Halep withdraws from Eastbourne</a></h4>-->
+                        <!--</div>-->
+                        <!--<div class="player-news__item-description">-->
+                            <!--The World No.1 has been forced to withdraw from the Nature Valley International...-->
+                        <!--</div>-->
+                    <!--</div>-->
+                <!--</div>-->
+            <!--</section>-->
+
+            <!--&lt;!&ndash;Photos&ndash;&gt;-->
+
+
+            <!--<section class="container player-tab-photos px-1 px-md-3 mt-2 mx-0 mx-md-3">-->
+                <!--<div class="row w-100">-->
+                    <!--<div class="col player-photos__filters mx-2 py-2 pt-md-4 d-flex align-items-center">-->
+                        <!--<input type="text" class="form-control" aria-describedby="player_one" placeholder="Print...">-->
+                        <!--<select class="custom-select mx-3">-->
+                            <!--<option value="" disabled selected>Mounth</option>-->
+                            <!--<option value="1">1</option>-->
+                            <!--<option value="2">2</option>-->
+                            <!--<option value="3">3</option>-->
+                        <!--</select>-->
+                        <!--<select class="custom-select mx-3">-->
+                            <!--<option value="" disabled selected>Year</option>-->
+                            <!--<option value="2018">2018</option>-->
+                            <!--<option value="2017">2017</option>-->
+                            <!--<option value="2016">2016</option>-->
+                        <!--</select>-->
+                        <!--<select class="custom-select mx-3">-->
+                            <!--<option value="" disabled selected>Tournament</option>-->
+                            <!--<option value="usOpen">US Open</option>-->
+                            <!--<option value="volvoCarOpen">Volvo Car Open</option>-->
+                        <!--</select>-->
+                        <!--<button type="button" class="btn mx-3 wta-primary-button text-uppercase">Search</button>-->
+                    <!--</div>-->
+                <!--</div>-->
+                <!--<div class="player-photos__content px-0 px-md-4">-->
+                    <!--<div class="player-photos__item">-->
+                        <!--<a href="#">-->
+                            <!--<div class="player-photos__item-image">-->
+                                <!--<img src="http://www.wtatennis.com/sites/default/files/styles/teaser_views_phone_1_77_1_2x/public/field/image/gettyimages-618571364.jpg" width="100%"/>-->
+                                <!--<div class="player-photos__item-description">-->
+                                    <!--The World No.1 has been forced to withdraw from the Nature Valley International...-->
+                                <!--</div>-->
+                            <!--</div>-->
+                        <!--</a>-->
+                    <!--</div>-->
+                    <!--<div class="player-photos__item">-->
+                        <!--<a href="#">-->
+                            <!--<div class="player-photos__item-image">-->
+                                <!--<img src="http://www.wtatennis.com/sites/default/files/styles/teaser_views_photos_phone_1_43_1_2x/public/azarenka_1.jpg" width="100%"/>-->
+                                <!--<div class="player-photos__item-description">-->
+                                    <!--Wimbledon 2018: WTA stars descend on the All England Club-->
+                                <!--</div>-->
+                            <!--</div>-->
+                        <!--</a>-->
+                    <!--</div>-->
+                    <!--<div class="player-photos__item">-->
+                        <!--<a href="#">-->
+                            <!--<div class="player-photos__item-image">-->
+                                <!--<img src="http://www.wtatennis.com/sites/default/files/styles/teaser_views_photos_phone_1_43_1_2x/public/azarenka_1.jpg" width="100%"/>-->
+                                <!--<div class="player-photos__item-description">-->
+                                    <!--Wimbledon 2018: WTA stars descend on the All England Club-->
+                                <!--</div>-->
+                            <!--</div>-->
+                        <!--</a>-->
+                    <!--</div>-->
+                    <!--<div class="player-photos__item">-->
+                        <!--<a href="#">-->
+                            <!--<div class="player-photos__item-image">-->
+                                <!--<img src="http://www.wtatennis.com/sites/default/files/styles/teaser_views_photos_phone_1_43_1_2x/public/azarenka_1.jpg" width="100%"/>-->
+                                <!--<div class="player-photos__item-description">-->
+                                    <!--Wimbledon 2018: WTA stars descend on the All England Club-->
+                                <!--</div>-->
+                            <!--</div>-->
+                        <!--</a>-->
+                    <!--</div>-->
+                    <!--<div class="player-photos__item">-->
+                        <!--<a href="#">-->
+                            <!--<div class="player-photos__item-image">-->
+                                <!--<img src="http://www.wtatennis.com/sites/default/files/styles/teaser_views_photos_phone_1_43_1_2x/public/azarenka_1.jpg" width="100%"/>-->
+                                <!--<div class="player-photos__item-description">-->
+                                    <!--Wimbledon 2018: WTA stars descend on the All England Club-->
+                                <!--</div>-->
+                            <!--</div>-->
+                        <!--</a>-->
+                    <!--</div>-->
+                <!--</div>-->
+            <!--</section>-->
+
+            <!--Videos-->
+
+
+            <!--<section class="container player-tab-videos px-1 px-md-3 mt-2 mx-0 mx-md-3">-->
+                <!--<div class="row w-100">-->
+                    <!--<div class="col player-videos__filters mx-2 py-2 pt-md-4 d-flex align-items-center">-->
+                        <!--<input type="text" class="form-control" aria-describedby="player_one" placeholder="Print...">-->
+                        <!--<select class="custom-select mx-3">-->
+                            <!--<option value="" disabled selected>Mounth</option>-->
+                            <!--<option value="1">1</option>-->
+                            <!--<option value="2">2</option>-->
+                            <!--<option value="3">3</option>-->
+                        <!--</select>-->
+                        <!--<select class="custom-select mx-3">-->
+                            <!--<option value="" disabled selected>Year</option>-->
+                            <!--<option value="2018">2018</option>-->
+                            <!--<option value="2017">2017</option>-->
+                            <!--<option value="2016">2016</option>-->
+                        <!--</select>-->
+                        <!--<select class="custom-select mx-3">-->
+                            <!--<option value="" disabled selected>Tournament</option>-->
+                            <!--<option value="usOpen">US Open</option>-->
+                            <!--<option value="volvoCarOpen">Volvo Car Open</option>-->
+                        <!--</select>-->
+                        <!--<button type="button" class="btn mx-3 wta-primary-button text-uppercase">Search</button>-->
+                    <!--</div>-->
+                <!--</div>-->
+                <!--<div class="player-videos__content px-0 px-md-4">-->
+                    <!--<div class="player-videos__item">-->
+                        <!--<a href="#">-->
+                            <!--<div class="player-videos__item-image">-->
+                                <!--<button class="play-button" type="button">-->
+                                    <!--<img src="img/play_icon.svg" width="35px"/>-->
+                                <!--</button>-->
+                                <!--<img src="http://www.wtatennis.com/sites/default/files/styles/teaser_views_phone_1_77_1_2x/public/field/image/gettyimages-618571364.jpg" width="100%"/>-->
+                            <!--</div>-->
+                            <!--<div class="player-videos__item-description">-->
+                                <!--The World No.1 has been forced to withdraw from the Nature Valley International...-->
+                            <!--</div>-->
+                        <!--</a>-->
+                    <!--</div>-->
+                    <!--<div class="player-videos__item">-->
+                        <!--<a href="#">-->
+                            <!--<div class="player-videos__item-image">-->
+                                <!--<button class="play-button" type="button">-->
+                                    <!--<img src="img/play_icon.svg" width="35px"/>-->
+                                <!--</button>-->
+                                <!--<img src="http://www.wtatennis.com/sites/default/files/styles/teaser_views_photos_phone_1_43_1_2x/public/azarenka_1.jpg" width="100%"/>-->
+                            <!--</div>-->
+                            <!--<div class="player-videos__item-description">-->
+                                <!--Wimbledon 2018: WTA stars descend on the All England Club-->
+                            <!--</div>-->
+                        <!--</a>-->
+                    <!--</div>-->
+                    <!--<div class="player-videos__item">-->
+                        <!--<a href="#">-->
+                            <!--<div class="player-videos__item-image">-->
+                                <!--<button class="play-button" type="button">-->
+                                    <!--<img src="img/play_icon.svg" width="35px"/>-->
+                                <!--</button>-->
+                                <!--<img src="http://www.wtatennis.com/sites/default/files/styles/teaser_views_photos_phone_1_43_1_2x/public/azarenka_1.jpg" width="100%"/>-->
+                            <!--</div>-->
+                            <!--<div class="player-videos__item-description">-->
+                                <!--Wimbledon 2018: WTA stars descend on the All England Club-->
+                            <!--</div>-->
+                        <!--</a>-->
+                    <!--</div>-->
+                    <!--<div class="player-videos__item">-->
+                        <!--<a href="#">-->
+                            <!--<div class="player-videos__item-image">-->
+                                <!--<button class="play-button" type="button">-->
+                                    <!--<img src="img/play_icon.svg" width="35px"/>-->
+                                <!--</button>-->
+                                <!--<img src="http://www.wtatennis.com/sites/default/files/styles/teaser_views_photos_phone_1_43_1_2x/public/azarenka_1.jpg" width="100%"/>-->
+                            <!--</div>-->
+                            <!--<div class="player-videos__item-description">-->
+                                <!--Wimbledon 2018: WTA stars descend on the All England Club-->
+                            <!--</div>-->
+                        <!--</a>-->
+                    <!--</div>-->
+                    <!--<div class="player-videos__item">-->
+                        <!--<a href="#">-->
+                            <!--<div class="player-videos__item-image">-->
+                                <!--<button class="play-button" type="button">-->
+                                    <!--<img src="img/play_icon.svg" width="35px"/>-->
+                                <!--</button>-->
+                                <!--<img src="http://www.wtatennis.com/sites/default/files/styles/teaser_views_photos_phone_1_43_1_2x/public/azarenka_1.jpg" width="100%"/>-->
+                            <!--</div>-->
+                            <!--<div class="player-videos__item-description">-->
+                                <!--Wimbledon 2018: WTA stars descend on the All England Club-->
+                            <!--</div>-->
+                        <!--</a>-->
+                    <!--</div>-->
+                    <!--<div class="player-videos__item">-->
+                        <!--<a href="#">-->
+                            <!--<div class="player-videos__item-image">-->
+                                <!--<button class="play-button" type="button">-->
+                                    <!--<img src="img/play_icon.svg" width="35px"/>-->
+                                <!--</button>-->
+                                <!--<img src="http://www.wtatennis.com/sites/default/files/styles/teaser_views_photos_phone_1_43_1_2x/public/azarenka_1.jpg" width="100%"/>-->
+                            <!--</div>-->
+                            <!--<div class="player-videos__item-description">-->
+                                <!--Wimbledon 2018: WTA stars descend on the All England Club-->
+                            <!--</div>-->
+                        <!--</a>-->
+                    <!--</div>-->
+                    <!--<div class="player-videos__item">-->
+                        <!--<a href="#">-->
+                            <!--<div class="player-videos__item-image">-->
+                                <!--<button class="play-button" type="button">-->
+                                    <!--<img src="img/play_icon.svg" width="35px"/>-->
+                                <!--</button>-->
+                                <!--<img src="http://www.wtatennis.com/sites/default/files/styles/teaser_views_photos_phone_1_43_1_2x/public/azarenka_1.jpg" width="100%"/>-->
+                            <!--</div>-->
+                            <!--<div class="player-videos__item-description">-->
+                                <!--Wimbledon 2018: WTA stars descend on the All England Club-->
+                            <!--</div>-->
+                        <!--</a>-->
+                    <!--</div>-->
+                <!--</div>-->
+            <!--</section>-->
         </main>
     </section>
     <section class="container player-compare w-100 my-3">
