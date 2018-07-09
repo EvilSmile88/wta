@@ -1,0 +1,226 @@
+@import "variables";
+.stats-tabs {
+  overflow-x: hidden;
+  margin-bottom: 25px;
+  background-color: white;
+  padding: 18px;
+  .stat-picture {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+  }
+  nav {
+    margin: 0px 20px;
+    max-width: 95vw;
+    overflow-x: auto;
+    &::-webkit-scrollbar {
+      height: 5px;
+    }
+
+    /* Track */
+    &::-webkit-scrollbar-track {
+      background: transparent;
+    }
+
+    /* Handle */
+    &::-webkit-scrollbar-thumb {
+      border-radius: 5px;
+      background: rgba(0, 0, 0, 0.1);
+    }
+
+    /* Handle on hover */
+    &::-webkit-scrollbar-thumb:hover {
+      background: rgba(0, 0, 0, 0.3);
+    }
+  }
+  nav ul {
+    border-bottom: 1px solid #D0D0D0;
+    min-width: 100%;
+    padding: 0px;
+    margin: 0px;
+    display: flex;
+    width: 350px;
+    .player-tabs--active {
+      color: $primary-color;
+      border-bottom: 3px solid $primary-color;
+    }
+    li {
+      font-size: 18px;
+      list-style: none;
+      color: #9B9B9B;
+      font-weight: bold;
+      text-transform: uppercase;
+      padding: 10px 0px;
+      display: flex;
+      justify-content: center;
+      flex-basis: 110px;
+      flex-grow: 1;
+      a {
+        color: #9B9B9B;
+        text-decoration: none;
+      }
+    }
+  }
+  .row {
+    margin: 0px;
+  }
+  button {
+    min-width: 170.37px;
+    font-size: 16px;
+    height: 28.38px;
+  }
+  max-width: 99vw;
+  .stats-tabs__filters {
+    margin: 0px 20px;
+    max-width: 100%;
+    overflow-x: auto;
+    &::-webkit-scrollbar {
+      height: 5px;
+    }
+
+    /* Track */
+    &::-webkit-scrollbar-track {
+      background: transparent;
+    }
+
+    /* Handle */
+    &::-webkit-scrollbar-thumb {
+      border-radius: 5px;
+      background: rgba(0, 0, 0, 0.1);
+    }
+
+    /* Handle on hover */
+    &::-webkit-scrollbar-thumb:hover {
+      background: rgba(0, 0, 0, 0.3);
+    }
+    .row {
+      margin: 0px;
+    }
+
+    display: flex;
+    align-items: flex-end;
+  }
+  .download-button {
+    button {
+      display: block;
+      position: relative;
+      height: 35px;
+      padding-right: 30px;
+      text-align: left;
+      min-width: 130px;
+      box-sizing: border-box;
+      font-size: 16px;
+      img {
+        position: absolute;
+        bottom: 7px;
+        right: 5px;
+      }
+    }
+  }
+  .stats-table {
+    border-top: 1px solid #D9D9D9;
+    overflow-x: auto;
+    &::-webkit-scrollbar {
+      height: 5px;
+    }
+
+    /* Track */
+    &::-webkit-scrollbar-track {
+      background: transparent;
+    }
+
+    /* Handle */
+    &::-webkit-scrollbar-thumb {
+      border-radius: 5px;
+      background: rgba(0, 0, 0, 0.1);
+    }
+
+    /* Handle on hover */
+    &::-webkit-scrollbar-thumb:hover {
+      background: rgba(0, 0, 0, 0.3);
+    }
+  }
+  table {
+    box-sizing: border-box;
+    min-width: 1320px;
+    th {
+      border-top: none;
+      color: $primary-color-light;
+      font-size: 14px;
+      position: relative;
+      font-weight: bold;
+      letter-spacing: -0.04px;
+      &.table-sort {
+        &:after{
+          position: absolute;
+          width: 12px;
+          height: 12px;
+          display: block;
+          top: 38%;
+          right: 0px;
+          content: "";
+          background-image: url("../img/arrow--gray.svg");
+          background-repeat: no-repeat;
+          background-size: 12px;
+        }
+        &.table-sort--desc:after {
+          transform: rotate(180deg);
+        }
+      }
+    }
+    tbody {
+      td {
+        color: #4A4A4A;
+        font-size: 16px;
+        letter-spacing: -0.05px;
+      }
+      tr {
+        &:hover {
+          background-color: rgba($primary-color-light, 0.05);
+        }
+        td:first-of-type {
+          color: $primary-color-light;
+          font-size: 20px;
+          letter-spacing: -1.33px;
+        }
+      }
+    }
+  }
+  @media (max-width: $screen-xl-max-width) {
+    .download-button {
+      justify-content: flex-end;
+    }
+    .stats-tabs-container {
+      flex-direction: column-reverse;
+    }
+    .stat-picture {
+      justify-content: center !important;
+    }
+  }
+  @media (max-width: $screen-sm-max-width) {
+    table {
+      min-width: 1200px;
+      th {
+        font-size: 12px;
+        font-weight: bold;
+        letter-spacing: -0.04px;
+      }
+      tbody {
+        td {
+          font-size: 14px;
+        }
+      }
+    }
+    select {
+      font-size: 14px;
+    }
+    padding: 18px 0px;
+    nav ul {
+      li {
+        font-size: 12px;
+        flex-basis: 70px;
+        flex-grow: 1;
+      }
+    }
+  }
+}

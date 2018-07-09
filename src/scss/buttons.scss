@@ -33,3 +33,21 @@
     background-color: #e5e5e5;
   }
 }
+
+.wta-primary-light-button {
+  height: auto;
+  min-height: 20px;
+  padding: 1px 10px;
+  min-width: 70px;
+  border-color: $primary-color-light;
+  border-radius: 0 15px 0 15px;
+  color: $primary-color-light;
+  background-color: rgb(249,249,249);
+  font-family: "Myriad Pro", sans-serif;
+  font-size: 12px;
+  font-weight: 600;
+  text-align: center;
+  &:hover:not(:disabled) {
+    background-color: #e5e5e5;
+  }
+}
