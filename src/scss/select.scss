@@ -1,0 +1,22 @@
+@import "variables";
+
+select, .custom-select {
+  position: relative;
+  display: flex;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background-image: url("../img/arrow.svg");
+  background-repeat: no-repeat;
+  background-position-y: 65%;
+  background-size: 12px;
+  width: auto;
+  border: none;
+  font-family: "Open Sans";
+  font-size: 16px;
+  padding-bottom: 0px;
+  color: #4A4A4A;
+  border-radius: 0px;
+  &:focus {
+    box-shadow:0px 2px 0 0 rgba(0, 123, 255, 0.25);
+  }
+}

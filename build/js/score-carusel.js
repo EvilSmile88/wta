@@ -2,10 +2,10 @@ var swiper = new Swiper('.swiper-container--score', {
   slidesPerView: 4,
   spaceBetween: 0,
   breakpoints: {
-    992: {
+    1150: {
       slidesPerView: 3,
     },
-    768: {
+    868: {
       slidesPerView: 2,
     },
     576: {

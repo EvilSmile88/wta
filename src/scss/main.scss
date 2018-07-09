@@ -1,5 +1,6 @@
 @import "variables";
 @import "buttons";
+@import "select";
 @import "player-card";
 @import "score-carusel";
 @import "player-videos";
@@ -15,6 +16,15 @@
 @import "player-played-tournaments";
 @import "player-story";
 @import "player-tabs";
+@import "player-overview";
+@import "player-matches";
+@import "player-bio";
+@import "player-stats";
+@import "player-ranking";
+@import "player-tab-news";
+@import "player-tab-photos";
+@import "player-tab-videos";
+
 
 html,
 body {
@@ -29,7 +39,7 @@ body {
 body > main {
   height: auto;
   min-height: 90vh;
-  width: 100%;
+  width: 98.7vw;
   box-sizing: border-box;
   max-width: 1400px;
 }

@@ -1,0 +1,40 @@
+@import "variables";
+
+.player-bio {
+  color: #4A4A4A;
+  padding: 20px;
+  .player-bio__value {
+    &>div, &>span, &>p {
+      &:not(:last-of-type) {
+        margin-right: 10px;
+        margin-bottom: 15px;
+      }
+    }
+    flex-direction: column;
+  }
+  font-family: "Open Sans";
+  font-size: 16px;
+  letter-spacing: -0.05px;
+  .row {
+    margin: 0px;
+  }
+  .player-bio__label {
+    padding-left: 0px;
+    color: $primary-color-light;
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+  max-width: 99vw;
+  @media (max-width: $screen-md-max-width) {
+    .row {
+      display: flex;
+      flex-direction: column;
+    }
+    .player-bio__value {
+      flex-direction: row;
+    }
+  }
+  @media (max-width: $screen-sm-max-width) {
+   font-size: 14px;
+  }
+}
