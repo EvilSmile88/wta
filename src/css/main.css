@@ -1271,6 +1271,7 @@ footer {
   font-style: normal; }
 
 .player-tabs {
+  overflow: hidden;
   margin: 25px 0px;
   background-color: white;
   padding: 18px; }
@@ -1565,6 +1566,126 @@ footer {
       .player-stats h3 {
         font-size: 15px;
         margin-bottom: 15px; } }
+
+@font-face {
+  font-family: 'Open Sans';
+  src: url("../fonts/open-sans.regular.woff2") format("woff2"), url("../fonts/open-sans.regular.woff") format("woff"), url("../fonts/open-sans.regular.ttf") format("truetype"), url("../fonts/open-sans.regular.svg#open_sansregular") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Myriad Pro';
+  src: url("../fonts/myriad-pro.regular.otf") format("opentype"), url("../fonts/myriad-pro.regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+
+.player-ranking {
+  position: relative;
+  max-width: 99vw;
+  font-family: "Open Sans"; }
+  .player-ranking .row {
+    margin: 0px; }
+  .player-ranking .player-ranking__high-title h2 {
+    display: flex;
+    flex-direction: column; }
+  .player-ranking .player-ranking__high {
+    font-size: 16px; }
+    .player-ranking .player-ranking__high h2 {
+      text-transform: uppercase;
+      font-size: 2.5em;
+      color: #444;
+      letter-spacing: -0.05px;
+      font-style: italic;
+      font-weight: bold;
+      margin-bottom: 0px; }
+    .player-ranking .player-ranking__high .player-ranking__high-singles, .player-ranking .player-ranking__high .player-ranking__high-doubles {
+      min-width: 200px;
+      text-transform: uppercase;
+      font-size: 1em;
+      font-weight: bold;
+      letter-spacing: -0.05px;
+      color: #9B9B9B; }
+      .player-ranking .player-ranking__high .player-ranking__high-singles h4, .player-ranking .player-ranking__high .player-ranking__high-doubles h4 {
+        margin: 2px 10px;
+        writing-mode: vertical-rl;
+        font-size: 1em;
+        font-weight: bold;
+        transform: rotate(180deg); }
+    .player-ranking .player-ranking__high .player-ranking__date {
+      line-height: 20px; }
+    .player-ranking .player-ranking__high .player-ranking__number {
+      display: flex;
+      align-items: center;
+      line-height: 90px;
+      font-size: 6.25em;
+      font-weight: 700;
+      margin-right: 5px;
+      color: #502784; }
+  .player-ranking .player-ranking__year:before, .player-ranking .player-ranking__week:before {
+    display: block;
+    content: "";
+    width: 110%;
+    height: 25px;
+    background-color: #F0F0F0;
+    position: absolute;
+    left: -20px;
+    top: 0px; }
+  .player-ranking .player-ranking__year h2, .player-ranking .player-ranking__week h2 {
+    text-transform: uppercase;
+    font-size: 30px;
+    font-weight: bold;
+    color: #502784; }
+  .player-ranking .player-ranking__year .player-ranking__year-header, .player-ranking .player-ranking__week .player-ranking__year-header {
+    padding-bottom: 30px;
+    border-bottom: 2px solid #ddd; }
+  .player-ranking .player-ranking__year .player-ranking__week-header, .player-ranking .player-ranking__week .player-ranking__week-header {
+    border-bottom: 2px solid #ddd; }
+    .player-ranking .player-ranking__year .player-ranking__week-header select, .player-ranking .player-ranking__week .player-ranking__week-header select {
+      margin-top: 30px; }
+  .player-ranking table {
+    color: #9b9b9b;
+    border-bottom: 1px solid #dee2e6;
+    font-size: 14px; }
+    .player-ranking table thead th {
+      text-transform: uppercase;
+      border: none;
+      font-weight: bold;
+      color: #502784;
+      padding: 5px;
+      background-color: #f0f0f0; }
+    .player-ranking table tbody tr:first-of-type td {
+      border-top: none; }
+    .player-ranking table tbody td {
+      width: 33,33%; }
+    .player-ranking table tbody td:not(:last-of-type) {
+      border-right: 1px solid #dee2e6; }
+    .player-ranking table tbody tr:nth-of-type(even) {
+      background-color: #f7f7f7; }
+    .player-ranking table tbody tr:hover {
+      background-color: rgba(80, 39, 132, 0.05); }
+  @media (max-width: 767.98px) {
+    .player-ranking .player-ranking__high-title h2 {
+      justify-content: center;
+      margin-bottom: 10px;
+      width: 100%;
+      flex-direction: row; }
+      .player-ranking .player-ranking__high-title h2 > span:last-of-type {
+        margin-left: 10px; }
+    .player-ranking .player-ranking__high {
+      line-height: 60px;
+      font-size: 12px; }
+      .player-ranking .player-ranking__high .player-ranking__high-singles, .player-ranking .player-ranking__high .player-ranking__high-doubles {
+        margin-top: 10px;
+        padding: 0px; }
+      .player-ranking .player-ranking__high .player-ranking__number {
+        line-height: 60px; } }
+  @media (max-width: 575.98px) {
+    .player-ranking .player-ranking__year h2, .player-ranking .player-ranking__week h2 {
+      font-size: 18px; }
+    .player-ranking .player-ranking__year .player-ranking__year-header, .player-ranking .player-ranking__week .player-ranking__year-header {
+      padding-bottom: 10px; }
+    .player-ranking .player-ranking__year .player-ranking__week-header select, .player-ranking .player-ranking__week .player-ranking__week-header select {
+      margin-top: 10px; } }
 
 html,
 body {

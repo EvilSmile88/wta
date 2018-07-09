@@ -25,4 +25,6 @@ function setNumberFontSize(id) {
 };
 
 setNumberFontSize('#ranking-number--doubles');
+setNumberFontSize('#tab-ranking-number--doubles');
 setNumberFontSize('#ranking-number--singles');
+setNumberFontSize('#tab-ranking-number--singles');
