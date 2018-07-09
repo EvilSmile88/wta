@@ -1,0 +1,119 @@
+@import "variables";
+.player-tab-photos {
+  background-color: black;
+  .row {
+    margin: 0px;
+  }
+  max-width: 1340px;
+  .player-photos__filters {
+    color: white;
+    margin: 0px 20px;
+    max-width: 100%;
+    overflow-x: auto;
+    &::-webkit-scrollbar {
+      height: 5px;
+    }
+
+    /* Track */
+    &::-webkit-scrollbar-track {
+      background: transparent;
+    }
+
+    /* Handle */
+    &::-webkit-scrollbar-thumb {
+      border-radius: 5px;
+      background: rgba(255, 255, 255, 0.5);
+    }
+
+    /* Handle on hover */
+    &::-webkit-scrollbar-thumb:hover {
+      background: rgba(255, 255, 255, 0.7);
+    }
+    .row {
+      margin: 0px;
+    }
+    display: flex;
+    align-items: flex-end;
+    button {
+      height: 26.8px;
+      width: 135.48px;
+      &:disabled {
+        opacity: 1;
+      }
+    }
+    .form-control {
+      width: 200px;
+    }
+    select {
+      background-color: transparent;
+      background-image: url("../img/arrow--gray.svg");
+      color: white;
+      option {
+        color: black;
+        &:disabled {
+          color: rgba(0,0,0, 0.5)
+        }
+      }
+    }
+  }
+  .player-photos__content {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 30px 30px;
+    padding: 25px 10px;
+    .player-photos__item-image {
+      margin: 0px;
+      display: flex;
+      min-height: 250px;
+      padding: 0px;
+      overflow: hidden;
+      position: relative;
+      img {
+        overflow: hidden;
+        max-height: 250px;
+        object-fit: cover;
+        object-position: top;
+      }
+      .player-photos__item-description {
+        position: absolute;
+        width: 100%;
+        font-size: 14px;
+        font-weight: bold;
+        letter-spacing: -0.04px;
+        bottom: 0px;
+        left: 0px;
+        background-color: rgba(0,0,0,0.7);
+        min-height: 65px;
+        max-height: 100px;
+        padding: 18px;
+        text-align: left;
+        color: white;
+      }
+      &:before {
+        display: block;
+        width: 30px;
+        height: 30px;
+        content: "";
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        background-image: url("../img/camera_icon.svg");
+        background-size: contain;
+        background-repeat: no-repeat;
+      }
+    }
+    .player-photos__item {
+      color: #666;
+    }
+  }
+  @media (max-width: $screen-lg-max-width) {
+    .player-photos__content {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+  @media (max-width: $screen-sm-max-width) {
+    .player-photos__content {
+      grid-template-columns: 1fr;
+    }
+  }
+}

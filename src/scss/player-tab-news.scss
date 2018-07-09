@@ -1,0 +1,98 @@
+@import "variables";
+.player-tab-news {
+  .row {
+    margin: 0px;
+  }
+  max-width: 99vw;
+  .player-news__filters {
+    margin: 0px 20px;
+    max-width: 100%;
+    overflow-x: auto;
+    &::-webkit-scrollbar {
+      height: 5px;
+    }
+
+    /* Track */
+    &::-webkit-scrollbar-track {
+      background: transparent;
+    }
+
+    /* Handle */
+    &::-webkit-scrollbar-thumb {
+      border-radius: 5px;
+      background: rgba(0, 0, 0, 0.1);
+    }
+
+    /* Handle on hover */
+    &::-webkit-scrollbar-thumb:hover {
+      background: rgba(0, 0, 0, 0.3);
+    }
+    .row {
+      margin: 0px;
+    }
+    display: flex;
+    align-items: flex-end;
+    button {
+      height: 26.8px;
+      width: 135.48px;
+      &:disabled {
+        opacity: 1;
+      }
+    }
+    .form-control {
+      width: 200px;
+    }
+  }
+  .player-news__content {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 30px 30px;
+    padding: 25px 10px;
+    .player-news__item-image {
+      margin: 0px;
+      display: block;
+      min-height: 250px;
+      padding: 0px;
+      overflow: hidden;
+      position: relative;
+      img {
+        overflow: hidden;
+        max-height: 170px;
+        object-fit: cover;
+        object-position: top;
+      }
+    }
+    .player-news__item {
+      color: #666;
+      .player-news__item-header {
+        h4 {
+          margin: 10px 0px;
+          font-size: 20px;
+          font-weight: bold;
+          a {
+            color: #666;
+            font: inherit;
+          }
+        }
+      }
+      .player-news__item-description {
+        font-size: 14px;
+      }
+    }
+  }
+  @media (max-width: $screen-xl-max-width) {
+    .player-news__content {
+      grid-template-columns: 1fr 1fr 1fr;
+    }
+  }
+  @media (max-width: $screen-lg-max-width) {
+    .player-news__content {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+  @media (max-width: $screen-sm-max-width) {
+    .player-news__content {
+      grid-template-columns: 1fr;
+    }
+  }
+}
