@@ -36,10 +36,20 @@
   }
 }
 
+.player-card__photo--old {
+  min-height: 300px;
+  .player-card__old-photo {
+    border-radius: 15px 0px 15px 0px;
+    overflow: hidden;
+    bottom: 30%;
+    position: absolute;
+  }
+}
 .player-card__photo {
   display: flex;
   position: relative;
   align-items: flex-end;
+  justify-content: center;
   overflow: hidden;
   img {
     object-fit: cover;
@@ -261,6 +271,14 @@
     .info-title {
       flex-grow: 1;
       flex-basis: 20px;
+    }
+  }
+  .player-card__photo--old {
+    min-height: 200px;
+    .player-card__old-photo {
+      img {
+        width: 130px;
+      }
     }
   }
   .player-card__info .info-value {
