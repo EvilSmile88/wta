@@ -1,20 +1,35 @@
-@import "variables";
+
 
 .wta-primary-button {
   height: auto;
   min-height: 20px;
   padding: 1px 10px;
-  padding-top: 3px;
   min-width: 70px;
   border-radius: 0 15px 0 15px;
   background-color: $primary-color-light;
   box-shadow: 0 2px 17px 0 rgba(0,0,0,0.24);
   color: #FFFFFF;
-  font-family: "Myriad Pro";
+  font-family: "Myriad Pro", sans-serif;
   font-size: 12px;
   font-weight: 600;
   text-align: center;
   &:hover:not(:disabled) {
     background-color: $primary-color;
+  }
+}
+.wta-default-button {
+  height: auto;
+  min-height: 20px;
+  padding: 1px 10px;
+  min-width: 70px;
+  border-radius: 0 15px 0 15px;
+  background-color: $light-gray;
+  font-family: "Myriad Pro", sans-serif;
+  font-size: 12px;
+  font-weight: 600;
+  color: #9B9B9B;
+  text-align: center;
+  &:hover:not(:disabled) {
+    background-color: #e5e5e5;
   }
 }

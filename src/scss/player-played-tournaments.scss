@@ -1,0 +1,115 @@
+@import "variables";
+.player-played-tournaments {
+  position: relative;
+  background-color: white;
+  header {
+    border-bottom: 3px solid #F3F3F3;
+    h2 {
+      font-size: 18px;
+      color: $primary-color;
+      font-style: italic;
+      font-weight: bold;
+      letter-spacing: -0.05px;
+    }
+  }
+  main {
+    display: flex;
+    flex-basis: 50px;
+    flex-grow: 1;
+  }
+  .swiper-container--played-tournaments {
+    position: static;
+    width: 100%;
+    max-width: 90vw;
+    a {
+      color: inherit;
+      transition: all ease 0.3s;
+      text-decoration: none;
+      &:hover {
+        box-shadow: 0px 2px 10px 0px rgba(0,0,0, 0.3);
+      }
+    }
+    .swiper-slide {
+      height: 100%;
+      text-align: center;
+      justify-content: center;
+      display: flex;
+      align-items: center;
+    }
+    .swiper-pagination {
+      top: 20px !important;
+      left: auto !important;
+      right: -50px !important;
+      .swiper-pagination-bullet {
+        width: 17px;
+        opacity: 0.7;
+        transition: ease all 0.3s;
+        border-radius: 2px;
+        height: 5px;
+        background-color: rgba(0, 0, 0, 0.4);
+        &:hover {
+          opacity: 1;
+          box-shadow: 0 0 0 1px white;
+        }
+      }
+      .swiper-pagination-bullet-active-next,
+      .swiper-pagination-bullet-active-next,
+      .swiper-pagination-bullet-active-next-next,
+      .swiper-pagination-bullet-active-prev,
+      .swiper-pagination-bullet-active-prev-prev {
+        transform: none;
+      }
+      .swiper-pagination-bullet-active {
+        background-color: $primary-color;
+      }
+    }
+  }
+  .played-tournament {
+    height: 85px;
+    box-sizing: border-box;
+    padding: 5px 0px;
+    &:not(:last-of-type) {
+      border-bottom: 1px solid #E7E7E7;
+    }
+    p{
+      max-width: 100%;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      overflow: hidden;
+      vertical-align: middle;
+      margin: 0px;
+      max-height: 100%;
+      font-size: 18px;
+      text-align: left;
+      font-weight: bold;
+      letter-spacing: -0.05px;
+    }
+    .player-played-tournaments__tournament-date {
+      padding: 3px;
+      margin: 10px 0px;
+      background-color: $primary-color;
+      color: white;
+      min-width: 50px;
+      font-size: 12px;
+      word-spacing: 50px;
+      height: auto;
+      text-transform: uppercase;
+    }
+  }
+  @media (max-width: $screen-xl-max-width) {
+    header h2 {
+      width: 60%;
+    }
+  }
+  @media (max-width: $screen-sm-max-width) {
+    header h2 {
+      font-size: 16px;
+    }
+    .played-tournament {
+      p {
+        font-size: 15px;
+      }
+    }
+  }
+}
