@@ -18,6 +18,7 @@ function setNumberFontSize(id) {
   var $size;
   if($numChar === 1) {
     $size = '6.5em'
+    $quote.css("line-height", '90px')
   } else {
     $size = 6.5/(0.7*$numChar) +'em';
   }
