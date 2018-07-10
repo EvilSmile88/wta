@@ -26,6 +26,31 @@
   .wta-primary-button:hover:not(:disabled) {
     background-color: #33145B; }
 
+.wta-live-scores-button {
+  height: 37.08px;
+  padding: 1px 15px;
+  width: 81.9px;
+  border-radius: 0 15px 0 15px;
+  border: 2px solid #FFFFFF;
+  background-color: transparent;
+  white-space: normal;
+  font-weight: bold;
+  line-height: 12px;
+  box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.15);
+  color: #502784;
+  font-family: "Open Sans";
+  font-style: italic;
+  background-image: url("../img/play_icon.svg");
+  background-size: 18px;
+  background-repeat: no-repeat;
+  background-position: right;
+  font-size: 12px;
+  text-align: left;
+  letter-spacing: -0.93px;
+  word-spacing: 60px; }
+  .wta-live-scores-button:hover:not(:disabled) {
+    background-color: rgba(0, 0, 0, 0.03); }
+
 .wta-default-button {
   height: auto;
   min-height: 20px;
@@ -40,6 +65,24 @@
   text-align: center; }
   .wta-default-button:hover:not(:disabled) {
     background-color: #e5e5e5; }
+
+.wta-default-transparent-button {
+  height: auto;
+  min-height: 20px;
+  padding: 1px 10px;
+  min-width: 70px;
+  border-radius: 0 15px 0 15px;
+  background-color: transparent;
+  font-family: "Myriad Pro", sans-serif;
+  font-size: 12px;
+  font-weight: 600;
+  color: #9B9B9B;
+  border-color: #9B9B9B;
+  text-align: center; }
+  .wta-default-transparent-button:hover:not(:disabled) {
+    color: white;
+    border-color: white;
+    background-color: rgba(155, 155, 155, 0.15); }
 
 .wta-primary-light-button {
   height: auto;
@@ -898,27 +941,29 @@ footer {
   font-weight: normal;
   font-style: normal; }
 
-.player-photos {
+.photos-container {
   max-width: 100%;
   background-color: #33145B; }
-  .player-photos .row {
+  .photos-container .row {
     padding: 20px;
     height: 100%; }
-  .player-photos .player-photos__photo {
+  .photos-container .photos__photo {
     margin: 0px;
     display: flex;
     min-height: 100%;
     padding: 0px;
     overflow: hidden;
     position: relative; }
-    .player-photos .player-photos__photo img {
+    .photos-container .photos__photo:hover .photos__description {
+      text-decoration: underline; }
+    .photos-container .photos__photo img {
       overflow: hidden;
       max-height: 300px;
       object-fit: cover;
       object-position: top; }
-    .player-photos .player-photos__photo:not(:last-of-type) {
+    .photos-container .photos__photo:not(:last-of-type) {
       border-right: 10px solid transparent; }
-    .player-photos .player-photos__photo:before {
+    .photos-container .photos__photo:before {
       display: block;
       width: 30px;
       height: 30px;
@@ -929,7 +974,7 @@ footer {
       background-image: url("../img/camera_icon.svg");
       background-size: contain;
       background-repeat: no-repeat; }
-  .player-photos .player-photos__description {
+  .photos-container .photos__description {
     width: 100%;
     font-size: 14px;
     font-weight: bold;
@@ -944,9 +989,9 @@ footer {
     text-align: left;
     color: white; }
   @media (max-width: 767.98px) {
-    .player-photos .player-photos__photo {
+    .photos-container .photos__photo {
       min-height: 200px; }
-      .player-photos .player-photos__photo:not(:last-of-type) {
+      .photos-container .photos__photo:not(:last-of-type) {
         border-right-width: 0px;
         margin-bottom: 10px; } }
 

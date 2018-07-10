@@ -1,0 +1,1127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway:400,800">
+    <link rel='stylesheet' href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./css/bootstrap.css">
+    <link rel="stylesheet" href="./css/tournament-main.css">
+    <link rel="stylesheet" href="./css/swiper.min.css">
+</head>
+<body>
+
+<!--header start-->
+<nav class="navbar navbar-expand-lg">
+    <button class="navbar-toggler p-1" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <img src="img/burger_icon.svg" width="40" class="d-inline-block align-top burger-icon" alt="">
+    </button>
+    <a class="navbar-brand" href="#">
+        <img src="img/logo.svg" width="53" class="d-inline-block align-top" alt="">
+    </a>
+    <div class="d-xl-none d-lg-none search-component search-component--expand">
+        <button onClick="mobileToggleSearchMode()" type="button" class="btn mx-2 bg-transparent p-1 close"
+                aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+        </button>
+        <button type="button" onClick="mobileToggleSearchMode()"
+                class="btn bg-transparent p-1 search-component__search-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35">
+                <g>
+                    <title>Layer 1</title>
+                    <path fill="white" id="search"
+                          d="m 19.4271 21.4271 c -1.38987 0.99036 -3.09047 1.57288 -4.92712 1.57288 c -4.69442 0 -8.5 -3.80558 -8.5 -8.5 c 0 -4.69442 3.80558 -8.5 8.5 -8.5 c 4.69442 0 8.5 3.80558 8.5 8.5 c 0 1.83665 -0.58252 3.53725 -1.57288 4.92712 l 5.5848 5.5848 c 0.5502 0.5502 0.54561 1.43055 -0.0002 1.97636 l -0.02344 0.02344 c -0.54442 0.54442 -1.43066 0.5459 -1.97636 0.0002 l -5.5848 -5.5848 l 0 0 Z m -4.92712 -0.42712 c 3.58985 0 6.5 -2.91015 6.5 -6.5 c 0 -3.58985 -2.91015 -6.5 -6.5 -6.5 c -3.58985 0 -6.5 2.91015 -6.5 6.5 c 0 3.58985 2.91015 6.5 6.5 6.5 l 0 0 Z"/>
+                </g>
+            </svg>
+        </button>
+        <form class="form-inline search-form">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+        </form>
+    </div>
+
+    <div role="navigation" class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav links-uppercase align-items-xl-center align-items-lg-center">
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" aria-haspopup="true"
+                   aria-expanded="false">
+                    Players
+                </a>
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" href="#">Player Index</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="#">Head to Head</a>
+                </div>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" aria-haspopup="true"
+                   aria-expanded="false">
+                    Tournaments
+                </a>
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" href="#">Active and Upcoming</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="#">Calendar</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="#">WTA Finals</a>
+                </div>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" aria-haspopup="true"
+                   aria-expanded="false">
+                    Stats
+                </a>
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" href="#">Match Stats</a>
+                </div>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" aria-haspopup="true"
+                   aria-expanded="false">
+                    Scores
+                </a>
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" href="#">WTA Tournaments</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="#">Grand Slams</a>
+                </div>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" aria-haspopup="true"
+                   aria-expanded="false">
+                    Rankings
+                </a>
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" href="#">Singles</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="#">History</a>
+                </div>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">News</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Photos</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Videos</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Health</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Fan zone</a>
+            </li>
+            <li class="nav-item ">
+                <a class="nav-link" href="#">Shop</a>
+            </li>
+            <li class="nav-item d-none d-lg-flex d-xl-flex search-component">
+                <button onClick="toggleSearchMode()" type="button" class="btn mx-2 bg-transparent close"
+                        aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                <button type="button" onClick="toggleSearchMode()"
+                        class="btn bg-transparent p-1 search-component__search-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 30 30">
+                        <g>
+                            <title>Layer 1</title>
+                            <path fill="white" id="search"
+                                  d="m 19.4271 21.4271 c -1.38987 0.99036 -3.09047 1.57288 -4.92712 1.57288 c -4.69442 0 -8.5 -3.80558 -8.5 -8.5 c 0 -4.69442 3.80558 -8.5 8.5 -8.5 c 4.69442 0 8.5 3.80558 8.5 8.5 c 0 1.83665 -0.58252 3.53725 -1.57288 4.92712 l 5.5848 5.5848 c 0.5502 0.5502 0.54561 1.43055 -0.0002 1.97636 l -0.02344 0.02344 c -0.54442 0.54442 -1.43066 0.5459 -1.97636 0.0002 l -5.5848 -5.5848 l 0 0 Z m -4.92712 -0.42712 c 3.58985 0 6.5 -2.91015 6.5 -6.5 c 0 -3.58985 -2.91015 -6.5 -6.5 -6.5 c -3.58985 0 -6.5 2.91015 -6.5 6.5 c 0 3.58985 2.91015 6.5 6.5 6.5 l 0 0 Z"/>
+                        </g>
+                    </svg>
+                </button>
+                <form class="form-inline search-form">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                </form>
+            </li>
+        </ul>
+        <div class="d-flex flex-wrap nav-other align-items-center justify-content-center align-items-center">
+            <a class="nav-link pr-1 header-profile" href="#">Sign Up / Log In</a>
+            <div class="dropdown header-profile">
+                <a class="nav-link px-1 dropdown-toggle" href="#" data-toggle="dropdown" aria-haspopup="true"
+                   aria-expanded="false">
+                    <svg version="1.1" fill="white" xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 100 100" style="enable-background:new 0 0 100 100;" xml:space="preserve">
+                        <g>
+                            <path d="M74.5,90.2l-2-2.1c-4.5-4.6-13.1-7.5-22.4-7.5s-17.9,2.9-22.4,7.5l-2,2.1l-2.1-2C14.1,79.8,8.8,67.5,8.8,54.4
+                            C8.8,30,27.3,10.2,50,10.2S91.2,30,91.2,54.4c0,13-5.3,25.4-14.6,33.8L74.5,90.2z M50,16.2c-19.4,0-35.2,17.2-35.2,38.3
+                            c0,10.4,3.9,20.3,10.7,27.5c5.9-4.6,14.8-7.3,24.5-7.3c9.7,0,18.6,2.7,24.5,7.3c6.8-7.2,10.7-17.1,10.7-27.5
+                            C85.2,33.3,69.4,16.2,50,16.2z"/>
+                            <path class="st0" d="M50,69c-7.4,0-15.7-6.5-17.4-19.1c-0.8-6,0.6-11.4,3.9-15.2c3.1-3.6,7.8-5.5,13.5-5.5c5.3,0,10,2,13.2,5.6
+                            c3.4,3.9,4.9,9.2,4.2,15.1C65.6,64,56.9,69,50,69z M50,34.3c-4.2,0-7.6,1.3-9.7,3.8c-2.3,2.7-3.3,6.7-2.7,11.2
+                            C38.9,58.9,44.8,64,50,64c5.1,0,11.1-3.9,12.4-14.7c0.5-4.4-0.5-8.4-2.9-11.1C57.2,35.6,53.9,34.3,50,34.3z"/>
+                        </g>
+                    </svg>
+                </a>
+                <div class="dropdown-menu dropdown-menu-right">
+                    <a class="dropdown-item" href="#">
+                        <span>Profile</span>
+                    </a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="#">
+                        <span>Log Out</span>
+                    </a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" aria-haspopup="true"
+                   aria-expanded="false">
+                    <img src="img/gbr_flag.svg" width="15" class="d-inline-block align-center mr-1" alt="">
+                </a>
+                <div class="dropdown-menu dropdown-menu-right">
+                    <a class="dropdown-item" href="#">
+                        <img src="img/russion_flag.svg" width="15" class="d-inline-block mr-2 align-сenter" alt="">
+                        <span>Russion</span>
+                    </a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="#">
+                        <img src="img/german_flag.svg" width="15" class="d-inline-block mr-2 align-center" alt="">
+                        <span>German</span>
+                    </a>
+                </div>
+            </div>
+            <div class="d-flex social-media">
+                <div class="nav-item">
+                    <a class="nav-link p-0 pt-1 px-2" href="https://www.facebook.com/WTA">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="white" width="15" height="15" viewBox="0 0 24 24">
+                            <path d="M22.675 0h-21.35c-.732 0-1.325.593-1.325 1.325v21.351c0 .731.593 1.324 1.325 1.324h11.495v-9.294h-3.128v-3.622h3.128v-2.671c0-3.1 1.893-4.788 4.659-4.788 1.325 0 2.463.099 2.795.143v3.24l-1.918.001c-1.504 0-1.795.715-1.795 1.763v2.313h3.587l-.467 3.622h-3.12v9.293h6.116c.73 0 1.323-.593 1.323-1.325v-21.35c0-.732-.593-1.325-1.325-1.325z"/>
+                        </svg>
+                    </a>
+                </div>
+                <div class="nav-item">
+                    <a class="nav-link p-0 pt-1 px-2" href="https://www.twitter.com/WTA">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="white" width="15" height="15" viewBox="0 0 24 24">
+                            <path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"/>
+                        </svg>
+                    </a>
+                </div>
+                <div class="nav-item">
+                    <a class="nav-link p-0 pt-1 px-2" href="http://www.youtube.com/user/wta">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="white" width="15" height="15" viewBox="0 0 24 24">
+                            <path d="M9.279 13.52h-.939v5.027h-.908v-5.027h-.94v-.854h2.788v.854zm5.395 1.721v2.406c0 .537-.2.954-.736.954-.296 0-.541-.108-.767-.388v.333h-.813v-5.88h.813v1.893c.183-.222.429-.405.718-.405.59 0 .785.499.785 1.087zm-.83.049c0-.146-.027-.257-.086-.333-.098-.129-.279-.143-.42-.071l-.167.132v2.703l.19.153c.132.066.324.071.413-.045.046-.061.069-.161.069-.299v-2.24zm-2.347-5.859c.229 0 .354-.183.354-.431v-2.119c0-.255-.111-.434-.371-.434-.237 0-.353.185-.353.434v2.119c.001.24.137.431.37.431zm-.733 8.07c-.099.123-.317.325-.475.325-.172 0-.215-.118-.215-.292v-3.325h-.805v3.626c0 .88.597.885 1.031.636.16-.092.315-.227.464-.403v.479h.807v-4.338h-.807v3.292zm13.236-12.501v14c0 2.761-2.238 5-5 5h-14c-2.761 0-5-2.239-5-5v-14c0-2.761 2.239-5 5-5h14c2.762 0 5 2.239 5 5zm-10.566 4.427c0 .45.137.813.592.813.256 0 .611-.133.979-.569v.503h.847v-4.554h-.847v3.457c-.104.129-.333.341-.498.341-.182 0-.226-.124-.226-.307v-3.491h-.847v3.807zm-3.177-2.621v2.233c0 .803.419 1.22 1.24 1.22.682 0 1.218-.456 1.218-1.22v-2.233c0-.713-.531-1.224-1.218-1.224-.745 0-1.24.493-1.24 1.224zm-3.155-2.806l1.135 3.67v2.504h.953v-2.504l1.11-3.67h-.969l-.611 2.468-.658-2.468h-.96zm11.564 11.667c-.014-2.978-.232-4.116-2.111-4.245-1.734-.118-7.377-.118-9.109 0-1.876.128-2.098 1.262-2.111 4.245.014 2.978.233 4.117 2.111 4.245 1.732.118 7.375.118 9.109 0 1.877-.129 2.097-1.262 2.111-4.245zm-1.011-.292v1.104h-1.542v.818c0 .325.027.607.352.607.34 0 .36-.229.36-.607v-.301h.83v.326c0 .836-.358 1.342-1.208 1.342-.771 0-1.164-.561-1.164-1.342v-1.947c0-.753.497-1.275 1.225-1.275.773-.001 1.147.491 1.147 1.275zm-.83-.008c0-.293-.062-.508-.353-.508-.299 0-.359.21-.359.508v.439h.712v-.439z"/>
+                        </svg>
+                    </a>
+                </div>
+                <div class="nav-item">
+                    <a class="nav-link p-0 pt-1 px-2" href="http://instagram.com/wta">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="white" width="15" height="15" viewBox="0 0 24 24">
+                            <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="header-overlay"/>
+</nav>
+<!--header end-->
+
+<!--main start-->
+<main>
+    <section class="container px-0" style="max-width: 1400px">
+        <div class="row w-100 mx-0">
+            <div class="col-12 col-sm-2 col-lg-1 py-1 d-flex align-items-center justify-content-center">
+                <button class="btn wta-live-scores-button text-uppercase" type="button">
+                    Live Scores
+                </button>
+            </div>
+            <div class="col-12 col-sm-10 col-lg-11 px-0">
+                <div class="swiper-container swiper-container--score">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide score-cell">
+                            <div class="score-cell__round">
+                                <p>Round 2</p>
+                            </div>
+                            <div class="score-cell__group">
+                                <h6>Wimbledon</h6>
+                                <div>
+                                    <div class="score-cell__group-row d-flex">
+                                        <div class="score-cell__players score-cell__players--doubles">
+                                            <div class="score-cell__player">
+                                                <div>
+                                                    <p><img src="img/german_flag.svg" width="15px"/> <sub>2</sub></p>
+                                                    <h5>A. Kerber</h5>
+                                                </div>
+                                            </div>
+                                            <div class="score-cell__player">
+                                                <div>
+                                                    <p><img src="img/german_flag.svg" width="15px"/> <sub>2</sub></p>
+                                                    <h5>A. Kerber</h5>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="score-cell__times">
+                                            <div>3</div>
+                                            <div>3</div>
+                                            <div>3</div>
+                                            <div class="score-cell__game score-cell__game--serve">15</div>
+                                        </div>
+                                    </div>
+                                    <div class="score-cell__group-row d-flex">
+                                        <div class="score-cell__players score-cell__players--doubles">
+                                            <div class="score-cell__player">
+                                                <div>
+                                                    <p><img src="img/german_flag.svg" width="15px"/> <sub>2</sub></p>
+                                                    <h5>A. Kerber</h5>
+                                                </div>
+                                            </div>
+                                            <div class="score-cell__player">
+                                                <div>
+                                                    <p><img src="img/german_flag.svg" width="15px"/> <sub>2</sub></p>
+                                                    <h5>A. Kerber</h5>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="score-cell__times">
+                                            <div>3</div>
+                                            <div>3</div>
+                                            <div>3</div>
+                                            <div class="score-cell__game">30</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="score-cell__stats d-flex align-items-center justify-content-between w-100 p-1">
+                                    <div class="match-stats text-light rounded text-uppercase">Match stats</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide score-cell">
+                            <div class="score-cell__round">
+                                <p>Round 2</p>
+                            </div>
+                            <div class="score-cell__group">
+                                <h6>Brisbane</h6>
+                                <div>
+                                    <div class="score-cell__group-row  score-cell__group-row--win d-flex">
+                                        <div class="score-cell__players">
+                                            <div class="score-cell__player">
+                                                <div>
+                                                    <p><img src="img/german_flag.svg" width="20px"/> <sub>2</sub></p>
+                                                    <h5>A. Kerber</h5>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="score-cell__times">
+                                            <div>3</div>
+                                            <div>3</div>
+                                            <div>3</div>
+                                        </div>
+                                    </div>
+                                    <div class="score-cell__group-row d-flex">
+                                        <div class="score-cell__players">
+                                            <div class="score-cell__player">
+                                                <div>
+                                                    <p><img src="img/german_flag.svg" width="20px"/> <sub>2</sub></p>
+                                                    <h5>A. Kerber</h5>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="score-cell__times">
+                                            <div>3</div>
+                                            <div>3</div>
+                                            <div>3</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="score-cell__stats d-flex align-items-center justify-content-between w-100 p-1">
+                                    <div class="match-stats text-light rounded text-uppercase">Match stats</div>
+                                    <div class="d-flex align-items-center">
+                                        <span class="mx-2 match-time">20:12:23</span>
+                                        <div class="match-completed text-light rounded text-uppercase">Completed</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">Slide 3</div>
+                        <div class="swiper-slide">Slide 4</div>
+                        <div class="swiper-slide">Slide 5</div>
+                        <div class="swiper-slide">Slide 6</div>
+                        <div class="swiper-slide">Slide 7</div>
+                        <div class="swiper-slide">Slide 8</div>
+                        <div class="swiper-slide">Slide 9</div>
+                        <div class="swiper-slide">Slide 10</div>
+                    </div>
+                    <div tabindex="-1" class="swiper-button-prev">
+                        <div class="arrow"></div>
+                    </div>
+                    <div tabindex="-1" class="swiper-button-next">
+                        <div class="arrow"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="tournament-card container">
+        <div class="tournament-logo">
+            <img src="http://www.wtatennis.com/sites/default/files/styles/luxbox_scale__w_400_/public/wimbledon_0.jpg" width="180px" alt="tournament-logo">
+        </div>
+        <div class="row tournament-card__header w-100">
+            <div class="col-12 col-lg-7 offset-0 offset-lg-2 tournament-card__header-title">
+                <h2><b class="text-uppercase">Wimbledon</b> / <i>Great Britain</i></h2>
+            </div>
+            <div class="col-12 col-lg-3 tournament-card__header-socials">
+                <div class="d-flex social-media">
+                    <div class="nav-item">
+                        <a class="nav-link p-0 pt-1 px-2" href="https://www.facebook.com/WTA">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="white" width="15" height="15" viewBox="0 0 24 24">
+                                <path d="M22.675 0h-21.35c-.732 0-1.325.593-1.325 1.325v21.351c0 .731.593 1.324 1.325 1.324h11.495v-9.294h-3.128v-3.622h3.128v-2.671c0-3.1 1.893-4.788 4.659-4.788 1.325 0 2.463.099 2.795.143v3.24l-1.918.001c-1.504 0-1.795.715-1.795 1.763v2.313h3.587l-.467 3.622h-3.12v9.293h6.116c.73 0 1.323-.593 1.323-1.325v-21.35c0-.732-.593-1.325-1.325-1.325z"/>
+                            </svg>
+                        </a>
+                    </div>
+                    <div class="nav-item">
+                        <a class="nav-link p-0 pt-1 px-2" href="https://www.twitter.com/WTA">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="white" width="15" height="15" viewBox="0 0 24 24">
+                                <path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"/>
+                            </svg>
+                        </a>
+                    </div>
+                    <div class="nav-item">
+                        <a class="nav-link p-0 pt-1 px-2" href="http://www.youtube.com/user/wta">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="white" width="15" height="15" viewBox="0 0 24 24">
+                                <path d="M9.279 13.52h-.939v5.027h-.908v-5.027h-.94v-.854h2.788v.854zm5.395 1.721v2.406c0 .537-.2.954-.736.954-.296 0-.541-.108-.767-.388v.333h-.813v-5.88h.813v1.893c.183-.222.429-.405.718-.405.59 0 .785.499.785 1.087zm-.83.049c0-.146-.027-.257-.086-.333-.098-.129-.279-.143-.42-.071l-.167.132v2.703l.19.153c.132.066.324.071.413-.045.046-.061.069-.161.069-.299v-2.24zm-2.347-5.859c.229 0 .354-.183.354-.431v-2.119c0-.255-.111-.434-.371-.434-.237 0-.353.185-.353.434v2.119c.001.24.137.431.37.431zm-.733 8.07c-.099.123-.317.325-.475.325-.172 0-.215-.118-.215-.292v-3.325h-.805v3.626c0 .88.597.885 1.031.636.16-.092.315-.227.464-.403v.479h.807v-4.338h-.807v3.292zm13.236-12.501v14c0 2.761-2.238 5-5 5h-14c-2.761 0-5-2.239-5-5v-14c0-2.761 2.239-5 5-5h14c2.762 0 5 2.239 5 5zm-10.566 4.427c0 .45.137.813.592.813.256 0 .611-.133.979-.569v.503h.847v-4.554h-.847v3.457c-.104.129-.333.341-.498.341-.182 0-.226-.124-.226-.307v-3.491h-.847v3.807zm-3.177-2.621v2.233c0 .803.419 1.22 1.24 1.22.682 0 1.218-.456 1.218-1.22v-2.233c0-.713-.531-1.224-1.218-1.224-.745 0-1.24.493-1.24 1.224zm-3.155-2.806l1.135 3.67v2.504h.953v-2.504l1.11-3.67h-.969l-.611 2.468-.658-2.468h-.96zm11.564 11.667c-.014-2.978-.232-4.116-2.111-4.245-1.734-.118-7.377-.118-9.109 0-1.876.128-2.098 1.262-2.111 4.245.014 2.978.233 4.117 2.111 4.245 1.732.118 7.375.118 9.109 0 1.877-.129 2.097-1.262 2.111-4.245zm-1.011-.292v1.104h-1.542v.818c0 .325.027.607.352.607.34 0 .36-.229.36-.607v-.301h.83v.326c0 .836-.358 1.342-1.208 1.342-.771 0-1.164-.561-1.164-1.342v-1.947c0-.753.497-1.275 1.225-1.275.773-.001 1.147.491 1.147 1.275zm-.83-.008c0-.293-.062-.508-.353-.508-.299 0-.359.21-.359.508v.439h.712v-.439z"/>
+                            </svg>
+                        </a>
+                    </div>
+                    <div class="nav-item">
+                        <a class="nav-link p-0 pt-1 px-2" href="http://instagram.com/wta">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="white" width="15" height="15" viewBox="0 0 24 24">
+                                <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="player-card__official-site ml-3">
+                    <button type="button" class="btn wta-default-transparent-button text-uppercase">Official Site</button>
+                </div>
+            </div>
+        </div>
+        <div class="row tournament-card__main w-100">
+            <img src="http://www.wtatennis.com/sites/default/files/styles/highlight_news_mobile_1_33_1_2x/public/wta-wimbledon-904_0.jpg" alt="tournament-poster" width="100%">
+            <h3 class="font-italic font-weight-bold">The Championships - Wimbledon</h3>
+        </div>
+        <div class="row tournament-card__footer w-100">
+            <p>Meanwhile, Federer suggested that Sunday's likely clash between the finals of the men's singles and the World Cup should worry football, not tennis - and Andy Murray announced he has a new job.</p>
+        </div>
+    </section>
+    <section class="tabs tabs--tournament container mx-0 mx-md- px-0 px-md-3 mt-4">
+        <div class="row d-flex tabs-container mx-3">
+            <div class="col-12 col-xl-7 px-0 d-flex align-items-end">
+                <nav class="mx-0 d-flex align-items-center w-100">
+                    <ul>
+                        <li class="tabs--active">Overview</li>
+                        <li><a href="#">Order of Play</a></li>
+                        <li><a href="#">Draws</a></li>
+                        <li><a href="#">Results Archive</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="col-12 col-xl-5 py-2 d-flex mx-0 px-0 download-button">
+                <button type="button" class="btn wta-primary-button font-italic text-uppercase">Match Notes
+                    <img src="img/pdf-icon.svg" width="20px">
+                </button>
+            </div>
+        </div>
+
+        <!--Overview-->
+
+        <div class="row tournament-overview px-3">
+            <div class="tournament-overview__item">
+                <span class="tournament-overview__label">Level:</span>
+                <span>ITF</span>
+            </div>
+            <div class="tournament-overview__item">
+                <span class="tournament-overview__label">Prize Money:</span>
+                <span>$21,969,327</span>
+            </div>
+            <div class="tournament-overview__item">
+                <span class="tournament-overview__label">Singles Draw Size:</span>
+                <span>128</span>
+            </div>
+            <div class="tournament-overview__item">
+                <span class="tournament-overview__label">City:</span>
+                <span>Wimbledon</span>
+            </div>
+            <div class="tournament-overview__item">
+                <span class="tournament-overview__label">Date:</span>
+                <span>Jul 2 - Jul 15, 2018</span>
+            </div>
+            <div class="tournament-overview__item">
+                <span class="tournament-overview__label">Doubles Draw Size:</span>
+                <span>64</span>
+            </div>
+            <div class="tournament-overview__item">
+                <span class="tournament-overview__label">Country:</span>
+                <span>Great Britain</span>
+            </div>
+            <div class="tournament-overview__item">
+                <span class="tournament-overview__label">Surface:</span>
+                <span>Grass</span>
+            </div>
+            <div class="tournament-overview__item">
+                <span class="tournament-overview__label">Director:</span>
+                <span>Gavin Fletcher</span>
+            </div>
+        </div>
+
+        <!--Results Archive -->
+
+        <!--<div class="row tournament-results-arcive px-3">-->
+            <!--<div class="col-12 px-0">-->
+                <!--<table class="table table-hover mb-1 mt-3">-->
+                    <!--<thead>-->
+                    <!--<tr>-->
+                        <!--<th class="text-md-left" scope="col">Year</th>-->
+                        <!--<th class="text-md-left" scope="col">Singles Champion</th>-->
+                        <!--<th class="text-md-left" scope="col">Doubles Champion</th>-->
+                        <!--<th class="text-md-right" scope="col">Draws</th>-->
+                    <!--</tr>-->
+                    <!--</thead>-->
+                    <!--<tbody>-->
+                    <!--<tr>-->
+                        <!--<td class="text-md-left text-uppercase">2017</td>-->
+                        <!--<td class="text-md-left">-->
+                            <!--<img src="img/russion_flag.svg" class="player-flag" width="30px">-->
+                            <!--<span class="ml-2">Karolina Pliskova (CZE)</span>-->
+                        <!--</td>-->
+                        <!--<td class="text-md-left">-->
+                            <!--<div class="d-flex align-items-center">-->
+                                <!--<img class="player-flag" src="img/russion_flag.svg" width="30px">-->
+                                <!--<span class="ml-2">Bethanie Mattek-Sands</span>-->
+                            <!--</div>-->
+                            <!--<div class="mt-2 d-flex align-items-center">-->
+                                <!--<img class="player-flag" src="img/russion_flag.svg" width="30px">-->
+                                <!--<span class="ml-2">Bethanie Mattek-Sands</span>-->
+                            <!--</div>-->
+                        <!--</td>-->
+                        <!--<td class="text-md-right">-->
+                            <!--<button class="download-pdf px-0" type="button">-->
+                                <!--<img src="img/pdf-icon&#45;&#45;primary.svg" width="25px">-->
+                            <!--</button>-->
+                        <!--</td>-->
+                    <!--</tr>-->
+                    <!--<tr>-->
+                        <!--<td class="text-md-left text-uppercase">2017</td>-->
+                        <!--<td class="text-md-left">-->
+                            <!--<img class="player-flag" src="img/russion_flag.svg" width="30px">-->
+                            <!--<span class="ml-2">Karolina Pliskova (CZE)</span>-->
+                        <!--</td>-->
+                        <!--<td class="text-md-left">-->
+                            <!--<div class="d-flex align-items-center">-->
+                                <!--<img class="player-flag" src="img/russion_flag.svg" width="30px">-->
+                                <!--<span class="ml-2">Bethanie Mattek-Sands</span>-->
+                            <!--</div>-->
+                            <!--<div class="mt-2 d-flex align-items-center">-->
+                                <!--<img class="player-flag" src="img/russion_flag.svg" width="30px">-->
+                                <!--<span class="ml-2">Bethanie Mattek-Sands</span>-->
+                            <!--</div>-->
+                        <!--</td>-->
+                        <!--<td class="text-md-right">-->
+                            <!--<button class="download-pdf px-0" type="button">-->
+                                <!--<img src="img/pdf-icon&#45;&#45;primary.svg" width="25px">-->
+                            <!--</button>-->
+                        <!--</td>-->
+                    <!--</tr>-->
+                    <!--</tbody>-->
+                <!--</table>-->
+            <!--</div>-->
+        <!--</div>-->
+        <!--<div class="row load-more mx-0 w-100 px-0">-->
+            <!--<div class="col-12 py-3 d-flex justify-content-center align-items-center">-->
+                <!--<button type="button" class="btn mx-2 wta-primary-light-button text-uppercase">Load More</button>-->
+            <!--</div>-->
+            <!--<div class="load-more__devider"></div>-->
+        <!--</div>-->
+
+        <!--Order of Play -->
+
+        <!--<div class="row tournament-order-of-play px-3">-->
+            <!--<div class="col-12 px-0 filters px-1 py-md-3 d-flex align-items-center">-->
+                <!--<div class="filters-wrapper">-->
+                    <!--<form class="form-inline search-form">-->
+                        <!--<input class="form-control mr-sm-2" type="search" placeholder="New search keyword" aria-label="Search">-->
+                    <!--</form>-->
+                    <!--<select class="custom-select mx-3">-->
+                        <!--<option value="" disabled selected>Date</option>-->
+                        <!--<option value="2018">2018</option>-->
+                        <!--<option value="2017">2017</option>-->
+                        <!--<option value="2016">2016</option>-->
+                    <!--</select>-->
+                    <!--<select class="custom-select mx-3">-->
+                        <!--<option value="" disabled selected>Player</option>-->
+                        <!--<option value="bethanieMattekSands">Bethanie Mattek-Sands</option>-->
+                    <!--</select>-->
+                    <!--<select class="custom-select mx-3">-->
+                        <!--<option value="" disabled selected>Round</option>-->
+                        <!--<option value="1">1</option>-->
+                        <!--<option value="2">2</option>-->
+                    <!--</select>-->
+                    <!--<button type="button" class="btn wta-primary-button text-uppercase" disabled>Singles</button>-->
+                    <!--<button type="button" class="btn mx-2 wta-default-button text-uppercase">Doubles</button>-->
+                    <!--<div class="download-pdf">-->
+                        <!--<button type="button" class="btn wta-primary-button font-italic text-uppercase">Download PDF-->
+                            <!--<img class="ml-1" src="img/pdf-icon.svg" width="20px">-->
+                        <!--</button>-->
+                    <!--</div>-->
+                <!--</div>-->
+            <!--</div>-->
+            <!--<div class="table-header mt-3">-->
+                <!--<h5 class="text-uppercase">Friday, September 23, 2016</h5>-->
+                <!--<span class="primary text-uppercase">Final</span>-->
+            <!--</div>-->
+            <!--<div class="col-12 table-wrapper px-0">-->
+                <!--<table class="table table-hover mb-1 mt-3">-->
+                    <!--<thead>-->
+                    <!--<tr>-->
+                        <!--<th class="text-md-left" scope="col">Time</th>-->
+                        <!--<th class="text-md-left" colspan="2" scope="col">Match</th>-->
+                        <!--<th class="text-md-left" scope="col">Scores</th>-->
+                        <!--<th class="text-md-right" scope="col"></th>-->
+                    <!--</tr>-->
+                    <!--</thead>-->
+                    <!--<tbody>-->
+                    <!--<tr>-->
+                        <!--<td class="text-md-left text-uppercase">13:30</td>-->
+                        <!--<td class="text-md-left match-win">-->
+                            <!--<div class="d-flex align-items-center">-->
+                                <!--<img class="player-flag" src="img/russion_flag.svg" width="30px">-->
+                                <!--<span class="ml-2">Bethanie Mattek-Sands</span>-->
+                            <!--</div>-->
+                            <!--<div class="d-flex mt-2 align-items-center">-->
+                                <!--<img class="player-flag" src="img/russion_flag.svg" width="30px">-->
+                                <!--<span class="ml-2">Bethanie Mattek-Sands</span>-->
+                            <!--</div>-->
+                        <!--</td>-->
+                        <!--<td class="text-md-left match-lose">-->
+                            <!--<div class="d-flex align-items-center">-->
+                                <!--<img class="player-flag" src="img/russion_flag.svg" width="30px">-->
+                                <!--<span class="ml-2">Bethanie Mattek-Sands</span>-->
+                            <!--</div>-->
+                            <!--<div class="d-flex mt-2 align-items-center">-->
+                                <!--<img class="player-flag" src="img/russion_flag.svg" width="30px">-->
+                                <!--<span class="ml-2">Bethanie Mattek-Sands</span>-->
+                            <!--</div>-->
+                        <!--</td>-->
+                        <!--<td class="text-md-left text-uppercase"><span>6 - 4</span> <span class="ml-2">6 - 4</span></td>-->
+                        <!--<td class="text-md-right">-->
+                            <!--<button type="button" class="btn wta-primary-button font-italic">Match Details</button>-->
+                        <!--</td>-->
+                    <!--</tr>-->
+                    <!--<tr>-->
+                        <!--<td class="text-md-left text-uppercase">13:30</td>-->
+                        <!--<td class="text-md-left match-win">-->
+                            <!--<div class="d-flex align-items-center">-->
+                                <!--<img class="player-flag" src="img/russion_flag.svg" width="30px">-->
+                                <!--<span class="ml-2">Bethanie Mattek-Sands</span>-->
+                            <!--</div>-->
+                            <!--<div class="d-flex mt-2 align-items-center">-->
+                                <!--<img class="player-flag" src="img/russion_flag.svg" width="30px">-->
+                                <!--<span class="ml-2">Bethanie Mattek-Sands</span>-->
+                            <!--</div>-->
+                        <!--</td>-->
+                        <!--<td class="text-md-left match-lose">-->
+                            <!--<div class="d-flex align-items-center">-->
+                                <!--<img class="player-flag" src="img/russion_flag.svg" width="30px">-->
+                                <!--<span class="ml-2">Bethanie Mattek-Sands</span>-->
+                            <!--</div>-->
+                            <!--<div class="d-flex mt-2 align-items-center">-->
+                                <!--<img class="player-flag" src="img/russion_flag.svg" width="30px">-->
+                                <!--<span class="ml-2">Bethanie Mattek-Sands</span>-->
+                            <!--</div>-->
+                        <!--</td>-->
+                        <!--<td class="text-md-left text-uppercase"><span>6 - 4</span> <span class="ml-2">6 - 4</span></td>-->
+                        <!--<td class="text-md-right">-->
+                            <!--<button type="button" class="btn wta-primary-button font-italic">Match Details</button>-->
+                        <!--</td>-->
+                    <!--</tr>-->
+                    <!--</tbody>-->
+                <!--</table>-->
+            <!--</div>-->
+        <!--</div>-->
+        <!--<div class="row load-more mx-0 w-100 px-0">-->
+            <!--<div class="col-12 py-3 d-flex justify-content-center align-items-center">-->
+                <!--<button type="button" class="btn mx-2 wta-primary-light-button text-uppercase">Load More</button>-->
+            <!--</div>-->
+            <!--<div class="load-more__devider"></div>-->
+        <!--</div>-->
+
+    </section>
+    <section class="container tournament-who-playing mb-4">
+       <div class="row">
+           <div class="col-12 d-flex flex-column px-3 py-1">
+               <header class="w-100 py-1">
+                   <h2 class="py-1">Who is Playing</h2>
+               </header>
+               <main>
+                   <div class="swiper-container swiper-container--who-playing">
+                       <div class="swiper-wrapper">
+                           <div class="swiper-slide d-flex flex-column justify-content-start">
+                               <div class="player">
+                                   <div class="player-photo">
+                                       <img src="img/player_photo.png" title="player_photo" alt="player_photo" width="100%">
+                                   </div>
+                                  <div class="rang d-flex flex-column justify-content-center align-items-center">
+                                      <div class="player_ranking champion">
+                                          <div class="px-2 singles-ranking">
+                                              <div class="ranking-title">
+                                                  <div class="text-uppercase">Ranking</div>
+                                              </div>
+                                              <span class="ranking-number">1</span>
+                                          </div>
+                                      </div>
+                                      <div class="cup-container d-flex my-2 align-items-center justify-content-around">
+                                          <img src="img/cup_icon.svg" width="20px">
+                                          <div class="mx-2">
+                                              <div>Tournament</div>
+                                              <div>Champion</div>
+                                          </div>
+                                      </div>
+                                  </div>
+                               </div>
+                               <div class="player-info d-flex w-100 flex-row align-items-center py-2">
+                                   <img src="img/german_flag.svg" width="50" class="d-inline-block mr-2 align-center" alt="">
+                                   <div class="d-flex flex-column w-75 ml-2">
+                                       <span class="font-italic font-weight-bold">Angelique</span>
+                                       <span class="font-italic font-weight-bold player-last-name">Kerber</span>
+                                   </div>
+                               </div>
+                           </div>
+                           <div class="swiper-slide d-flex flex-column justify-content-start">
+                               <div class="player">
+                                   <div class="player-photo">
+                                       <img src="img/player_photo.png" title="player_photo" alt="player_photo" width="100%">
+                                   </div>
+                                   <div class="rang">
+                                       <div class="player_ranking">
+                                           <div class="px-2 singles-ranking">
+                                               <div class="ranking-title">
+                                                   <div class="text-uppercase">Ranking</div>
+                                               </div>
+                                               <span class="ranking-number">10</span>
+                                           </div>
+                                       </div>
+                                   </div>
+                               </div>
+                               <div class="player-info d-flex w-100 flex-row align-items-center py-2">
+                                   <img src="img/german_flag.svg" width="50" class="d-inline-block mr-2 align-center" alt="">
+                                   <div class="d-flex flex-column ml-2">
+                                       <span class="font-italic font-weight-bold">Angelique</span>
+                                       <span class="font-italic font-weight-bold player-last-name">Kerber</span>
+                                   </div>
+                               </div>
+                           </div>
+                           <div class="swiper-slide d-flex flex-column justify-content-start">
+                               <div class="player">
+                                   <div class="player-photo">
+                                       <img src="img/player_photo.png" title="player_photo" alt="player_photo" width="100%">
+                                   </div>
+                                   <div class="rang">
+                                       <div class="player_ranking">
+                                           <div class="px-2 singles-ranking">
+                                               <div class="ranking-title">
+                                                   <div class="text-uppercase">Ranking</div>
+                                               </div>
+                                               <span class="ranking-number">10000</span>
+                                           </div>
+                                       </div>
+                                   </div>
+                               </div>
+                               <div class="player-info d-flex w-100 flex-row align-items-center py-2">
+                                   <img src="img/russion_flag.svg" width="50" class="d-inline-block mr-2 align-center" alt="">
+                                   <div class="d-flex flex-column ml-2">
+                                       <span class="font-italic font-weight-bold">Anastasia</span>
+                                       <span class="font-italic font-weight-bold player-last-name">Pavlyuchenkova</span>
+                                   </div>
+                               </div>
+                           </div>
+                           <div class="swiper-slide d-flex flex-column justify-content-start">
+                               <div class="player">
+                                   <div class="player-photo">
+                                       <img src="img/player_photo.png" title="player_photo" alt="player_photo" width="100%">
+                                   </div>
+                                   <div class="rang">
+                                       <div class="player_ranking">
+                                           <div class="px-2 singles-ranking">
+                                               <div class="ranking-title">
+                                                   <div class="text-uppercase">Ranking</div>
+                                               </div>
+                                               <span class="ranking-number">100</span>
+                                           </div>
+                                       </div>
+                                   </div>
+                               </div>
+                               <div class="player-info d-flex w-100 flex-row align-items-center py-2">
+                                   <img src="img/russion_flag.svg" width="50" class="d-inline-block mr-2 align-center" alt="">
+                                   <div class="d-flex flex-column ml-2">
+                                       <span class="font-italic font-weight-bold">Anastasia</span>
+                                       <span class="font-italic font-weight-bold player-last-name">Pavlyuchenkova</span>
+                                   </div>
+                               </div>
+                           </div>
+                           <div class="swiper-slide d-flex flex-column justify-content-start">
+                               <div class="player">
+                                   <div class="player-photo">
+                                       <img src="img/player_photo.png" title="player_photo" alt="player_photo" width="100%">
+                                   </div>
+                                   <div class="rang">
+                                       <div class="player_ranking">
+                                           <div class="px-2 singles-ranking">
+                                               <div class="ranking-title">
+                                                   <div class="text-uppercase">Ranking</div>
+                                               </div>
+                                               <span class="ranking-number">10000</span>
+                                           </div>
+                                       </div>
+                                   </div>
+                               </div>
+                               <div class="player-info d-flex w-100 flex-row align-items-center py-2">
+                                   <img src="img/russion_flag.svg" width="50" class="d-inline-block mr-2 align-center" alt="">
+                                   <div class="d-flex flex-column ml-2">
+                                       <span class="font-italic font-weight-bold">Anastasia</span>
+                                       <span class="font-italic font-weight-bold player-last-name">Pavlyuchenkova</span>
+                                   </div>
+                               </div>
+                           </div>
+                       </div>
+                       <div class="swiper-pagination"></div>
+                   </div>
+               </main>
+           </div>
+       </div>
+    </section>
+    <section class="mb-4">
+        <div class="swiper-container swiper-container--videos px-3">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="swiper-slide__cell">
+                        <div class="swiper-slide__preview">
+                            <button class="play-button" type="button">
+                                <img src="img/play_icon.svg" width="35px"/>
+                            </button>
+                            <img src="img/press-conference.jpg" width="100%" alt="video_preview"/>
+                        </div>
+                        <h3>Australian Open Press Conference: Angelique Kerber</h3>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="swiper-slide__cell">
+                        <div class="swiper-slide__preview">
+                            <button class="play-button" type="button">
+                                <img src="img/play_icon.svg" width="35px"/>
+                            </button>
+                            <img src="img/press-conference.jpg" width="100%" alt="video_preview"/>
+                        </div>
+                        <h3>Australian Open Press Conference: Angelique Kerber</h3>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="swiper-slide__cell">
+                        <div class="swiper-slide__preview">
+                            <button class="play-button" type="button">
+                                <img src="img/play_icon.svg" width="35px"/>
+                            </button>
+                            <img src="img/press-conference.jpg" width="100%" alt="video_preview"/>
+                        </div>
+                        <h3>Australian Open Press Conference: Angelique Kerber</h3>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="swiper-slide__cell">
+                        <div class="swiper-slide__preview">
+                            <button class="play-button" type="button">
+                                <img src="img/play_icon.svg" width="35px"/>
+                            </button>
+                            <img src="img/press-conference.jpg" width="100%" alt="video_preview"/>
+                        </div>
+                        <h3>Australian Open Press Conference: Angelique Kerber</h3>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="swiper-slide__cell">
+                        <div class="swiper-slide__preview swiper-slide__preview--live">
+                            <button class="play-button" type="button">
+                                <img src="img/play_icon.svg" width="35px"/>
+                            </button>
+                            <img src="img/press-conference.jpg" width="100%" alt="video_preview"/>
+                        </div>
+                        <h3>Australian Open Press Conference: Angelique Kerber</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </section>
+    <section class="container news mb-4">
+        <div class="row">
+            <a href="#" class="news__item px-3 col-12 col-sm-6 col-xl-3">
+                <div class="news__item-photo">
+                    <img src="http://www.wtatennis.com/sites/default/files/styles/teaser_views_phone_1_77_1_2x/public/kerber_kasatkina_lb.jpg" width="100%">
+                </div>
+                <h4 class="news__item-title">LIVE: Angelique Kerber</h4>
+                <p class="news__item-decription">Follow all the action live as No.11 seed Angelique Kerber takes on
+                    No.14 seed...</p>
+            </a>
+            <a href="#" class="news__item px-3 col-12 col-sm-6 col-xl-3">
+                <div class="news__item-photo">
+                    <img src="http://www.wtatennis.com/sites/default/files/styles/teaser_views_phone_1_77_1_2x/public/venus_serena_williams_iw_2018.jpg" width="100%">
+                </div>
+                <h4 class="news__item-title">Venus could coach Olympia, says Serena</h4>
+                <p class="news__item-decription">Serena Williams doesn't necessarily want daughter Olympia to pursue a...</p>
+            </a>
+            <a href="#" class="news__item px-3 col-12 col-sm-6 col-xl-3">
+                <div class="news__item-photo">
+                    <img src="http://www.wtatennis.com/sites/default/files/styles/teaser_views_phone_1_77_1_2x/public/wozniacki_wim_2018_r2.jpg" width="100%">
+                </div>
+                <h4 class="news__item-title">Social buzz: Up, up and away! High life for Wozniacki</h4>
+                <p class="news__item-decription">The Australian Open champion has her head in the clouds, while back at...</p>
+            </a>
+            <a href="#" class="news__aside px-5 col-12 col-sm-6 col-xl-3">
+                <div class="news__aside-photo">
+                    <img src="http://sapphilippines.mseedsystems.com/wp-content/uploads/2016/04/SAP-Philippines-benefits-of-SAP.png" width="100%">
+                </div>
+            </a>
+        </div>
+    </section>
+    <section class="container photos-container w-100 mb-4">
+        <div class="row">
+            <a href="#" class="col-12 col-md-4 photos__photo">
+                <img src="http://www.wtatennis.com/sites/default/files/styles/teaser_views_photos_phone_1_43_1_2x/public/azarenka_1.jpg" width="100%">
+                <div class="photos__description">
+                    Wimbledon 2018: WTA stars descend on the All England Club
+                </div>
+            </a>
+            <a href="#" class="col-12 col-md-4 photos__photo">
+                <img src="http://www.wtatennis.com/sites/default/files/styles/teaser_views_photos_phone_1_43_1_2x/public/gettyimages-812667020.jpg" width="100%">
+                <div class="photos__description">
+                    Wimbledon 2018: WTA stars descend on the All England Club
+                </div>
+            </a>
+            <a href="#" class="col-12 col-md-4 photos__photo">
+                <img src="http://www.wtatennis.com/sites/default/files/styles/teaser_views_photos_phone_1_43_1_2x/public/field/image/simona_halep.jpg" width="100%">
+                <div class="photos__description">
+                    Wimbledon 2018: WTA stars descend on the All England Club
+                </div>
+            </a>
+        </div>
+    </section>
+</main>
+<!--main end-->
+
+<!--footer start-->
+<footer role="contentinfo" class="container p-4 d-flex flex-column align-items-center">
+    <div class="row">
+        <div class="col-lg col-sm-12">
+            <h5 class="text-uppercase">About</h5>
+            <ul>
+                <li>
+                    <a href="http://www.wtatennis.com/about-wta">
+                        About The WTA
+                    </a>
+                </li>
+                <li>
+                    <a href="http://www.wtatennis.com/official-partners">
+                        Official Partners
+                    </a>
+                </li>
+                <li>
+                    <a href="http://www.wtatennis.com/partnership-opportunities">
+                        Partnership Opportunities
+                    </a>
+                </li>
+                <li>
+                    <a href="http://www.wtatennis.com/wta-rules">
+                        WTA Rules
+                    </a>
+                </li>
+                <li>
+                    <a href="http://www.wtatennis.com/player-development">
+                        Player Development
+                    </a>
+                </li>
+                <li>
+                    <a href="http://www.wtatennis.com/management-team">
+                        Management Team
+                    </a>
+                </li>
+                <li>
+                    <a href="http://www.wtatennis.com/board-directors">
+                        Board Of Directors
+                    </a>
+                </li>
+                <li>
+                    <a href="http://www.wtatennis.com/anti-doping">
+                        Anti-Doping
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.teamworkonline.com/golf-tennis-jobs/protennisjobs/wta">
+                        Job Opportunities
+                    </a>
+                </li>
+                <li>
+                    <a href="http://www.wtatennis.com/press-center">
+                        Press Center
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="col-lg col-sm-12">
+            <h5 class="text-uppercase">Tools</h5>
+            <ul>
+                <li>
+                    <a href="http://www.wtatennis.com/rss-feeds">
+                        RSS Feeds
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="col-lg col-md-12">
+            <h5 class="text-uppercase">Pattern</h5>
+            <ul>
+                <li>
+                    <a href="http://www.dubaidutyfree.com/">
+                        Dubai Duty Free
+                    </a>
+                </li>
+                <li>
+                    <a href="http://www.iqiyi.com/">
+                        iQIYI
+                    </a>
+                </li>
+                <li>
+                    <a href="http://www.porsche.com/">
+                        Porsche
+                    </a>
+                </li>
+                <li>
+                    <a href="http://www.sap.com/">
+                        SAP
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.usana.com/">
+                        USANA
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="col-lg col-md-12">
+            <h5 class="text-uppercase">Affiliated</h5>
+            <ul>
+                <li>
+                    <a href="http://www.itftennis.com/home.aspx">
+                        International Tennis Federation
+                    </a>
+                </li>
+                <li>
+                    <a href="http://www.atpworldtour.com/">
+                        ATP World Tour
+                    </a>
+                </li>
+                <li>
+                    <a href="http://www.usopenseries.com/home/default.sps">
+                        US Open Series
+                    </a>
+                </li>
+                <li>
+                    <a href="http://www.fedcup.com/en/home.aspx">
+                        Fed Cup
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.tennisfame.com/">
+                        International Tennis Hall of Fame
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.womenssportsfoundation.org/">
+                        Women's Sports Foundation
+                    </a>
+                </li>
+                <li>
+                    <a href="http://2016.wtt.com/">
+                        World Team Tennis
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="col-lg col-md-12 first-server">
+            <h5 class="text-uppercase"><i>Sign Up for WTA First Serve</i></h5>
+            <div class="py-2 d-flex align-items-center">
+                <img src="img/logo.svg" width="62" class="d-inline-block align-top" alt="">
+                <h6 class="mx-2 my-0"><i>first serve</i></h6>
+            </div>
+            <ul class="my-2">
+                <li>
+                    <a href="#">
+                        Insider content
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        Featured stories and videos
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        Keep up with your favorite player
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        Weekly delivery, right to your indox
+                    </a>
+                </li>
+            </ul>
+            <button type="button" class="btn wta-primary-button">SIGN UP</button>
+        </div>
+    </div>
+    <div class="row social-pages">
+        <div class="col-lg-4 social-pages__terms">
+            <ul>
+                <li>
+                    <a href="#" class="text-uppercase">Site Map</a>
+                </li>
+                <li>
+                    <a href="http://www.wtatennis.com/terms-and-conditions-use" class="text-uppercase">Terms &
+                        Conditions</a>
+                </li>
+                <li>
+                    <a href="http://www.wtatennis.com/wta-privacy-policy" class="text-uppercase">Privacy policy</a>
+                </li>
+                <li>
+                    <a href="http://www.wtatennis.com/content/wta-contact-information"
+                       class="text-uppercase">Contact</a>
+                </li>
+            </ul>
+        </div>
+        <div class="col-lg-4 social-pages__app text-uppercase text-lg-center">
+            Download the WTA app:
+            <ul>
+                <li>
+                    <a href="#" class="text-uppercase"> App store</a>
+                </li>
+                <li><a href="#" class="text-uppercase">Google Play</a></li>
+            </ul>
+        </div>
+        <div class="col-lg-4 text-uppercase">
+            <span>© 2018 WTA tout, inc. | WTA and the WTA logo are trademarks of the WTA tour, inc.</span>
+        </div>
+    </div>
+</footer>
+<!--footer end-->
+<script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"
+        integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb"
+        crossorigin="anonymous"></script>
+<script src="js/popper.js"></script>
+
+<script src="./js/swiper.min.js"></script>
+<script src="./js/bootstrap.min.js"></script>
+<script src="./js/index.js"></script>
+<script src="./js/header.js"></script>
+<script src="./js/tournament-who-playing.js"></script>
+<script src="./js/player-videos.js"></script>
+<script src="js/score-carusel.js"></script>
+<script src="js/player-played-tournaments.js"></script>
+</body>
+</html>
