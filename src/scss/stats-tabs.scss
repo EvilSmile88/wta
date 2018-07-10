@@ -1,75 +1,16 @@
 @import "variables";
+@import "tabs";
 .stats-tabs {
-  overflow-x: hidden;
-  margin-bottom: 25px;
-  background-color: white;
-  padding: 18px;
-  .stat-picture {
-    display: flex;
-    justify-content: flex-end;
-    align-items: flex-start;
-  }
-  nav {
-    margin: 0px 20px;
-    max-width: 95vw;
-    overflow-x: auto;
-    &::-webkit-scrollbar {
-      height: 5px;
-    }
-
-    /* Track */
-    &::-webkit-scrollbar-track {
-      background: transparent;
-    }
-
-    /* Handle */
-    &::-webkit-scrollbar-thumb {
-      border-radius: 5px;
-      background: rgba(0, 0, 0, 0.1);
-    }
-
-    /* Handle on hover */
-    &::-webkit-scrollbar-thumb:hover {
-      background: rgba(0, 0, 0, 0.3);
-    }
-  }
-  nav ul {
-    border-bottom: 1px solid #D0D0D0;
-    min-width: 100%;
-    padding: 0px;
-    margin: 0px;
-    display: flex;
-    width: 350px;
-    .player-tabs--active {
-      color: $primary-color;
-      border-bottom: 3px solid $primary-color;
-    }
-    li {
-      font-size: 18px;
-      list-style: none;
-      color: #9B9B9B;
-      font-weight: bold;
-      text-transform: uppercase;
-      padding: 10px 0px;
-      display: flex;
-      justify-content: center;
-      flex-basis: 110px;
-      flex-grow: 1;
-      a {
-        color: #9B9B9B;
-        text-decoration: none;
-      }
-    }
-  }
-  .row {
-    margin: 0px;
-  }
   button {
     min-width: 170.37px;
     font-size: 16px;
     height: 28.38px;
   }
-  max-width: 99vw;
+  .stat-picture {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+  }
   .stats-tabs__filters {
     margin: 0px 20px;
     max-width: 100%;
@@ -191,9 +132,6 @@
     .download-button {
       justify-content: flex-end;
     }
-    .stats-tabs-container {
-      flex-direction: column-reverse;
-    }
     .stat-picture {
       justify-content: center !important;
     }
@@ -216,12 +154,5 @@
       font-size: 14px;
     }
     padding: 18px 0px;
-    nav ul {
-      li {
-        font-size: 12px;
-        flex-basis: 70px;
-        flex-grow: 1;
-      }
-    }
   }
 }
