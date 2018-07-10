@@ -177,6 +177,15 @@ select, .custom-select {
       .player-card__photo .player-card__official-site button:after {
         right: -100%; }
 
+.player-card__photo--old {
+  min-height: 200px;
+  justify-content: center; }
+  .player-card__photo--old .old-photo-container {
+    top: 30%;
+    position: absolute;
+    overflow: hidden;
+    border-radius: 15px 0; }
+
 .player-social .nav-item svg {
   transition: opacity ease 0.3s;
   fill: white;
@@ -272,9 +281,21 @@ select, .custom-select {
     margin-right: 10px; }
   .player-card__info .info-value {
     font-size: 15px;
-    line-height: 24px; } }
+    line-height: 24px; }
+  .player-card__photo--old {
+    min-height: 250px; }
+    .player-card__photo--old .old-photo-container {
+      top: 10%; }
+      .player-card__photo--old .old-photo-container img {
+        width: 150px; } }
 
 @media (max-width: 575.98px) {
+  .player-card__photo--old {
+    min-height: 200px; }
+    .player-card__photo--old .old-photo-container {
+      top: 10%; }
+      .player-card__photo--old .old-photo-container img {
+        width: 120px; }
   .player-social svg {
     width: 17px;
     height: 17px; }

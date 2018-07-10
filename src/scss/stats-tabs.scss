@@ -144,6 +144,7 @@
     box-sizing: border-box;
     min-width: 1320px;
     th {
+      cursor: pointer;
       border-top: none;
       color: $primary-color-light;
       font-size: 14px;

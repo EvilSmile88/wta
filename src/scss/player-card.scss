@@ -89,6 +89,16 @@
     }
   }
 }
+.player-card__photo--old {
+  min-height: 200px;
+  justify-content: center;
+  .old-photo-container {
+    top: 30%;
+    position: absolute;
+    overflow: hidden;
+    border-radius: 15px 0;
+  }
+}
 .player-social {
   .nav-item {
     svg {
@@ -211,9 +221,27 @@
     font-size: 15px;
     line-height: 24px;
   }
+  .player-card__photo--old {
+    min-height: 250px;
+    .old-photo-container {
+      top: 10%;
+      img {
+        width: 150px;
+      }
+    }
+  }
 }
 
 @media (max-width: $screen-sm-max-width) {
+  .player-card__photo--old {
+    min-height: 200px;
+    .old-photo-container {
+      top: 10%;
+      img {
+        width: 120px;
+      }
+    }
+  }
   .player-social {
     svg {
       width: 17px;

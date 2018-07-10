@@ -374,9 +374,16 @@
                             <span class="w-100 stats-player-stat__value">302</span>
                         </div>
                     </div>
+
+                    <!--New Photo-->
                     <div class="player-card__photo">
                         <img src="img/player_photo.png" title="player_photo" alt="player_photo" width="280px">
                     </div>
+
+                    <!--Old Photo-->
+                    <!--<div class="player-card__photo player-card__photo&#45;&#45;old">-->
+                        <!--<img src="http://www.wtatennis.com/sites/default/files/styles/luxbox_1_1_2x/public/player_311470.jpg" title="player_photo" alt="player_photo" width="140px">-->
+                    <!--</div>-->
                 </div>
             </div>
             <div class="col-12 mb-4 col-lg-6 w-100 px-0 px-md-3">
@@ -470,16 +477,16 @@
                 <table class="table table-hover mb-1 mt-3">
                     <thead>
                     <tr>
-                        <th scope="col" class="text-uppercase table-sort table-sort--desc">Standing</th>
-                        <th scope="col" class="text-uppercase table-sort">Player</th>
-                        <th scope="col" class="text-uppercase table-sort">Aces</th>
-                        <th scope="col" class="text-uppercase table-sort">Double Faults</th>
-                        <th scope="col" class="text-uppercase table-sort">1<sup>st</sup> Serve %</th>
-                        <th scope="col" class="text-uppercase table-sort">1<sup>st</sup> Serve PTS Won %</th>
-                        <th scope="col" class="text-uppercase table-sort">2<sup>nd</sup> Serve %</th>
-                        <th scope="col" class="text-uppercase table-sort">2<sup>nd</sup> Serve PTS Won %</th>
-                        <th scope="col" class="text-uppercase table-sort">Service PTS Won %</th>
-                        <th scope="col" class="text-uppercase table-sort">Service Games Won %</th>
+                        <th scope="col" onclick="toggleSort(event)" class="text-uppercase table-sort table-sort--desc">Standing</th>
+                        <th scope="col" onclick="toggleSort(event)" class="text-uppercase table-sort">Player</th>
+                        <th scope="col" onclick="toggleSort(event)" class="text-uppercase table-sort">Aces</th>
+                        <th scope="col" onclick="toggleSort(event)" class="text-uppercase table-sort">Double Faults</th>
+                        <th scope="col" onclick="toggleSort(event)" class="text-uppercase table-sort">1<sup>st</sup> Serve %</th>
+                        <th scope="col" onclick="toggleSort(event)" class="text-uppercase table-sort">1<sup>st</sup> Serve PTS Won %</th>
+                        <th scope="col" onclick="toggleSort(event)" class="text-uppercase table-sort">2<sup>nd</sup> Serve %</th>
+                        <th scope="col" onclick="toggleSort(event)" class="text-uppercase table-sort">2<sup>nd</sup> Serve PTS Won %</th>
+                        <th scope="col" onclick="toggleSort(event)" class="text-uppercase table-sort">Service PTS Won %</th>
+                        <th scope="col" onclick="toggleSort(event)" class="text-uppercase table-sort">Service Games Won %</th>
                     </tr>
                     </thead>
                     <tbody>
@@ -734,6 +741,7 @@
 <script src="./js/bootstrap.min.js"></script>
 <script src="./js/index.js"></script>
 <script src="./js/header.js"></script>
+<script src="./js/table-sort.js"></script>
 <script src="js/score-carusel.js"></script>
 </body>
 </html>
