@@ -42,6 +42,22 @@
   .wta-default-button:hover:not(:disabled) {
     background-color: #e5e5e5; }
 
+.wta-primary-light-button {
+  height: auto;
+  min-height: 20px;
+  padding: 1px 10px;
+  min-width: 70px;
+  border-color: #502784;
+  border-radius: 0 15px 0 15px;
+  color: #502784;
+  background-color: #f9f9f9;
+  font-family: "Myriad Pro", sans-serif;
+  font-size: 12px;
+  font-weight: 600;
+  text-align: center; }
+  .wta-primary-light-button:hover:not(:disabled) {
+    background-color: #e5e5e5; }
+
 @font-face {
   font-family: 'Open Sans';
   src: url("../fonts/open-sans.regular.woff2") format("woff2"), url("../fonts/open-sans.regular.woff") format("woff"), url("../fonts/open-sans.regular.ttf") format("truetype"), url("../fonts/open-sans.regular.svg#open_sansregular") format("svg");
@@ -198,6 +214,17 @@ select, .custom-select {
       .player-card__photo .player-card__official-site button:after {
         right: -100%; }
 
+.player-card__photo--old {
+  min-height: 200px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+  .player-card__photo--old .old-photo-container {
+    top: 30%;
+    position: absolute;
+    overflow: hidden;
+    border-radius: 15px 0; }
+
 .player-social .nav-item svg {
   -webkit-transition: opacity ease 0.3s;
   -o-transition: opacity ease 0.3s;
@@ -312,9 +339,21 @@ select, .custom-select {
     margin-right: 10px; }
   .player-card__info .info-value {
     font-size: 15px;
-    line-height: 24px; } }
+    line-height: 24px; }
+  .player-card__photo--old {
+    min-height: 250px; }
+    .player-card__photo--old .old-photo-container {
+      top: 10%; }
+      .player-card__photo--old .old-photo-container img {
+        width: 150px; } }
 
 @media (max-width: 575.98px) {
+  .player-card__photo--old {
+    min-height: 200px; }
+    .player-card__photo--old .old-photo-container {
+      top: 10%; }
+      .player-card__photo--old .old-photo-container img {
+        width: 120px; }
   .player-social svg {
     width: 17px;
     height: 17px; }
@@ -2002,6 +2041,11 @@ footer {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column; }
+  .player-ranking .stats-player-ranking {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row; }
   .player-ranking .player-ranking__high {
     font-size: 16px; }
     .player-ranking .player-ranking__high h2 {
