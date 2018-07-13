@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "gulp start"
   },
   "author": "",
   "license": "ISC",
@@ -24,5 +24,7 @@
   },
   "homepage": "https://github.com/EvilSmile88/wta#readme",
   "description": "",
-  "devDependencies": {}
+  "devDependencies": {
+    "gulp-livereload": "^3.8.1"
+  }
 }

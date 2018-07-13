@@ -1,0 +1,35 @@
+.wta-modal {
+  &-dialog {
+    width: 100%;
+    max-width: 538px;
+    z-index: 1100;
+    margin: 1.75rem auto;
+    position: relative;
+    pointer-events: none;
+  }
+  &-content {
+    pointer-events: auto;
+  }
+  &-close {
+    padding: 25px 0 25px;
+    float: right;
+    font-size: 4.5rem;
+    line-height: .5;
+    color: #fff;
+    background-color: transparent;
+    border: 0;
+    &:hover {
+      cursor: pointer;
+    }
+  }
+  &-header {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-end;
+
+  }
+  &-body {
+    border-radius: 1px;
+    background-color: #fff;
+  }
+}
