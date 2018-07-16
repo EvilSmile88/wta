@@ -38,3 +38,6 @@ typings
 #
 node_modules/
 .tmp
+
+# Build
+build/*

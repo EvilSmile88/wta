@@ -647,6 +647,15 @@ select, .custom-select {
   border-top-color: transparent;
   transform: rotate(45deg); }
 
+.nav-item:hover .dropdown-menu {
+  display: block;
+  margin-top: 16px;
+  border-radius: 0; }
+
+.nav-item .dropdown-divider {
+  width: calc(100% - 40px);
+  margin-left: 20px; }
+
 @font-face {
   font-family: 'Open Sans';
   src: url("../fonts/open-sans.regular.woff2") format("woff2"), url("../fonts/open-sans.regular.woff") format("woff"), url("../fonts/open-sans.regular.ttf") format("truetype"), url("../fonts/open-sans.regular.svg#open_sansregular") format("svg");
