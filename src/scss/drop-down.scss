@@ -1,13 +1,26 @@
-.dropdown-toggle:after {
-  top: 0px;
-  margin-left: 7px;
-  margin-top: -3px;
-  width: 8px;
-  height: 8px;
-  border-radius: 2px;
-  border: 2px solid;
-  opacity: 0.6;
-  border-left-color: transparent;
-  border-top-color: transparent;
-  transform: rotate(45deg);
+.dropdown-toggle {
+  &:after {
+    top: 0px;
+    margin-left: 7px;
+    margin-top: -3px;
+    width: 8px;
+    height: 8px;
+    border-radius: 2px;
+    border: 2px solid;
+    opacity: 0.6;
+    border-left-color: transparent;
+    border-top-color: transparent;
+    transform: rotate(45deg);
+  }
+}
+.nav-item {
+  &:hover .dropdown-menu {
+    display: block;
+    margin-top: 16px;
+    border-radius: 0;
+  }
+  .dropdown-divider {
+    width: calc(100% - 40px);
+    margin-left: 20px;
+  }
 }
