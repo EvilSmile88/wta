@@ -1,0 +1,35 @@
+@import "variables";
+@import "buttons";
+@import "select";
+@import "player-card";
+@import "score-carusel";
+@import "videos-carusel";
+@import "drop-down";
+@import "header";
+@import "footer";
+@import "photos";
+
+@import "player-tabs";
+@import "player-bio";
+
+
+html,
+body {
+  min-width: 100%;
+  margin: 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: $body-bg;
+  font-family: 'Open Sans', sans-serif;
+}
+body > main {
+  height: auto;
+  min-height: 90vh;
+  width: 98.7vw;
+  box-sizing: border-box;
+  max-width: 1400px;
+}
+.popover-body {
+  padding: 3px;
+}

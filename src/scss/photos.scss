@@ -1,5 +1,15 @@
 @import "variables";
 .photos-container {
+  header {
+    h2 {
+      color: white;
+      font-size: 40px;
+      margin: 0px;
+      padding: 10px 5px;
+      padding-bottom: 0px;
+      font-weight: bold;
+    }
+  }
   .row {
     padding: 20px;
     height: 100%;
@@ -56,6 +66,11 @@
     color: white;
   }
   @media (max-width: $screen-md-max-width) {
+    header {
+      h2 {
+        font-size: 25px;
+      }
+    }
     .photos__photo {
       min-height: 200px;
       &:not(:last-of-type) {
