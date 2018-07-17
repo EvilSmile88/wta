@@ -1,0 +1,169 @@
+@import "variables";
+@import "player-ranking";
+
+.tournament-who-playing {
+  max-width: 1400px;
+  position: relative;
+  background-color: white;
+  header {
+    border-bottom: 3px solid #F3F3F3;
+    h2 {
+      font-size: 18px;
+      color: $primary-color-light;
+      font-style: italic;
+      font-weight: bold;
+      letter-spacing: -0.05px;
+    }
+  }
+  .swiper-container--who-playing {
+    min-height: 100px;
+    width: 100%;
+    a {
+      color: inherit;
+      transition: all ease 0.3s;
+      text-decoration: none;
+      &:hover {
+        box-shadow: 0px 2px 10px 0px rgba(0,0,0, 0.3);
+      }
+    }
+    .rang {
+      position: absolute;
+      top: 10px;
+      z-index: 2;
+    }
+    .cup-container {
+      background-color: rgb(239,239,239);
+      padding: 5px;
+      font-size: 9px;
+      color: rgb(74,74,74);
+      text-align: left;
+      line-height: 11px;
+      font-weight: bold;
+    }
+    .player_ranking {
+      &.champion {
+        border-bottom: 2px solid rgb(240,240,240);
+      }
+      padding-bottom: 10px;
+      font-size: 12px;
+      .ranking-number {
+        display: flex;
+        align-items: center;
+        line-height: 90%;
+        font-size: 6.25em;
+        font-weight: 700;
+        margin-right: 5px;
+        color: $primary-color-light;
+        &.ranking-number--xl {
+
+        }
+      }
+      .ranking-title {
+        margin: 0px;
+        color: rgb(155,155,155);
+        writing-mode: vertical-rl;
+        font-size: 1em;
+        font-weight: bold;
+        transform: rotate(180deg);
+      }
+      .singles-ranking {
+        position: relative;
+        min-height: 70px;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+      }
+    }
+    .swiper-slide {
+      height: 100%;
+      text-align: center;
+      justify-content: center;
+      display: flex;
+      align-items: center;
+      .player {
+        max-width: 340px;
+        min-height: 200px;
+        border-bottom: 2px solid #D0D0D0;
+        max-height: 200px;
+        position: relative;
+        overflow: hidden;
+      }
+      .player-photo {
+        margin-right: -20%;
+        min-height: 250px;
+        display: flex;
+        position: relative;
+        align-items: flex-end;
+        overflow: hidden;
+        img {
+          object-fit: contain;
+          object-position: top;
+          overflow: hidden;
+          max-height: 250px;
+        }
+      }
+      .player-photo--old {
+        box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.1);
+        position: absolute;
+        right: 5px;
+        top: 10px;
+        border-radius: 15px 0;
+        overflow: hidden;
+      }
+      .player-info {
+        max-width: 340px;
+        color: #444;
+        img {
+          box-shadow: 0 0 5px 2px rgba(0,0,0,0.1);
+        }
+        span {
+          max-width: 100%;
+          text-overflow: ellipsis;
+          overflow: hidden;
+          text-align: left;
+          line-height: 20px;
+          font-size: 15px;
+        }
+        .player-last-name {
+          line-height: 27px;
+          font-size: 24px;
+        }
+      }
+    }
+    .swiper-pagination {
+      position: static;
+      .swiper-pagination-bullet {
+        width: 17px;
+        opacity: 0.7;
+        transition: ease all 0.3s;
+        border-radius: 2px;
+        height: 5px;
+        background-color: rgba(0, 0, 0, 0.4);
+        &:hover {
+          opacity: 1;
+          box-shadow: 0 0 0 1px white;
+        }
+      }
+      .swiper-pagination-bullet-active-next,
+      .swiper-pagination-bullet-active-next,
+      .swiper-pagination-bullet-active-next-next,
+      .swiper-pagination-bullet-active-prev,
+      .swiper-pagination-bullet-active-prev-prev {
+        transform: none;
+      }
+      .swiper-pagination-bullet-active {
+        background-color: $primary-color;
+      }
+    }
+  }
+  @media (max-width: $screen-xl-max-width) {
+    header h2 {
+      width: 60%;
+    }
+  }
+  @media (max-width: $screen-sm-max-width) {
+    header h2 {
+      font-size: 16px;
+    }
+  }
+}

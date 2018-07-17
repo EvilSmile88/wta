@@ -1,0 +1,144 @@
+@import "variables";
+
+.stats-player-card {
+  position: relative;
+  .player-card__photo {
+    bottom: 0px;
+    z-index: 1;
+    position: absolute;
+    right: 0px;
+    display: flex;
+    align-items: flex-end;
+    overflow: hidden;
+    img {
+      display: flex;
+      object-fit: cover;
+      object-position: top;
+      overflow: hidden;
+      max-height: 350px;
+    }
+  }
+  .player-card__photo--old {
+    box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    display: inline-block;
+    border-radius: 15px 0;
+    right: 10px;
+    top: 10px;
+    bottom: auto;
+  }
+  font-size: 16px;
+  background-color: white;
+  &>.row {
+    min-height: 160px;
+  }
+  .player-name {
+    flex-direction: column;
+  }
+  .stats-player-stat {
+    background-color: $primary-color-light;
+    color: white;
+    .stats-player-stat__title {
+      filter: drop-shadow(0px 0px 5px rgba(0,0,0, 0.6));
+      font-size: 1.5em;
+      font-style: italic;
+      font-weight: bold;
+      letter-spacing: -0.07px;
+      border-bottom: 3px solid #F3F3F3;
+    }
+    .stats-player-stat__value {
+      filter: drop-shadow(0px 0px 5px rgba(0,0,0, 0.6));
+      font-weight: bold;
+      letter-spacing: -2.6px;
+      font-size: 6em;
+      line-height: 90px;
+    }
+  }
+  .stats-player-ranking {
+    align-items: center;
+    color: #4A4A4A;
+    .player-first-name {
+      font-style: italic;
+      font-size: 2em;
+      line-height: 35px;
+      letter-spacing: -0.59px;
+      font-weight: bold;
+    }
+    .player-last-name {
+      line-height: 50px;
+      font-weight: bold;
+      letter-spacing: -0.59px;
+      font-style: italic;
+      font-size: 3em;
+    }
+    .player-country {
+      color: #6C1F7E;
+      line-height: 50px;
+      text-transform: uppercase;
+      font-weight: bold;
+      letter-spacing: -0.05px;
+      font-size: 1em;
+    }
+    .player-ranking {
+      min-width: 200px;
+      text-transform: uppercase;
+      font-size: 1em;
+      font-weight: bold;
+      letter-spacing: -0.05px;
+      color: #9B9B9B;
+      h4 {
+        margin: 2px 10px;
+        writing-mode: vertical-rl;
+        font-size: 1em;
+        font-weight: bold;
+        transform: rotate(180deg);
+      }
+    }
+    .player-ranking__number {
+      display: flex;
+      align-items: center;
+      font-size: 6.25em;
+      font-weight: 700;
+      margin-right: 5px;
+      color: $primary-color-light;
+    }
+  }
+  @media (max-width: $screen-sm-max-width) {
+    .stats-player-ranking {
+      .player-name {
+        justify-content: center;
+        flex-direction: row;
+        align-items: flex-end;
+        .player-last-name, .player-first-name {
+          font-size: 25px;
+          line-height: 30px;
+        }
+        .player-last-name {
+          margin-left: 5px;
+        }
+      }
+    }
+    font-size: 12px;
+    .player-card__photo {
+      width: 250px;
+    }
+    .stats-player-ranking {
+      .player-first-name {
+        line-height: 25px;
+      }
+      .player-last-name {
+        line-height: 35px;
+      }
+    }
+    .stats-player-stat > div {
+      z-index: 2;
+    }
+    .player-card__photo--old {
+      top: 15%;
+      width: 120px;
+      img {
+        width: 120px;
+      }
+    }
+  }
+}

@@ -1,4 +1,4 @@
-
+@import "variables";
 
 .wta-primary-button {
   height: auto;
@@ -17,6 +17,31 @@
     background-color: $primary-color;
   }
 }
+.wta-live-scores-button {
+  height: 37.08px;
+  padding: 1px 15px;
+  width: 81.9px;
+  border-radius: 0 15px 0 15px;
+  border: 2px solid #FFFFFF;
+  background-color: transparent;
+  white-space: normal;
+  font-weight: bold;
+  line-height: 12px;
+  box-shadow: 0 2px 10px 0 rgba(0,0,0,0.15);
+  color: $primary-color-light;
+  font-style: italic;
+  background-image: url("../img/play_icon.svg");
+  background-size: 18px;
+  background-repeat: no-repeat;
+  background-position: right;
+  font-size: 12px;
+  text-align: left;
+  letter-spacing: -0.93px;
+  word-spacing: 60px;
+  &:hover:not(:disabled) {
+    background-color: rgba(0, 0, 0, 0.03);;
+  }
+}
 .wta-default-button {
   height: auto;
   min-height: 20px;
@@ -28,6 +53,44 @@
   font-size: 12px;
   font-weight: 600;
   color: #9B9B9B;
+  text-align: center;
+  &:hover:not(:disabled) {
+    background-color: #e5e5e5;
+  }
+}
+
+.wta-default-transparent-button {
+  height: auto;
+  min-height: 20px;
+  padding: 1px 10px;
+  min-width: 70px;
+  border-radius: 0 15px 0 15px;
+  background-color: transparent;
+  font-family: "Myriad Pro", sans-serif;
+  font-size: 12px;
+  font-weight: 600;
+  color: #9B9B9B;
+  border-color: #9B9B9B;
+  text-align: center;
+  &:hover:not(:disabled) {
+    color: white;
+    border-color: white;
+    background-color: rgba(155, 155, 155, 0.15);
+  }
+}
+
+.wta-primary-light-button {
+  height: auto;
+  min-height: 20px;
+  padding: 1px 10px;
+  min-width: 70px;
+  border-color: $primary-color-light;
+  border-radius: 0 15px 0 15px;
+  color: $primary-color-light;
+  background-color: rgb(249,249,249);
+  font-family: "Myriad Pro", sans-serif;
+  font-size: 12px;
+  font-weight: 600;
   text-align: center;
   &:hover:not(:disabled) {
     background-color: #e5e5e5;

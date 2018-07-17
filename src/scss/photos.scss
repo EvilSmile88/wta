@@ -1,16 +1,31 @@
 @import "variables";
-.player-photos {
+.photos-container {
+  header {
+    h2 {
+      color: white;
+      font-size: 40px;
+      margin: 0px;
+      padding: 10px 5px;
+      padding-bottom: 0px;
+      font-weight: bold;
+    }
+  }
   .row {
     padding: 20px;
     height: 100%;
   }
   max-width: 100%;
   background-color: $primary-color;
-  .player-photos__photo {
+  .photos__photo {
     margin: 0px;
     display: flex;
     min-height: 100%;
     padding: 0px;
+    &:hover {
+      .photos__description {
+        text-decoration: underline;
+      }
+    }
     overflow: hidden;
     position: relative;
     img {
@@ -35,7 +50,15 @@
       background-repeat: no-repeat;
     }
   }
-  .player-photos__description {
+  footer {
+    padding: 15px;
+    background: transparent;
+    .btn {
+      width: 140.08px;
+      color: $primary-color-light;
+    }
+  }
+  .photos__description {
     width: 100%;
     font-size: 14px;
     font-weight: bold;
@@ -51,7 +74,12 @@
     color: white;
   }
   @media (max-width: $screen-md-max-width) {
-    .player-photos__photo {
+    header {
+      h2 {
+        font-size: 25px;
+      }
+    }
+    .photos__photo {
       min-height: 200px;
       &:not(:last-of-type) {
         border-right-width: 0px;

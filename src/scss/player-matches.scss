@@ -1,7 +1,24 @@
 @import "variables";
+
 .player-matches {
   .row {
     margin: 0px;
+  }
+  &__content {
+    & .--tick {
+      color: $success-color;
+      font-size: 24px;
+    }
+  }
+  &__header {
+    font-size: 22px;
+    font-family: $primary-font;
+    @media (max-width: $screen-sm-max-width) {
+      font-size: 14px;
+    }
+    span {
+      text-transform: uppercase;
+    }
   }
   max-width: 99vw;
   .player-matches__filters {
@@ -108,7 +125,7 @@
   table {
     th {
       color: $primary-color-light;
-      font-size: 16px;
+      font-size: 14px;
       letter-spacing: -0.05px;
       text-transform: uppercase;
       border: none;

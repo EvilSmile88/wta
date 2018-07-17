@@ -1,0 +1,80 @@
+@import "variables";
+.tournament-results-arcive {
+    overflow-x: auto;
+    &::-webkit-scrollbar {
+      height: 5px;
+    }
+
+    /* Track */
+    &::-webkit-scrollbar-track {
+      background: transparent;
+    }
+
+    /* Handle */
+    &::-webkit-scrollbar-thumb {
+      border-radius: 5px;
+      background: rgba(0, 0, 0, 0.1);
+    }
+
+    /* Handle on hover */
+    &::-webkit-scrollbar-thumb:hover {
+      background: rgba(0, 0, 0, 0.3);
+    }
+  table {
+    box-sizing: border-box;
+    min-width: 700px;
+    th {
+      padding-bottom: 0px;
+      text-transform: uppercase;
+      border-top: none;
+      color: $primary-color-light;
+      font-size: 16px;
+      position: relative;
+      font-weight: bold;
+      letter-spacing: -0.04px;
+      border-bottom: none;
+    }
+    tbody {
+      td {
+        vertical-align: middle;
+        .player-flag {
+          box-shadow: 0px 0px 5px 1px rgba(0,0,0, 0.1);
+        }
+        color: #4A4A4A;
+        font-size: 16px;
+        letter-spacing: -0.05px;
+      }
+      tr {
+        &:first-of-type {
+          td {
+            border-top: none;
+          }
+        }
+        &:hover {
+          background-color: rgba($primary-color-light, 0.05);
+        }
+      }
+    }
+  }
+  .download-pdf {
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+    width: auto;
+  }
+  @media (max-width: $screen-sm-max-width) {
+    table {
+      min-width: 550px;
+      th {
+        font-size: 12px;
+        font-weight: bold;
+        letter-spacing: -0.04px;
+      }
+      tbody {
+        td {
+          font-size: 12px;
+        }
+      }
+    }
+  }
+}
