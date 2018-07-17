@@ -10,6 +10,9 @@
     margin: 0px 20px;
     max-width: 100%;
     overflow-x: auto;
+    @media (max-width: $screen-md-min-width) {
+      width: calc(100% - 15px);
+    }
     &::-webkit-scrollbar {
       height: 5px;
     }

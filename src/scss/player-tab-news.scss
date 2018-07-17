@@ -9,6 +9,9 @@
     max-width: 100%;
     overflow-x: auto;
     min-height: 52px;
+    @media (max-width: $screen-md-min-width) {
+      width: calc(100% - 15px);
+    }
     &::-webkit-scrollbar {
       height: 5px;
     }
@@ -56,6 +59,9 @@
       padding: 0px;
       overflow: hidden;
       position: relative;
+      @media (max-width: $screen-sm-max-width) {
+        min-height: auto;
+      }
       img {
         overflow: hidden;
         max-height: 170px;
