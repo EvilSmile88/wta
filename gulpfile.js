@@ -5,7 +5,14 @@ var gulp = require('gulp'),
 
 // Compile sass into CSS & auto-inject into browsers
 gulp.task('sass', function() {
-  return gulp.src(['node_modules/bootstrap/scss/bootstrap.scss', 'src/scss/main.scss', 'src/scss/stats-main.scss', 'src/scss/tournament-main.scss', 'src/scss/coach-main.scss'])
+  return gulp.src([
+    'node_modules/bootstrap/scss/bootstrap.scss',
+    'src/scss/main.scss',
+    'src/scss/stats-main.scss',
+    'src/scss/tournament-main.scss',
+    'src/scss/coach-profile-main.scss',
+    'src/scss/coach-index-main.scss'
+  ])
     .pipe(sass())
     .pipe(gulp.dest("src/css"))
 });

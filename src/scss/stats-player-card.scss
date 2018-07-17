@@ -11,9 +11,9 @@
     align-items: flex-end;
     overflow: hidden;
     img {
+      display: flex;
       object-fit: cover;
       object-position: top;
-      flex: 1;
       overflow: hidden;
       max-height: 350px;
     }
@@ -21,6 +21,7 @@
   .player-card__photo--old {
     box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.1);
     overflow: hidden;
+    display: inline-block;
     border-radius: 15px 0;
     right: 10px;
     top: 10px;

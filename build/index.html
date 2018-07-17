@@ -346,7 +346,7 @@
         <div class="row d-block d-md-none">
             <div class="col-12">
                 <div class="d-flex w-100 d-md-none px-1 ">
-                    <h2 class="w-100 text-center m-0"><i>Angelique Kerber</i></h2>
+                    <h2 class="w-100 text-center m-0 mt-2"><i>Angelique Kerber</i></h2>
                 </div>
             </div>
         </div>
@@ -382,11 +382,11 @@
                             <div class="info-age pb-md-5 col-sm-12 col-md-2 pl-0 d-flex flex-sm-row flex-md-column">
                                 <div class="pl-0 info-title">Age</div>
                                 <div class="d-none d-md-flex">
-                                    <span class="info-value mr-1 info-value--large font-weight-bold">29</span>
+                                    <span class="info-value mr-1 info-value--middle font-weight-bold">29</span>
                                     <span class="birth-date my-2 px-1">18 Jan 1988</span>
                                 </div>
                                 <div class="d-sm-flex d-md-none">
-                                    <span class="info-value info-value--large font-weight-bold">29 </span>
+                                    <span class="info-value info-value--middle font-weight-bold">29</span>
                                     <span>(18 Jan 1988)</span>
                                 </div>
                             </div>
@@ -400,15 +400,15 @@
                             </div>
                             <div class="col-sm-12 pb-md-5 col-md-3 pl-0 d-flex flex-sm-row flex-md-column">
                                 <div class="info-title">Birthplace</div>
-                                <span class="info-value info-value--middle font-weight-bold text-uppercase">Bremen, German</span>
+                                <span class="info-value info-value--small font-weight-bold text-uppercase">Bremen, German</span>
                             </div>
                             <div class="col-sm-12 pb-md-5 col-md-3 pl-0 d-flex flex-sm-row flex-md-column">
                                 <div class="info-title">Residence</div>
-                                <span class="info-value info-value--middle font-weight-bold text-uppercase">Puszcykowo, Poland</span>
+                                <span class="info-value info-value--small font-weight-bold text-uppercase">Puszcykowo, Poland</span>
                             </div>
                             <div class="info-height pb-md-5 col-sm-12 col-md-3 pl-0 d-flex flex-sm-row flex-md-column">
                                 <div class="info-title justify-content-sm-start justify-content-lg-end">Plays</div>
-                                <div class=" d-flex info-value justify-content-sm-start justify-content-lg-end info-value--middle font-weight-bold text-uppercase">
+                                <div class=" d-flex info-value justify-content-sm-start justify-content-lg-end info-value--small font-weight-bold text-uppercase">
                                     Left-handed
                                 </div>
                             </div>
@@ -421,17 +421,21 @@
                     <div class="player_ranking">
                         <div class="px-2 singles-ranking">
                             <div class="ranking-title">
+                                <div>Singles</div>
                                 <div>Ranking</div>
                             </div>
                             <span id="ranking-number--singles" class="ranking-number">1</span>
                         </div>
+                        <div class="px-2 doubles-ranking doubles-ranking--hide">
+                            <div class="ranking-title">
+                                <div>Doubles</div>
+                                <div>Ranking</div>
+                            </div>
+                            <span id="ranking-number--doubles" class="ranking-number">100</span>
+                        </div>
                         <div class="player-ranking__switcher d-flex justify-content-between">
-                            <button type="button" onClick="setSinglesRanking()" id="singles-ranking__btn"
-                                    class="btn wta-primary-button w-50 text-uppercase">Singles
-                            </button>
-                            <button type="button" onClick="setDoublesRanking()" id="doubles-ranking__btn"
-                                    class="btn wta-primary-button w-50 text-uppercase">Doubles
-                            </button>
+                            <button type="button" onClick="setSinglesRanking()" id="singles-ranking__btn" class="btn wta-primary-button w-50 text-uppercase">Singles</button>
+                            <button type="button" onClick="setDoublesRanking()" id="doubles-ranking__btn" class="btn wta-primary-button w-50 text-uppercase">Doubles</button>
                         </div>
                     </div>
                     <div class="d-flex flex-column align-items-center">
@@ -500,8 +504,8 @@
 
             <section class="container player-overview">
                 <div class="row w-100 mx-2 pb-2 pt-md-4 pb-md-2 player-overview__filters">
-                    <button type="button" class="btn player-overview__btn wta-primary-button text-uppercase">Singles</button>
-                    <button type="button" class="btn player-overview__btn mx-2 wta-default-button text-uppercase">Doubles</button>
+                    <a tabindex="-1" class="btn player-overview__btn wta-primary-button text-uppercase">Singles</a>
+                    <a tabindex="-1" class="btn player-overview__btn mx-2 wta-default-button text-uppercase">Doubles</a>
                     <select class="custom-select mx-3">
                         <option value="" selected>Year</option>
                         <option value="2018">2018</option>
@@ -544,8 +548,8 @@
             <section class="container player-overview">
                 <div class="row w-100">
                     <div class="col-12 player-overview__filters py-4">
-                        <button type="button" class="btn player-overview__btn wta-primary wta-primary-button text-uppercase">Singles</button>
-                        <button type="button" class="btn player-overview__btn wta-primary mx-2 wta-default-button text-uppercase">Doubles</button>
+                        <a tabindex="-1" class="btn player-overview__btn wta-primary wta-primary-button text-uppercase">Singles</a>
+                        <a tabindex="-1" class="btn player-overview__btn wta-primary mx-2 wta-default-button text-uppercase">Doubles</a>
                     </div>
                 </div>
                 <div class="row player-overview__content">
@@ -665,7 +669,7 @@
                     <div class="col-12 player-matches__header">US Open / <span>friday, september 23, 2016</span></div>
                 </div>
                 <div class="row player-matches__content my-2">
-                    <div class="w-100 table-responsive mx-2">
+                    <div class="w-100 table-responsive">
                         <table class="table table-hover mb-1">
                             <thead>
                             <tr>
@@ -735,7 +739,7 @@
             <!--Matches 2-->
             <section class="container player-matches px-1 px-md-3">
                 <div class="row w-100">
-                    <div class="col player-matches__filters mx-2 pb-2 pt-md-4 pb-md-2 ">
+                    <div class="player-matches__filters mx-2 pb-2 pt-md-4 pb-md-2 ">
                         <button type="button" class="btn wta-primary-button text-uppercase" disabled>Singles</button>
                         <button type="button" class="btn mx-2 wta-default-button text-uppercase">Doubles</button>
                         <select class="custom-select mx-3">
@@ -1688,7 +1692,7 @@
 <!--footer start-->
 <footer role="contentinfo" class="container p-4 d-flex flex-column align-items-center">
     <div class="row">
-        <div class="col-lg col-sm-12">
+        <div class="col-xl col-sm-6">
             <h5 class="text-uppercase">About</h5>
             <ul>
                 <li>
@@ -1743,7 +1747,7 @@
                 </li>
             </ul>
         </div>
-        <div class="col-lg col-sm-12">
+        <div class="col-xl col-sm-6">
             <h5 class="text-uppercase">Tools</h5>
             <ul>
                 <li>
@@ -1753,7 +1757,7 @@
                 </li>
             </ul>
         </div>
-        <div class="col-lg col-md-12">
+        <div class="col-xl col-sm-6">
             <h5 class="text-uppercase">Pattern</h5>
             <ul>
                 <li>
@@ -1783,7 +1787,7 @@
                 </li>
             </ul>
         </div>
-        <div class="col-lg col-md-12">
+        <div class="col-xl col-sm-6">
             <h5 class="text-uppercase">Affiliated</h5>
             <ul>
                 <li>
@@ -1823,7 +1827,7 @@
                 </li>
             </ul>
         </div>
-        <div class="col-lg col-md-12 first-server">
+        <div class="col-xl col-sm-6 first-server">
             <h5 class="text-uppercase"><i>Sign Up for WTA First Serve</i></h5>
             <div class="py-2 d-flex align-items-center">
                 <img src="img/logo.svg" width="62" class="d-inline-block align-top" alt="">

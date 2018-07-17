@@ -10,6 +10,18 @@
   font-weight: normal;
   font-style: normal; }
 
+@font-face {
+  font-family: 'Open Sans';
+  src: url("../fonts/open-sans.regular.woff2") format("woff2"), url("../fonts/open-sans.regular.woff") format("woff"), url("../fonts/open-sans.regular.ttf") format("truetype"), url("../fonts/open-sans.regular.svg#open_sansregular") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Myriad Pro';
+  src: url("../fonts/myriad-pro.regular.otf") format("opentype"), url("../fonts/myriad-pro.regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+
 .wta-primary-button {
   height: auto;
   min-height: 20px;
@@ -38,7 +50,6 @@
   line-height: 12px;
   box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.15);
   color: #502784;
-  font-family: "Open Sans";
   font-style: italic;
   background-image: url("../img/play_icon.svg");
   background-size: 18px;
@@ -123,7 +134,6 @@ select, .custom-select {
   background-size: 12px;
   width: auto;
   border: none;
-  font-family: "Open Sans";
   font-size: 16px;
   padding-bottom: 0px;
   color: #4A4A4A;
@@ -181,7 +191,6 @@ select, .custom-select {
   .player-card__photo img {
     object-fit: cover;
     object-position: top;
-    flex: 1;
     overflow: hidden;
     max-height: 350px; }
   .player-card__photo .player-card__official-site {
