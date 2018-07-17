@@ -10,6 +10,30 @@
   font-weight: normal;
   font-style: normal; }
 
+.form-control {
+  margin-left: 5px; }
+  .form-control:focus {
+    -webkit-box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.25);
+            box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.25); }
+
+@font-face {
+  font-family: 'Open Sans';
+  src: url("../fonts/open-sans.regular.woff2") format("woff2"), url("../fonts/open-sans.regular.woff") format("woff"), url("../fonts/open-sans.regular.ttf") format("truetype"), url("../fonts/open-sans.regular.svg#open_sansregular") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Myriad Pro';
+  src: url("../fonts/myriad-pro.regular.otf") format("opentype"), url("../fonts/myriad-pro.regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+
+.form-control {
+  margin-left: 5px; }
+  .form-control:focus {
+    -webkit-box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.25);
+            box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.25); }
+
 .wta-primary-button {
   height: auto;
   min-height: 20px;
@@ -40,7 +64,6 @@
   -webkit-box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.15);
           box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.15);
   color: #502784;
-  font-family: "Open Sans";
   font-style: italic;
   background-image: url("../img/play_icon.svg");
   background-size: 18px;
@@ -114,6 +137,12 @@
   font-weight: normal;
   font-style: normal; }
 
+.form-control {
+  margin-left: 5px; }
+  .form-control:focus {
+    -webkit-box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.25);
+            box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.25); }
+
 select, .custom-select {
   position: relative;
   display: -webkit-box;
@@ -127,7 +156,6 @@ select, .custom-select {
   background-size: 12px;
   width: auto;
   border: none;
-  font-family: "Open Sans";
   font-size: 16px;
   padding-bottom: 0px;
   color: #4A4A4A;
@@ -147,6 +175,12 @@ select, .custom-select {
   src: url("../fonts/myriad-pro.regular.otf") format("opentype"), url("../fonts/myriad-pro.regular.ttf") format("truetype");
   font-weight: normal;
   font-style: normal; }
+
+.form-control {
+  margin-left: 5px; }
+  .form-control:focus {
+    -webkit-box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.25);
+            box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.25); }
 
 .swiper-container--score {
   -webkit-box-shadow: 0 0 15px 5px rgba(0, 0, 0, 0.05);
@@ -393,88 +427,105 @@ select, .custom-select {
   font-weight: normal;
   font-style: normal; }
 
-.swiper-container--videos {
-  width: 100%;
-  max-width: 98.7vw;
-  background-color: #33145B;
-  height: 360px; }
-  .swiper-container--videos a {
-    color: white; }
-  .swiper-container--videos .swiper-slide {
+.form-control {
+  margin-left: 5px; }
+  .form-control:focus {
+    -webkit-box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.25);
+            box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.25); }
+
+.videos {
+  background-color: #33145B; }
+  .videos header h2 {
     color: white;
-    text-align: center;
-    font-size: 18px;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center; }
-  .swiper-container--videos .swiper-slide__cell {
-    height: 80%;
+    font-size: 40px;
+    margin: 0px;
+    padding: 10px 20px;
+    font-weight: bold; }
+  .videos .swiper-container--videos {
     width: 100%;
-    overflow: hidden;
-    padding-bottom: 10px;
-    border-bottom: 3px solid rgba(255, 255, 255, 0.4); }
-  .swiper-container--videos .swiper-slide__preview {
-    cursor: pointer;
-    margin-bottom: 10px;
-    position: relative;
-    overflow: hidden;
-    width: 100%;
-    background-color: gray;
-    height: 200px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex; }
-    .swiper-container--videos .swiper-slide__preview img {
+    max-width: 98.7vw;
+    height: 320px; }
+    .videos .swiper-container--videos a {
+      color: white; }
+    .videos .swiper-container--videos .swiper-slide {
+      color: white;
+      text-align: center;
+      font-size: 18px;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center; }
+    .videos .swiper-container--videos .swiper-slide__cell {
+      height: 100%;
+      width: 100%;
       overflow: hidden;
-      max-height: 200px;
-      -o-object-fit: cover;
-         object-fit: cover;
-      -o-object-position: top;
-         object-position: top; }
-    .swiper-container--videos .swiper-slide__preview .play-button {
-      border: none;
-      background-color: transparent;
-      top: 15px;
-      left: 5px;
-      position: absolute;
-      -webkit-transition: all ease 0.3s;
-      -o-transition: all ease 0.3s;
-      transition: all ease 0.3s; }
-      .swiper-container--videos .swiper-slide__preview .play-button img {
-        -webkit-filter: grayscale(1) brightness(0.9) contrast(200%) drop-shadow(0px 0px 3px rgba(0, 0, 0, 0.3));
-                filter: grayscale(1) brightness(0.9) contrast(200%) drop-shadow(0px 0px 3px rgba(0, 0, 0, 0.3)); }
-    .swiper-container--videos .swiper-slide__preview:hover img {
-      -webkit-filter: none;
-              filter: none; }
-    .swiper-container--videos .swiper-slide__preview.swiper-slide__preview--live:before {
-      display: inline;
-      position: absolute;
-      top: 55px;
-      left: 20px;
-      content: 'LIVE';
-      font-size: 12px;
-      -webkit-filter: drop-shadow(0px 0px 3px rgba(0, 0, 0, 0.5));
-              filter: drop-shadow(0px 0px 3px rgba(0, 0, 0, 0.5));
-      font-weight: bold;
-      letter-spacing: 1px; }
-  .swiper-container--videos h3 {
-    letter-spacing: -0.04px;
-    font-size: 18px;
-    text-align: left; }
-  .swiper-container--videos .swiper-pagination .swiper-pagination-bullet {
-    width: 17px;
-    border-radius: 2px;
-    height: 4px;
-    background-color: rgba(255, 255, 255, 0.53); }
-    .swiper-container--videos .swiper-pagination .swiper-pagination-bullet:hover {
-      -webkit-box-shadow: 0 0 0 1px white;
-              box-shadow: 0 0 0 1px white; }
+      padding-bottom: 10px; }
+    .videos .swiper-container--videos .swiper-slide__preview {
+      cursor: pointer;
+      margin-bottom: 10px;
+      position: relative;
+      overflow: hidden;
+      width: 100%;
+      background-color: gray;
+      height: 200px;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex; }
+      .videos .swiper-container--videos .swiper-slide__preview img {
+        overflow: hidden;
+        max-height: 200px;
+        -o-object-fit: cover;
+           object-fit: cover;
+        -o-object-position: top;
+           object-position: top; }
+      .videos .swiper-container--videos .swiper-slide__preview .play-button {
+        border: none;
+        background-color: transparent;
+        top: 15px;
+        left: 5px;
+        position: absolute;
+        -webkit-transition: all ease 0.3s;
+        -o-transition: all ease 0.3s;
+        transition: all ease 0.3s; }
+        .videos .swiper-container--videos .swiper-slide__preview .play-button img {
+          -webkit-filter: grayscale(1) brightness(0.9) contrast(200%) drop-shadow(0px 0px 3px rgba(0, 0, 0, 0.3));
+                  filter: grayscale(1) brightness(0.9) contrast(200%) drop-shadow(0px 0px 3px rgba(0, 0, 0, 0.3)); }
+      .videos .swiper-container--videos .swiper-slide__preview:hover img {
+        -webkit-filter: none;
+                filter: none; }
+      .videos .swiper-container--videos .swiper-slide__preview.swiper-slide__preview--live:before {
+        display: inline;
+        position: absolute;
+        top: 55px;
+        left: 20px;
+        content: 'LIVE';
+        font-size: 12px;
+        -webkit-filter: drop-shadow(0px 0px 3px rgba(0, 0, 0, 0.5));
+                filter: drop-shadow(0px 0px 3px rgba(0, 0, 0, 0.5));
+        font-weight: bold;
+        letter-spacing: 1px; }
+    .videos .swiper-container--videos h3 {
+      letter-spacing: -0.04px;
+      font-size: 18px;
+      text-align: left;
+      padding-bottom: 20px;
+      border-bottom: 3px solid rgba(255, 255, 255, 0.4); }
+    .videos .swiper-container--videos .swiper-pagination .swiper-pagination-bullet {
+      width: 17px;
+      border-radius: 2px;
+      height: 4px;
+      background-color: rgba(255, 255, 255, 0.53); }
+      .videos .swiper-container--videos .swiper-pagination .swiper-pagination-bullet:hover {
+        -webkit-box-shadow: 0 0 0 1px white;
+                box-shadow: 0 0 0 1px white; }
+  @media (max-width: 575.98px) {
+    .videos header h2 {
+      font-size: 25px; } }
 
 .dropdown-toggle:after {
   top: 0px;
@@ -511,6 +562,12 @@ select, .custom-select {
   src: url("../fonts/myriad-pro.regular.otf") format("opentype"), url("../fonts/myriad-pro.regular.ttf") format("truetype");
   font-weight: normal;
   font-style: normal; }
+
+.form-control {
+  margin-left: 5px; }
+  .form-control:focus {
+    -webkit-box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.25);
+            box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.25); }
 
 .navbar {
   width: 100%;
@@ -631,6 +688,12 @@ select, .custom-select {
   font-weight: normal;
   font-style: normal; }
 
+.form-control {
+  margin-left: 5px; }
+  .form-control:focus {
+    -webkit-box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.25);
+            box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.25); }
+
 footer {
   min-width: 100%;
   -webkit-box-sizing: border-box;
@@ -730,9 +793,22 @@ footer {
   font-weight: normal;
   font-style: normal; }
 
+.form-control {
+  margin-left: 5px; }
+  .form-control:focus {
+    -webkit-box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.25);
+            box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.25); }
+
 .photos-container {
   max-width: 100%;
   background-color: #33145B; }
+  .photos-container header h2 {
+    color: white;
+    font-size: 40px;
+    margin: 0px;
+    padding: 10px 5px;
+    padding-bottom: 0px;
+    font-weight: bold; }
   .photos-container .row {
     padding: 20px;
     height: 100%; }
@@ -767,6 +843,12 @@ footer {
       background-image: url("../img/camera_icon.svg");
       background-size: contain;
       background-repeat: no-repeat; }
+  .photos-container footer {
+    padding: 15px;
+    background: transparent; }
+    .photos-container footer .btn {
+      width: 140.08px;
+      color: #502784; }
   .photos-container .photos__description {
     width: 100%;
     font-size: 14px;
@@ -782,6 +864,8 @@ footer {
     text-align: left;
     color: white; }
   @media (max-width: 767.98px) {
+    .photos-container header h2 {
+      font-size: 25px; }
     .photos-container .photos__photo {
       min-height: 200px; }
       .photos-container .photos__photo:not(:last-of-type) {
@@ -799,6 +883,12 @@ footer {
   src: url("../fonts/myriad-pro.regular.otf") format("opentype"), url("../fonts/myriad-pro.regular.ttf") format("truetype");
   font-weight: normal;
   font-style: normal; }
+
+.form-control {
+  margin-left: 5px; }
+  .form-control:focus {
+    -webkit-box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.25);
+            box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.25); }
 
 .tabs {
   overflow-x: hidden;
@@ -832,8 +922,8 @@ footer {
     display: flex;
     width: 350px; }
     .tabs nav ul .tabs--active {
-      color: #33145B;
-      border-bottom: 3px solid #33145B; }
+      color: #502784;
+      border-bottom: 3px solid #502784; }
     .tabs nav ul li {
       font-size: 18px;
       list-style: none;
@@ -883,6 +973,12 @@ footer {
   src: url("../fonts/myriad-pro.regular.otf") format("opentype"), url("../fonts/myriad-pro.regular.ttf") format("truetype");
   font-weight: normal;
   font-style: normal; }
+
+.form-control {
+  margin-left: 5px; }
+  .form-control:focus {
+    -webkit-box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.25);
+            box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.25); }
 
 .tournament-card {
   padding: 0px;
@@ -1005,6 +1101,12 @@ footer {
   font-weight: normal;
   font-style: normal; }
 
+.form-control {
+  margin-left: 5px; }
+  .form-control:focus {
+    -webkit-box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.25);
+            box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.25); }
+
 @font-face {
   font-family: 'Open Sans';
   src: url("../fonts/open-sans.regular.woff2") format("woff2"), url("../fonts/open-sans.regular.woff") format("woff"), url("../fonts/open-sans.regular.ttf") format("truetype"), url("../fonts/open-sans.regular.svg#open_sansregular") format("svg");
@@ -1016,6 +1118,12 @@ footer {
   src: url("../fonts/myriad-pro.regular.otf") format("opentype"), url("../fonts/myriad-pro.regular.ttf") format("truetype");
   font-weight: normal;
   font-style: normal; }
+
+.form-control {
+  margin-left: 5px; }
+  .form-control:focus {
+    -webkit-box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.25);
+            box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.25); }
 
 .player-ranking {
   position: relative;
@@ -1154,7 +1262,7 @@ footer {
     border-bottom: 3px solid #F3F3F3; }
     .tournament-who-playing header h2 {
       font-size: 18px;
-      color: #33145B;
+      color: #502784;
       font-style: italic;
       font-weight: bold;
       letter-spacing: -0.05px; }
@@ -1236,6 +1344,7 @@ footer {
               align-items: center; }
       .tournament-who-playing .swiper-container--who-playing .swiper-slide .player {
         max-width: 340px;
+        min-height: 200px;
         border-bottom: 2px solid #D0D0D0;
         max-height: 200px;
         position: relative;
@@ -1256,11 +1365,16 @@ footer {
              object-fit: contain;
           -o-object-position: top;
              object-position: top;
-          -webkit-box-flex: 1;
-              -ms-flex: 1;
-                  flex: 1;
           overflow: hidden;
           max-height: 250px; }
+      .tournament-who-playing .swiper-container--who-playing .swiper-slide .player-photo--old {
+        -webkit-box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.1);
+                box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.1);
+        position: absolute;
+        right: 5px;
+        top: 10px;
+        border-radius: 15px 0;
+        overflow: hidden; }
       .tournament-who-playing .swiper-container--who-playing .swiper-slide .player-info {
         max-width: 340px;
         color: #444; }
@@ -1322,10 +1436,22 @@ footer {
   font-weight: normal;
   font-style: normal; }
 
+.form-control {
+  margin-left: 5px; }
+  .form-control:focus {
+    -webkit-box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.25);
+            box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.25); }
+
 .news {
   max-width: 1400px;
   color: #666;
   background-color: #F0F0F0; }
+  .news header h2 {
+    color: #545454;
+    font-size: 40px;
+    margin: 0px;
+    padding: 10px 0px;
+    font-weight: bold; }
   .news a {
     color: #666;
     text-decoration: none; }
@@ -1388,6 +1514,8 @@ footer {
         -ms-flex-align: end;
             align-items: flex-end; }
   @media (max-width: 575.98px) {
+    .news header h2 {
+      font-size: 25px; }
     .news .news__item {
       min-height: 200px; } }
 
@@ -1402,6 +1530,12 @@ footer {
   src: url("../fonts/myriad-pro.regular.otf") format("opentype"), url("../fonts/myriad-pro.regular.ttf") format("truetype");
   font-weight: normal;
   font-style: normal; }
+
+.form-control {
+  margin-left: 5px; }
+  .form-control:focus {
+    -webkit-box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.25);
+            box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.25); }
 
 .tournament-overview {
   margin-top: 30px;
@@ -1441,6 +1575,12 @@ footer {
   src: url("../fonts/myriad-pro.regular.otf") format("opentype"), url("../fonts/myriad-pro.regular.ttf") format("truetype");
   font-weight: normal;
   font-style: normal; }
+
+.form-control {
+  margin-left: 5px; }
+  .form-control:focus {
+    -webkit-box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.25);
+            box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.25); }
 
 .tournament-results-arcive {
   overflow-x: auto;
@@ -1508,6 +1648,12 @@ footer {
   src: url("../fonts/myriad-pro.regular.otf") format("opentype"), url("../fonts/myriad-pro.regular.ttf") format("truetype");
   font-weight: normal;
   font-style: normal; }
+
+.form-control {
+  margin-left: 5px; }
+  .form-control:focus {
+    -webkit-box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.25);
+            box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.25); }
 
 .tournament-order-of-play .table-wrapper, .tournament-order-of-play .filters {
   overflow-x: auto;

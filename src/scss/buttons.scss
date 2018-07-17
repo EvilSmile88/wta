@@ -1,4 +1,4 @@
-
+@import "variables";
 
 .wta-primary-button {
   height: auto;
@@ -29,7 +29,6 @@
   line-height: 12px;
   box-shadow: 0 2px 10px 0 rgba(0,0,0,0.15);
   color: $primary-color-light;
-  font-family: "Open Sans";
   font-style: italic;
   background-image: url("../img/play_icon.svg");
   background-size: 18px;

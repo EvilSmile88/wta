@@ -352,7 +352,7 @@
                         <div class="col-12 col-sm-5 py-2">
                             <div class="d-flex player-name">
                                 <div class="player-first-name">Angelique</div>
-                                <div class="player-last-name">Kerber</div>
+                                <div class="player-last-name">Ker</div>
                             </div>
                             <div class="player-country d-flex align-items-center my-1">
                                 <img src="img/german_flag.svg" width="30" class="d-inline-block align-center mr-3" alt="">
@@ -376,14 +376,14 @@
                     </div>
 
                     <!--New Photo-->
-                    <div class="player-card__photo">
-                        <img src="img/player_photo.png" title="player_photo" alt="player_photo" width="280px">
-                    </div>
+                    <!--<div class="player-card__photo">-->
+                        <!--<img src="img/player_photo.png" title="player_photo" alt="player_photo" width="280px">-->
+                    <!--</div>-->
 
                     <!--Old Photo-->
-                    <!--<div class="player-card__photo player-card__photo&#45;&#45;old">-->
-                        <!--<img src="http://www.wtatennis.com/sites/default/files/styles/luxbox_1_1_2x/public/player_311470.jpg" title="player_photo" alt="player_photo" width="140px">-->
-                    <!--</div>-->
+                    <div class="player-card__photo player-card__photo--old">
+                        <img src="http://www.wtatennis.com/sites/default/files/styles/luxbox_1_1_2x/public/player_311470.jpg" title="player_photo" alt="player_photo" width="140px">
+                    </div>
                 </div>
             </div>
             <div class="col-12 mb-4 col-lg-6 w-100 px-0 px-md-3">
@@ -392,7 +392,7 @@
                         <div class="col-12 col-sm-5 py-2">
                             <div class="d-flex player-name">
                                 <div class="player-first-name">Angelique</div>
-                                <div class="player-last-name">Kerber</div>
+                                <div class="player-last-name">Pavlyuchenkova</div>
                             </div>
                             <div class="player-country d-flex align-items-center my-1">
                                 <img src="img/german_flag.svg" width="30" class="d-inline-block align-center mr-3" alt="">
@@ -422,7 +422,7 @@
             </div>
         </div>
     </section>
-    <section class="stats-tabs tabs container">
+    <section class="stats-tabs tabs container px-0 pb-0 mb-4">
         <div class="row d-flex tabs-container">
             <div class="col-12 col-xl-5 px-0 px-md-2">
                 <nav class="mx-2 mx-md-3 d-flex align-items-center">
@@ -432,36 +432,6 @@
                         <li><a href="#">By the Number</a></li>
                     </ul>
                 </nav>
-                <main>
-                    <section class="container px-0 px-md-2">
-                        <div class="row w-100">
-                            <div class="col stats-tabs__filters mx-2 px-0 px-1 py-md-3 d-flex align-items-center">
-                                <select class="custom-select mx-3">
-                                    <option value="" disabled selected>Year</option>
-                                    <option value="2018">2018</option>
-                                    <option value="2017">2017</option>
-                                    <option value="2016">2016</option>
-                                </select>
-                                <select class="custom-select mx-3">
-                                    <option value="" disabled selected>Surface</option>
-                                    <option value="2018">2018</option>
-                                    <option value="2017">2017</option>
-                                    <option value="2016">2016</option>
-                                </select>
-                                <select class="custom-select mx-3">
-                                    <option value="" disabled selected>Country</option>
-                                    <option value="us">US</option>
-                                    <option value="ger">German</option>
-                                </select>
-                                <select class="custom-select mx-3">
-                                    <option value="1-100" disabled selected>1-100</option>
-                                    <option value="1-50"></option>
-                                    <option value="1-100">German</option>
-                                </select>
-                            </div>
-                        </div>
-                    </section>
-                </main>
             </div>
             <div class="col-12 col-xl-2 py-2 d-flex download-button">
                 <button type="button" class="btn wta-primary-button text-uppercase">Download PDF
@@ -472,59 +442,97 @@
                 <img src="img/sap-picture.PNG" width="375px">
             </div>
         </div>
-        <div class="row">
-            <div class="col-12 stats-table px-0 mx-1">
-                <table class="table table-hover mb-1 mt-3" id="stats-table">
-                    <thead>
-                    <tr>
-                        <th scope="col" class="text-uppercase table-sort">Standing</th>
-                        <th scope="col" class="text-uppercase table-sort">Player</th>
-                        <th scope="col" class="text-uppercase table-sort">Aces</th>
-                        <th scope="col" class="text-uppercase table-sort">Double Faults</th>
-                        <th scope="col" class="text-uppercase table-sort">1<sup>st</sup> Serve %</th>
-                        <th scope="col" class="text-uppercase table-sort">1<sup>st</sup> Serve PTS Won %</th>
-                        <th scope="col" class="text-uppercase table-sort">2<sup>nd</sup> Serve %</th>
-                        <th scope="col" class="text-uppercase table-sort">2<sup>nd</sup> Serve PTS Won %</th>
-                        <th scope="col" class="text-uppercase table-sort">Service PTS Won %</th>
-                        <th scope="col" class="text-uppercase table-sort">Service Games Won %</th>
-                    </tr>
-                    </thead>
-                    <tbody>
-                    <tr>
-                        <td class="font-weight-bold">1</td>
-                        <td class="font-weight-bold font-italic">Serena Williams</td>
-                        <td>324</td>
-                        <td>10</td>
-                        <td>15</td>
-                        <td>78</td>
-                        <td>78</td>
-                        <td>10</td>
-                        <td>10</td>
-                        <td>10</td>
-                    </tr>
-                    <tr>
-                        <td class="font-weight-bold">2</td>
-                        <td class="font-weight-bold font-italic">Serena Williams</td>
-                        <td>324</td>
-                        <td>10</td>
-                        <td>15</td>
-                        <td>78</td>
-                        <td>78</td>
-                        <td>10</td>
-                        <td>10</td>
-                        <td>10</td>
-                    </tr>
-                    </tbody>
-                </table>
-            </div>
-        </div>
+       <div class="row">
+           <div class="col-12 container px-0">
+               <div class="row">
+                   <div class="col-12 px-0 stats-filters">
+                       <main>
+                           <section class="container px-0 px-md-2">
+                               <div class="row w-100">
+                                   <div class="col stats-tabs__filters mx-2 px-0 px-1 py-md-3 d-flex align-items-center">
+                                       <select class="custom-select mx-3">
+                                           <option value="" disabled selected>Year</option>
+                                           <option value="2018">2018</option>
+                                           <option value="2017">2017</option>
+                                           <option value="2016">2016</option>
+                                       </select>
+                                       <select class="custom-select mx-3">
+                                           <option value="" disabled selected>Surface</option>
+                                           <option value="2018">2018</option>
+                                           <option value="2017">2017</option>
+                                           <option value="2016">2016</option>
+                                       </select>
+                                       <select class="custom-select mx-3">
+                                           <option value="" disabled selected>Country</option>
+                                           <option value="us">US</option>
+                                           <option value="ger">German</option>
+                                       </select>
+                                       <select class="custom-select mx-3">
+                                           <option value="1-100" disabled selected>1-100</option>
+                                           <option value="1-50"></option>
+                                           <option value="1-100">German</option>
+                                       </select>
+                                   </div>
+                               </div>
+                           </section>
+                       </main>
+                   </div>
+               </div>
+               <div class="row">
+                   <div class="col-12 stats-table  mb-3 mx-1">
+                       <table class="table table-hover mb-1 mt-3" id="stats-table">
+                           <thead>
+                           <tr>
+                               <th scope="col" class="text-uppercase table-sort">Standing</th>
+                               <th scope="col" class="text-uppercase table-sort">Player</th>
+                               <th scope="col" class="text-uppercase table-sort">Aces</th>
+                               <th scope="col" class="text-uppercase table-sort">Double Faults</th>
+                               <th scope="col" class="text-uppercase table-sort">1<sup>st</sup> Serve %</th>
+                               <th scope="col" class="text-uppercase table-sort">1<sup>st</sup> Serve PTS Won %</th>
+                               <th scope="col" class="text-uppercase table-sort">2<sup>nd</sup> Serve %</th>
+                               <th scope="col" class="text-uppercase table-sort">2<sup>nd</sup> Serve PTS Won %</th>
+                               <th scope="col" class="text-uppercase table-sort">Service PTS Won %</th>
+                               <th scope="col" class="text-uppercase table-sort">Service Games Won %</th>
+                           </tr>
+                           </thead>
+                           <tbody>
+                           <tr>
+                               <td class="font-weight-bold">1</td>
+                               <td class="font-weight-bold font-italic">Serena Williams</td>
+                               <td>324</td>
+                               <td>10</td>
+                               <td>15</td>
+                               <td>78</td>
+                               <td>78</td>
+                               <td>10</td>
+                               <td>10</td>
+                               <td>10</td>
+                           </tr>
+                           <tr>
+                               <td class="font-weight-bold">2</td>
+                               <td class="font-weight-bold font-italic">Serena Williams</td>
+                               <td>324</td>
+                               <td>10</td>
+                               <td>15</td>
+                               <td>78</td>
+                               <td>78</td>
+                               <td>10</td>
+                               <td>10</td>
+                               <td>10</td>
+                           </tr>
+                           </tbody>
+                       </table>
+                   </div>
+                   <div class="row load-more mx-0 w-100">
+                       <div class="col-12 py-3 d-flex justify-content-center align-items-center">
+                           <button type="button" class="btn mx-2 wta-primary-light-button text-uppercase">Load More</button>
+                       </div>
+                       <div class="load-more__devider"></div>
+                   </div>
+               </div>
+           </div>
+       </div>
     </section>
-    <div class="row load-more mx-0 w-100">
-        <div class="col-12 py-3 d-flex justify-content-center align-items-center">
-            <button type="button" class="btn mx-2 wta-primary-light-button text-uppercase">Load More</button>
-        </div>
-        <div class="load-more__devider"></div>
-    </div>
 </main>
 <!--main end-->
 

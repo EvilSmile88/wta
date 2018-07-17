@@ -1,3 +1,5 @@
-function toggleSort(event) {
-  $(event.currentTarget).toggleClass("table-sort--desc");
-}
+$(document).ready(function() {
+  $('#stats-table').on('click', '.table-sort', function() {
+    $(this).toggleClass("table-sort--desc");
+  })
+})

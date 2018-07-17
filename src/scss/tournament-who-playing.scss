@@ -82,6 +82,7 @@
       align-items: center;
       .player {
         max-width: 340px;
+        min-height: 200px;
         border-bottom: 2px solid #D0D0D0;
         max-height: 200px;
         position: relative;
@@ -97,10 +98,17 @@
         img {
           object-fit: contain;
           object-position: top;
-          flex: 1;
           overflow: hidden;
           max-height: 250px;
         }
+      }
+      .player-photo--old {
+        box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.1);
+        position: absolute;
+        right: 5px;
+        top: 10px;
+        border-radius: 15px 0;
+        overflow: hidden;
       }
       .player-info {
         max-width: 340px;

@@ -7,13 +7,13 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway:400,800">
     <link rel='stylesheet' href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="./css/bootstrap.css">
-    <link rel="stylesheet" href="./css/stats-main.css">
+    <link rel="stylesheet" href="./css/coach-index-main.css">
     <link rel="stylesheet" href="./css/swiper.min.css">
 </head>
 <body>
 
 <!--header start-->
-<nav class="navbar navbar-expand-lg">
+<header class="navbar navbar-expand-lg">
     <button class="navbar-toggler p-1" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
             aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
         <img src="img/burger_icon.svg" width="40" class="d-inline-block align-top burger-icon" alt="">
@@ -44,7 +44,7 @@
     <div role="navigation" class="collapse navbar-collapse" id="navbarNavDropdown">
         <ul class="navbar-nav links-uppercase align-items-xl-center align-items-lg-center">
             <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" aria-haspopup="true"
+                <a class="nav-link dropdown-toggle" href="#"
                    aria-expanded="false">
                     Players
                 </a>
@@ -213,8 +213,9 @@
         </div>
     </div>
     <div class="header-overlay"/>
-</nav>
+</header>
 <!--header end-->
+
 <!--main start-->
 <main>
     <section>
@@ -341,197 +342,250 @@
             </div>
         </div>
     </section>
-    <section class="stats-header container">
-        <h1>WTA Stats</h1>
+    <section class="common-card container my-3">
+        <div class="row common-card__main w-100">
+            <img src="http://www.wtatennis.com/sites/default/files/styles/highlight_news_mobile_1_33_1_2x/public/wta-wimbledon-904_0.jpg" alt="common-poster" width="100%">
+            <div class="common-card__main-title">
+                <div class="common-card__link d-flex align-items-center">
+                    <a class="btn mx-2 wta-default-transparent-button text-uppercase">Toray Pan Pacific Open</a>
+                    <a href="#" class="play-icon">
+                        <img src="img/play_icon.svg" width="12px"/>
+                        <span class="text-uppercase">Watch video</span>
+                    </a>
+                </div>
+                <h3 class="font-italic font-weight-bold">Cibulkova, Kvitova Move Into 2nd Round In Tokyo</h3>
+            </div>
+        </div>
+        <div class="row common-card__footer w-100">
+            <p>What are the biggest storylines coming out of Angelique Kerber's three-set win over Dominika Cibulkova to close out Day 1 at the WTA Finals?</p>
+        </div>
     </section>
-    <section class="container">
+    <section class="container news mb-4 px-0">
+        <header><h2>Latest News</h2></header>
         <div class="row">
-            <div class="col-12 mb-4 col-lg-6 w-100 px-0 px-md-3">
-                <div class="stats-player-card container">
-                    <div class="row stats-player-ranking d-flex">
-                        <div class="col-12 col-sm-5 py-2">
-                            <div class="d-flex player-name">
-                                <div class="player-first-name">Angelique</div>
-                                <div class="player-last-name">Ker</div>
-                            </div>
-                            <div class="player-country d-flex align-items-center my-1">
-                                <img src="img/german_flag.svg" width="30" class="d-inline-block align-center mr-3" alt="">
-                                <span>Germany</span>
-                            </div>
-                        </div>
-                        <div class="col-12 col-sm-4">
-                            <div class="row">
-                                <div class="col-12 col-sm-6 player-ranking mb-2 d-flex align-center px-3 px-sm-0">
-                                    <h4>Singles <br> Ranking</h4>
-                                    <span id="tab-ranking-number--singles" class="player-ranking__number">1</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row stats-player-stat">
-                        <div class="col">
-                            <h3 class="w-100 stats-player-stat__title py-2">Aces</h3>
-                            <span class="w-100 stats-player-stat__value">302</span>
-                        </div>
-                    </div>
-
-                    <!--New Photo-->
-                    <!--<div class="player-card__photo">-->
-                        <!--<img src="img/player_photo.png" title="player_photo" alt="player_photo" width="280px">-->
-                    <!--</div>-->
-
-                    <!--Old Photo-->
-                    <div class="player-card__photo player-card__photo--old">
-                        <img src="http://www.wtatennis.com/sites/default/files/styles/luxbox_1_1_2x/public/player_311470.jpg" title="player_photo" alt="player_photo" width="140px">
-                    </div>
+            <a href="#" class="news__item px-3 col-12 col-sm-6 col-xl-3">
+                <div class="news__item-photo">
+                    <img src="http://www.wtatennis.com/sites/default/files/styles/teaser_views_phone_1_77_1_2x/public/kerber_kasatkina_lb.jpg" width="100%">
                 </div>
-            </div>
-            <div class="col-12 mb-4 col-lg-6 w-100 px-0 px-md-3">
-                <div class="stats-player-card container">
-                    <div class="row stats-player-ranking d-flex">
-                        <div class="col-12 col-sm-5 py-2">
-                            <div class="d-flex player-name">
-                                <div class="player-first-name">Angelique</div>
-                                <div class="player-last-name">Pavlyuchenkova</div>
-                            </div>
-                            <div class="player-country d-flex align-items-center my-1">
-                                <img src="img/german_flag.svg" width="30" class="d-inline-block align-center mr-3" alt="">
-                                <span>Germany</span>
-                            </div>
-                        </div>
-                        <div class="col-6 col-sm-4 px-0">
-                            <div class="row">
-                                <div class="col-12 col-sm-6 player-ranking mb-2 d-flex align-center px-3 px-sm-0">
-                                    <h4>Singles <br> Ranking</h4>
-                                    <span id="ranking-number--singles" class="player-ranking__number">322</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row stats-player-stat">
-                        <div class="col">
-                            <h3 class="w-100 stats-player-stat__title py-2">Return Games Won %</h3>
-                            <span class="w-100 stats-player-stat__value">52.4%</span>
-                        </div>
-                    </div>
-                    <div class="player-card__photo">
-                        <img src="img/player_photo.png" title="player_photo" alt="player_photo" width="280px">
-                    </div>
+                <h4 class="news__item-title">LIVE: Angelique Kerber</h4>
+                <p class="news__item-decription">Follow all the action live as No.11 seed Angelique Kerber takes on
+                    No.14 seed...</p>
+            </a>
+            <a href="#" class="news__item px-3 col-12 col-sm-6 col-xl-3">
+                <div class="news__item-photo">
+                    <img src="http://www.wtatennis.com/sites/default/files/styles/teaser_views_phone_1_77_1_2x/public/venus_serena_williams_iw_2018.jpg" width="100%">
                 </div>
+                <h4 class="news__item-title">Venus could coach Olympia, says Serena</h4>
+                <p class="news__item-decription">Serena Williams doesn't necessarily want daughter Olympia to pursue a...</p>
+            </a>
+            <a href="#" class="news__item px-3 col-12 col-sm-6 col-xl-3">
+                <div class="news__item-photo">
+                    <img src="http://www.wtatennis.com/sites/default/files/styles/teaser_views_phone_1_77_1_2x/public/wozniacki_wim_2018_r2.jpg" width="100%">
                 </div>
-            </div>
+                <h4 class="news__item-title">Social buzz: Up, up and away! High life for Wozniacki</h4>
+                <p class="news__item-decription">The Australian Open champion has her head in the clouds, while back at...</p>
+            </a>
+            <a href="#" class="news__item px-3 col-12 col-sm-6 col-xl-3">
+                <div class="news__item-photo">
+                    <img src="http://www.wtatennis.com/sites/default/files/styles/teaser_views_phone_1_77_1_2x/public/wozniacki_wim_2018_r2.jpg" width="100%">
+                </div>
+                <h4 class="news__item-title">Social buzz: Up, up and away! High life for Wozniacki</h4>
+                <p class="news__item-decription">The Australian Open champion has her head in the clouds, while back at...</p>
+            </a>
         </div>
     </section>
-    <section class="stats-tabs tabs container px-0 pb-0 mb-4">
-        <div class="row d-flex tabs-container">
-            <div class="col-12 col-xl-5 px-0 px-md-2">
-                <nav class="mx-2 mx-md-3 d-flex align-items-center">
-                    <ul>
-                        <li class="tabs--active">Server</li>
-                        <li><a href="#">Return</a></li>
-                        <li><a href="#">By the Number</a></li>
-                    </ul>
-                </nav>
-            </div>
-            <div class="col-12 col-xl-2 py-2 d-flex download-button">
-                <button type="button" class="btn wta-primary-button text-uppercase">Download PDF
-                    <img src="img/pdf-icon.svg" width="20px">
-                </button>
-            </div>
-            <div class="col-12 col-xl-5 py-2 stat-picture">
-                <img src="img/sap-picture.PNG" width="375px">
-            </div>
+    <section class="container coach-index py-4 mb-4">
+        <div class="row w-100 mx-2 py-2 coach-index__filters">
+            <input type="text" class="form-control" aria-describedby="player_one" placeholder="Search keywords">
+            <select class="custom-select mx-3">
+                <option value="" selected>Country</option>
+                <option value="usOpen">Germany</option>
+                <option value="volvoCarOpen">Italy</option>
+            </select>
+            <button type="button" class="btn mx-3 mr-5 wta-primary-button text-uppercase">Search</button>
         </div>
-       <div class="row">
-           <div class="col-12 container px-0">
-               <div class="row">
-                   <div class="col-12 px-0 stats-filters">
-                       <main>
-                           <section class="container px-0 px-md-2">
-                               <div class="row w-100">
-                                   <div class="col stats-tabs__filters mx-2 px-0 px-1 py-md-3 d-flex align-items-center">
-                                       <select class="custom-select mx-3">
-                                           <option value="" disabled selected>Year</option>
-                                           <option value="2018">2018</option>
-                                           <option value="2017">2017</option>
-                                           <option value="2016">2016</option>
-                                       </select>
-                                       <select class="custom-select mx-3">
-                                           <option value="" disabled selected>Surface</option>
-                                           <option value="2018">2018</option>
-                                           <option value="2017">2017</option>
-                                           <option value="2016">2016</option>
-                                       </select>
-                                       <select class="custom-select mx-3">
-                                           <option value="" disabled selected>Country</option>
-                                           <option value="us">US</option>
-                                           <option value="ger">German</option>
-                                       </select>
-                                       <select class="custom-select mx-3">
-                                           <option value="1-100" disabled selected>1-100</option>
-                                           <option value="1-50"></option>
-                                           <option value="1-100">German</option>
-                                       </select>
-                                   </div>
-                               </div>
-                           </section>
-                       </main>
-                   </div>
-               </div>
-               <div class="row">
-                   <div class="col-12 stats-table  mb-3 mx-1">
-                       <table class="table table-hover mb-1 mt-3" id="stats-table">
-                           <thead>
-                           <tr>
-                               <th scope="col" class="text-uppercase table-sort">Standing</th>
-                               <th scope="col" class="text-uppercase table-sort">Player</th>
-                               <th scope="col" class="text-uppercase table-sort">Aces</th>
-                               <th scope="col" class="text-uppercase table-sort">Double Faults</th>
-                               <th scope="col" class="text-uppercase table-sort">1<sup>st</sup> Serve %</th>
-                               <th scope="col" class="text-uppercase table-sort">1<sup>st</sup> Serve PTS Won %</th>
-                               <th scope="col" class="text-uppercase table-sort">2<sup>nd</sup> Serve %</th>
-                               <th scope="col" class="text-uppercase table-sort">2<sup>nd</sup> Serve PTS Won %</th>
-                               <th scope="col" class="text-uppercase table-sort">Service PTS Won %</th>
-                               <th scope="col" class="text-uppercase table-sort">Service Games Won %</th>
-                           </tr>
-                           </thead>
-                           <tbody>
-                           <tr>
-                               <td class="font-weight-bold">1</td>
-                               <td class="font-weight-bold font-italic">Serena Williams</td>
-                               <td>324</td>
-                               <td>10</td>
-                               <td>15</td>
-                               <td>78</td>
-                               <td>78</td>
-                               <td>10</td>
-                               <td>10</td>
-                               <td>10</td>
-                           </tr>
-                           <tr>
-                               <td class="font-weight-bold">2</td>
-                               <td class="font-weight-bold font-italic">Serena Williams</td>
-                               <td>324</td>
-                               <td>10</td>
-                               <td>15</td>
-                               <td>78</td>
-                               <td>78</td>
-                               <td>10</td>
-                               <td>10</td>
-                               <td>10</td>
-                           </tr>
-                           </tbody>
-                       </table>
-                   </div>
-                   <div class="row load-more mx-0 w-100">
-                       <div class="col-12 py-3 d-flex justify-content-center align-items-center">
-                           <button type="button" class="btn mx-2 wta-primary-light-button text-uppercase">Load More</button>
-                       </div>
-                       <div class="load-more__devider"></div>
-                   </div>
-               </div>
-           </div>
-       </div>
+        <div class="col-sm-12 px-0 px-md-5 coach-index__table ">
+            <table class="table px-0 table-hover mb-1 mt-3">
+                <thead>
+                <tr>
+                    <th scope="col" class="coach-cell">Coach</th>
+                    <th scope="col"></th>
+                    <th class="text-md-center" scope="col">Country</th>
+                    <th scope="col">Player</th>
+                    <th class="text-md-right" scope="col">Previous Players</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td class="text-uppercase">
+                        <div class="coach-cell__img">
+                            <img src="http://www.gptcatennis.org/images/coaches/1258/big.jpg" title="coach_photo" alt="coach_photo" width="80px">
+                        </div>
+                    </td>
+                    <td class="text-uppercase text-md-left">
+                        <span class="coach-cell__name">De Vos, Alain</span>
+                    </td>
+                    <td class="text-md-center">
+                        <img src="img/russion_flag.svg" class="player-flag" width="40px">
+                    </td>
+                    <td>
+                        Irina Begu
+                    </td>
+                    <td class="text-md-right">
+                        Irina Begu
+                    </td>
+                </tr>
+                <tr>
+                    <td class="text-uppercase">
+                        <div class="coach-cell__img">
+                            <img src="http://www.gptcatennis.org/images/coaches/1258/big.jpg" title="coach_photo" alt="coach_photo" width="80px">
+                        </div>
+                    </td>
+                    <td class="text-uppercase text-md-left">
+                        <span class="coach-cell__name">De Vos, Alain</span>
+                    </td>
+                    <td class="text-md-center">
+                        <img src="img/russion_flag.svg" class="player-flag" width="40px">
+                    </td>
+                    <td>
+                        Irina Begu
+                    </td>
+                    <td class="text-md-right">
+                        Monica Niculescu, Madison Keys, Nao Hibino, Kristina Mladenovic
+                    </td>
+                </tr>
+                <tr>
+                    <td class="text-uppercase">
+                        <div class="coach-cell__img">
+                            <img src="http://www.gptcatennis.org/images/coaches/1258/big.jpg" title="coach_photo" alt="coach_photo" width="80px">
+                        </div>
+                    </td>
+                    <td class="text-uppercase text-md-left">
+                        <span class="coach-cell__name">De Vos, Alain</span>
+                    </td>
+                    <td class="text-md-center">
+                        <img src="img/russion_flag.svg" class="player-flag" width="40px">
+                    </td>
+                    <td>
+                        Irina Begu
+                    </td>
+                    <td class="text-md-right">
+                        Irina Begu
+                    </td>
+                </tr>
+                <tr>
+                    <td class="text-uppercase">
+                        <div class="coach-cell__img">
+                            <img src="http://www.gptcatennis.org/images/coaches/1258/big.jpg" title="coach_photo" alt="coach_photo" width="80px">
+                        </div>
+                    </td>
+                    <td class="text-uppercase text-md-left">
+                        <span class="coach-cell__name">De Vos, Alain</span>
+                    </td>
+                    <td class="text-md-center">
+                        <img src="img/russion_flag.svg" class="player-flag" width="40px">
+                    </td>
+                    <td>
+                        Irina Begu
+                    </td>
+                    <td class="text-md-right">
+                        Irina Begu
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+    <section class="container photos-container w-100 mb-4">
+        <header><h2>Photos</h2></header>
+        <div class="row">
+            <a href="#" class="col-12 col-md-4 photos__photo">
+                <img src="http://www.wtatennis.com/sites/default/files/styles/teaser_views_photos_phone_1_43_1_2x/public/azarenka_1.jpg" width="100%">
+                <div class="photos__description">
+                    Wimbledon 2018: WTA stars descend on the All England Club
+                </div>
+            </a>
+            <a href="#" class="col-12 col-md-4 photos__photo">
+                <img src="http://www.wtatennis.com/sites/default/files/styles/teaser_views_photos_phone_1_43_1_2x/public/gettyimages-812667020.jpg" width="100%">
+                <div class="photos__description">
+                    Wimbledon 2018: WTA stars descend on the All England Club
+                </div>
+            </a>
+            <a href="#" class="col-12 col-md-4 photos__photo">
+                <img src="http://www.wtatennis.com/sites/default/files/styles/teaser_views_photos_phone_1_43_1_2x/public/field/image/simona_halep.jpg" width="100%">
+                <div class="photos__description">
+                    Wimbledon 2018: WTA stars descend on the All England Club
+                </div>
+            </a>
+        </div>
+        <footer class="row">
+            <div class="col-12 d-flex justify-content-center">
+                <a class="btn mx-2 wta-default-button text-uppercase">See More</a>
+            </div>
+        </footer>
+    </section>
+    <section class="mb-4 videos">
+        <header><h2>Videos</h2></header>
+        <div class="swiper-container swiper-container--videos px-3">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="swiper-slide__cell">
+                        <div class="swiper-slide__preview">
+                            <button class="play-button" type="button">
+                                <img src="img/play_icon.svg" width="35px"/>
+                            </button>
+                            <img src="img/press-conference.jpg" width="100%" alt="video_preview"/>
+                        </div>
+                        <h3>Australian Open Press Conference: Angelique Kerber</h3>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="swiper-slide__cell">
+                        <div class="swiper-slide__preview">
+                            <button class="play-button" type="button">
+                                <img src="img/play_icon.svg" width="35px"/>
+                            </button>
+                            <img src="img/press-conference.jpg" width="100%" alt="video_preview"/>
+                        </div>
+                        <h3>Australian Open Press Conference: Angelique Kerber</h3>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="swiper-slide__cell">
+                        <div class="swiper-slide__preview">
+                            <button class="play-button" type="button">
+                                <img src="img/play_icon.svg" width="35px"/>
+                            </button>
+                            <img src="img/press-conference.jpg" width="100%" alt="video_preview"/>
+                        </div>
+                        <h3>Australian Open Press Conference: Angelique Kerber</h3>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="swiper-slide__cell">
+                        <div class="swiper-slide__preview">
+                            <button class="play-button" type="button">
+                                <img src="img/play_icon.svg" width="35px"/>
+                            </button>
+                            <img src="img/press-conference.jpg" width="100%" alt="video_preview"/>
+                        </div>
+                        <h3>Australian Open Press Conference: Angelique Kerber</h3>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="swiper-slide__cell">
+                        <div class="swiper-slide__preview swiper-slide__preview--live">
+                            <button class="play-button" type="button">
+                                <img src="img/play_icon.svg" width="35px"/>
+                            </button>
+                            <img src="img/press-conference.jpg" width="100%" alt="video_preview"/>
+                        </div>
+                        <h3>Australian Open Press Conference: Angelique Kerber</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
     </section>
 </main>
 <!--main end-->
@@ -744,12 +798,15 @@
         integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb"
         crossorigin="anonymous"></script>
 <script src="js/popper.js"></script>
-<script src="./js/player-card.js"></script>
+<script src="http://localhost:35729/livereload.js"></script>
 <script src="./js/swiper.min.js"></script>
 <script src="./js/bootstrap.min.js"></script>
 <script src="./js/index.js"></script>
 <script src="./js/header.js"></script>
-<script src="./js/table-sort.js"></script>
+<script src="./js/player-card.js"></script>
+<script src="./js/player-videos.js"></script>
 <script src="js/score-carusel.js"></script>
+<script src="js/sap-stats-modal.js"></script>
+<script src="js/player-played-tournaments.js"></script>
 </body>
 </html>
