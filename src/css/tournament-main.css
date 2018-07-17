@@ -721,8 +721,8 @@ footer {
     display: flex;
     width: 350px; }
     .tabs nav ul .tabs--active {
-      color: #33145B;
-      border-bottom: 3px solid #33145B; }
+      color: #502784;
+      border-bottom: 3px solid #502784; }
     .tabs nav ul li {
       font-size: 18px;
       list-style: none;
@@ -989,7 +989,7 @@ footer {
     border-bottom: 3px solid #F3F3F3; }
     .tournament-who-playing header h2 {
       font-size: 18px;
-      color: #33145B;
+      color: #502784;
       font-style: italic;
       font-weight: bold;
       letter-spacing: -0.05px; }

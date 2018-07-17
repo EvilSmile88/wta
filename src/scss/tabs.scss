@@ -37,8 +37,8 @@
     display: flex;
     width: 350px;
     .tabs--active {
-      color: $primary-color;
-      border-bottom: 3px solid $primary-color;
+      color: $primary-color-light;
+      border-bottom: 3px solid $primary-color-light;
     }
     li {
       font-size: 18px;
