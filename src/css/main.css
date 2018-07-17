@@ -291,8 +291,12 @@ select, .custom-select {
   line-height: 44px; }
 
 .player-card__info .info-value--middle {
+  font-size: 28px;
+  line-height: 40px; }
+
+.player-card__info .info-value--small {
   font-size: 18px;
-  line-height: 20px; }
+  line-height: 25px; }
 
 .player-card__info .info-age {
   min-width: 100px; }
@@ -1032,6 +1036,12 @@ footer {
       background-image: url("../img/camera_icon.svg");
       background-size: contain;
       background-repeat: no-repeat; }
+  .photos-container footer {
+    padding: 15px;
+    background: transparent; }
+    .photos-container footer .btn {
+      width: 140.08px;
+      color: #502784; }
   .photos-container .photos__description {
     width: 100%;
     font-size: 14px;

@@ -50,6 +50,14 @@
       background-repeat: no-repeat;
     }
   }
+  footer {
+    padding: 15px;
+    background: transparent;
+    .btn {
+      width: 140.08px;
+      color: $primary-color-light;
+    }
+  }
   .photos__description {
     width: 100%;
     font-size: 14px;

@@ -1,6 +1,15 @@
 @import "variables";
 
 .news {
+  header {
+    h2 {
+      color: #545454;
+      font-size: 40px;
+      margin: 0px;
+      padding: 10px 0px;
+      font-weight: bold;
+    }
+  }
   max-width: 1400px;
   color: #666;
   a {
@@ -58,6 +67,11 @@
     align-items: flex-end;
   }
   @media (max-width: $screen-sm-max-width) {
+    header {
+      h2 {
+        font-size: 25px;
+      }
+    }
     .news__item {
       min-height: 200px;
     }

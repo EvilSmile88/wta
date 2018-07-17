@@ -676,6 +676,12 @@ footer {
       background-image: url("../img/camera_icon.svg");
       background-size: contain;
       background-repeat: no-repeat; }
+  .photos-container footer {
+    padding: 15px;
+    background: transparent; }
+    .photos-container footer .btn {
+      width: 140.08px;
+      color: #502784; }
   .photos-container .photos__description {
     width: 100%;
     font-size: 14px;
@@ -1143,6 +1149,12 @@ footer {
   max-width: 1400px;
   color: #666;
   background-color: #F0F0F0; }
+  .news header h2 {
+    color: #545454;
+    font-size: 40px;
+    margin: 0px;
+    padding: 10px 0px;
+    font-weight: bold; }
   .news a {
     color: #666;
     text-decoration: none; }
@@ -1185,6 +1197,8 @@ footer {
     flex-grow: 1;
     align-items: flex-end; }
   @media (max-width: 575.98px) {
+    .news header h2 {
+      font-size: 25px; }
     .news .news__item {
       min-height: 200px; } }
 
