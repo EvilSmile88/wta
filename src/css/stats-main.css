@@ -713,8 +713,8 @@ footer {
     display: flex;
     width: 350px; }
     .tabs nav ul .tabs--active {
-      color: #33145B;
-      border-bottom: 3px solid #33145B; }
+      color: #502784;
+      border-bottom: 3px solid #502784; }
     .tabs nav ul li {
       font-size: 18px;
       list-style: none;
@@ -823,6 +823,9 @@ footer {
       background-image: url("../img/arrow--gray.svg");
       background-repeat: no-repeat;
       background-size: 12px; }
+      @media (max-width: 575.98px) {
+        .stats-tabs table th.table-sort:after {
+          right: 4px; } }
     .stats-tabs table th.table-sort.table-sort--desc:after {
       transform: rotate(180deg); }
   .stats-tabs table tbody td {

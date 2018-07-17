@@ -100,6 +100,9 @@
           display: block;
           top: 38%;
           right: 0px;
+          @media (max-width: $screen-sm-max-width) {
+            right: 4px;
+          }
           content: "";
           background-image: url("../img/arrow--gray.svg");
           background-repeat: no-repeat;
