@@ -10,8 +10,12 @@
     display: flex;
     justify-content: flex-end;
     align-items: flex-start;
+    img {
+      position: absolute;
+    }
   }
   .stats-tabs__filters {
+    border-bottom: 1px solid #D9D9D9;
     margin: 0px 20px;
     max-width: 100%;
     overflow-x: auto;
@@ -59,7 +63,6 @@
     }
   }
   .stats-table {
-    border-top: 1px solid #D9D9D9;
     overflow-x: auto;
     &::-webkit-scrollbar {
       height: 5px;
@@ -132,6 +135,11 @@
     }
   }
   @media (max-width: $screen-xl-max-width) {
+    .stat-picture {
+      img {
+        position: static;
+      }
+    }
     .download-button {
       justify-content: flex-end;
     }
@@ -141,7 +149,7 @@
   }
   @media (max-width: $screen-sm-max-width) {
     table {
-      min-width: 1200px;
+      min-width: 1250px;
       th {
         font-size: 12px;
         font-weight: bold;

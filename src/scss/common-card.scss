@@ -1,0 +1,98 @@
+@import "variables";
+
+.common-card {
+  padding: 0px;
+  color: white;
+  position: relative;
+  font-size: 18px;
+  max-width: none;
+  .common-card__main {
+    position: relative;
+    margin: 0px;
+    display: flex;
+    justify-content: center;
+    min-height: 540px;
+    padding: 0px;
+    overflow: hidden;
+    position: relative;
+    img {
+      overflow: hidden;
+      max-height: 540px;
+      object-fit: cover;
+      object-position: top;
+    }
+    .common-card__main-title {
+      flex-direction: row;
+      position: absolute;
+      margin: 0px;
+      padding: 0px 60px;
+      bottom: 5%;
+      h3 {
+        filter: drop-shadow( 0 0 5px rgba(0,0,0,0.4));
+        width: 100%;
+        margin: 0px;
+        font-size: 3.8em;
+      }
+    }
+    .common-card__link {
+      filter: drop-shadow(0 0 2px rgba(0, 0, 0, 0.2));
+      a {
+        color: white;
+        text-decoration: none;
+      }
+      .play-icon {
+        img {
+          filter: grayscale(1) brightness(0.9) contrast(200%) drop-shadow(0px 0px 3px rgba(0,0,0, 0.3));
+        }
+        &:hover {
+          img {
+            filter: none;
+          }
+        }
+      }
+      font-size: 14px;
+      .btn {
+        border-radius: 0px;
+        font-size: 22px;
+        color: $gold;
+      }
+    }
+  }
+  .common-card__footer {
+    margin: 0px;
+    box-sizing: border-box;
+    background-color: white;
+    color: #4A4A4A;
+    font-size: 22px;
+    padding: 15px 60px;
+    p {
+      margin: 0px;
+    }
+    border-bottom: 5px solid $gold;
+  }
+  @media (max-width: $screen-md-max-width) {
+    font-size: 15px;
+  }
+  @media (max-width: $screen-sm-max-width) {
+    font-size: 10px;
+    .common-card__main {
+      .common-card__link {
+        flex-direction: column;
+      }
+      min-height: 350px;
+      img {
+        max-height: 350px;
+      }
+      .common-card__main-title {
+        padding: 0 10px;
+        h3 {
+          font-size: 3.2em;
+        }
+      }
+    }
+    .common-card__footer {
+      font-size: 16px;
+      padding: 15px 10px;
+    }
+  }
+}

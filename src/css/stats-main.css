@@ -10,6 +10,11 @@
   font-weight: normal;
   font-style: normal; }
 
+.form-control {
+  margin-left: 5px; }
+  .form-control:focus {
+    box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.25); }
+
 @font-face {
   font-family: 'Open Sans';
   src: url("../fonts/open-sans.regular.woff2") format("woff2"), url("../fonts/open-sans.regular.woff") format("woff"), url("../fonts/open-sans.regular.ttf") format("truetype"), url("../fonts/open-sans.regular.svg#open_sansregular") format("svg");
@@ -21,6 +26,11 @@
   src: url("../fonts/myriad-pro.regular.otf") format("opentype"), url("../fonts/myriad-pro.regular.ttf") format("truetype");
   font-weight: normal;
   font-style: normal; }
+
+.form-control {
+  margin-left: 5px; }
+  .form-control:focus {
+    box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.25); }
 
 .wta-primary-button {
   height: auto;
@@ -123,6 +133,11 @@
   font-weight: normal;
   font-style: normal; }
 
+.form-control {
+  margin-left: 5px; }
+  .form-control:focus {
+    box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.25); }
+
 select, .custom-select {
   position: relative;
   display: flex;
@@ -152,6 +167,11 @@ select, .custom-select {
   src: url("../fonts/myriad-pro.regular.otf") format("opentype"), url("../fonts/myriad-pro.regular.ttf") format("truetype");
   font-weight: normal;
   font-style: normal; }
+
+.form-control {
+  margin-left: 5px; }
+  .form-control:focus {
+    box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.25); }
 
 .swiper-container--score {
   box-shadow: 0 0 15px 5px rgba(0, 0, 0, 0.05);
@@ -356,6 +376,11 @@ select, .custom-select {
   font-weight: normal;
   font-style: normal; }
 
+.form-control {
+  margin-left: 5px; }
+  .form-control:focus {
+    box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.25); }
+
 .navbar {
   width: 100%;
   position: static;
@@ -460,6 +485,11 @@ select, .custom-select {
   font-weight: normal;
   font-style: normal; }
 
+.form-control {
+  margin-left: 5px; }
+  .form-control:focus {
+    box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.25); }
+
 footer {
   min-width: 100%;
   box-sizing: border-box;
@@ -555,6 +585,11 @@ footer {
   src: url("../fonts/myriad-pro.regular.otf") format("opentype"), url("../fonts/myriad-pro.regular.ttf") format("truetype");
   font-weight: normal;
   font-style: normal; }
+
+.form-control {
+  margin-left: 5px; }
+  .form-control:focus {
+    box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.25); }
 
 .stats-player-card {
   position: relative;
@@ -691,6 +726,11 @@ footer {
   font-weight: normal;
   font-style: normal; }
 
+.form-control {
+  margin-left: 5px; }
+  .form-control:focus {
+    box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.25); }
+
 @font-face {
   font-family: 'Open Sans';
   src: url("../fonts/open-sans.regular.woff2") format("woff2"), url("../fonts/open-sans.regular.woff") format("woff"), url("../fonts/open-sans.regular.ttf") format("truetype"), url("../fonts/open-sans.regular.svg#open_sansregular") format("svg");
@@ -702,6 +742,11 @@ footer {
   src: url("../fonts/myriad-pro.regular.otf") format("opentype"), url("../fonts/myriad-pro.regular.ttf") format("truetype");
   font-weight: normal;
   font-style: normal; }
+
+.form-control {
+  margin-left: 5px; }
+  .form-control:focus {
+    box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.25); }
 
 .tabs {
   overflow-x: hidden;
@@ -769,8 +814,11 @@ footer {
   display: flex;
   justify-content: flex-end;
   align-items: flex-start; }
+  .stats-tabs .stat-picture img {
+    position: absolute; }
 
 .stats-tabs .stats-tabs__filters {
+  border-bottom: 1px solid #D9D9D9;
   margin: 0px 20px;
   max-width: 100%;
   overflow-x: auto;
@@ -806,7 +854,6 @@ footer {
     right: 5px; }
 
 .stats-tabs .stats-table {
-  border-top: 1px solid #D9D9D9;
   overflow-x: auto;
   /* Track */
   /* Handle */
@@ -860,6 +907,8 @@ footer {
     letter-spacing: -1.33px; }
 
 @media (max-width: 1199.98px) {
+  .stats-tabs .stat-picture img {
+    position: static; }
   .stats-tabs .download-button {
     justify-content: flex-end; }
   .stats-tabs .stat-picture {
@@ -869,7 +918,7 @@ footer {
   .stats-tabs {
     padding: 18px 0px; }
     .stats-tabs table {
-      min-width: 1200px; }
+      min-width: 1250px; }
       .stats-tabs table th {
         font-size: 12px;
         font-weight: bold;
@@ -910,7 +959,8 @@ body > main {
       font-weight: bold;
       letter-spacing: -0.1px; }
   body > main .load-more {
-    position: relative; }
+    position: relative;
+    background-color: #F0F0F0; }
     body > main .load-more button {
       width: 137px;
       z-index: 2;
