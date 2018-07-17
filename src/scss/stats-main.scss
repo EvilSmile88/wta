@@ -43,6 +43,7 @@ body > main {
   }
   .load-more{
     position: relative;
+    background-color: $body-bg;
     button {
       width: 137px;
       z-index: 2;

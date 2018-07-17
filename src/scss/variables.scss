@@ -25,7 +25,12 @@ $screen-xl-min-width: 1200px;
   font-weight: normal;
   font-style: normal;
 }
-
+.form-control{
+  margin-left: 5px;
+  &:focus {
+    box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.25);
+  }
+}
 $primary-font: 'Open Sans';
 $secondary-font: 'Myriad Pro';
 

@@ -10,6 +10,11 @@
   font-weight: normal;
   font-style: normal; }
 
+.form-control {
+  margin-left: 5px; }
+  .form-control:focus {
+    box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.25); }
+
 @font-face {
   font-family: 'Open Sans';
   src: url("../fonts/open-sans.regular.woff2") format("woff2"), url("../fonts/open-sans.regular.woff") format("woff"), url("../fonts/open-sans.regular.ttf") format("truetype"), url("../fonts/open-sans.regular.svg#open_sansregular") format("svg");
@@ -21,6 +26,11 @@
   src: url("../fonts/myriad-pro.regular.otf") format("opentype"), url("../fonts/myriad-pro.regular.ttf") format("truetype");
   font-weight: normal;
   font-style: normal; }
+
+.form-control {
+  margin-left: 5px; }
+  .form-control:focus {
+    box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.25); }
 
 .wta-primary-button {
   height: auto;
@@ -123,6 +133,11 @@
   font-weight: normal;
   font-style: normal; }
 
+.form-control {
+  margin-left: 5px; }
+  .form-control:focus {
+    box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.25); }
+
 select, .custom-select {
   position: relative;
   display: flex;
@@ -152,6 +167,11 @@ select, .custom-select {
   src: url("../fonts/myriad-pro.regular.otf") format("opentype"), url("../fonts/myriad-pro.regular.ttf") format("truetype");
   font-weight: normal;
   font-style: normal; }
+
+.form-control {
+  margin-left: 5px; }
+  .form-control:focus {
+    box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.25); }
 
 .player-card {
   height: auto;
@@ -399,6 +419,11 @@ select, .custom-select {
   font-weight: normal;
   font-style: normal; }
 
+.form-control {
+  margin-left: 5px; }
+  .form-control:focus {
+    box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.25); }
+
 .swiper-container--score {
   box-shadow: 0 0 15px 5px rgba(0, 0, 0, 0.05);
   padding: 0px 20px;
@@ -580,6 +605,11 @@ select, .custom-select {
   font-weight: normal;
   font-style: normal; }
 
+.form-control {
+  margin-left: 5px; }
+  .form-control:focus {
+    box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.25); }
+
 .videos {
   background-color: #33145B; }
   .videos header h2 {
@@ -692,6 +722,11 @@ select, .custom-select {
   font-weight: normal;
   font-style: normal; }
 
+.form-control {
+  margin-left: 5px; }
+  .form-control:focus {
+    box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.25); }
+
 .navbar {
   width: 100%;
   position: static;
@@ -796,6 +831,11 @@ select, .custom-select {
   font-weight: normal;
   font-style: normal; }
 
+.form-control {
+  margin-left: 5px; }
+  .form-control:focus {
+    box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.25); }
+
 .news {
   max-width: 1400px;
   color: #666;
@@ -864,6 +904,11 @@ select, .custom-select {
   src: url("../fonts/myriad-pro.regular.otf") format("opentype"), url("../fonts/myriad-pro.regular.ttf") format("truetype");
   font-weight: normal;
   font-style: normal; }
+
+.form-control {
+  margin-left: 5px; }
+  .form-control:focus {
+    box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.25); }
 
 footer {
   min-width: 100%;
@@ -961,6 +1006,11 @@ footer {
   font-weight: normal;
   font-style: normal; }
 
+.form-control {
+  margin-left: 5px; }
+  .form-control:focus {
+    box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.25); }
+
 .photos-container {
   max-width: 100%;
   background-color: #33145B; }
@@ -1042,6 +1092,11 @@ footer {
   font-weight: normal;
   font-style: normal; }
 
+.form-control {
+  margin-left: 5px; }
+  .form-control:focus {
+    box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.25); }
+
 .coach-tabs {
   overflow-x: hidden;
   margin: 25px 0px;
@@ -1099,6 +1154,11 @@ footer {
   src: url("../fonts/myriad-pro.regular.otf") format("opentype"), url("../fonts/myriad-pro.regular.ttf") format("truetype");
   font-weight: normal;
   font-style: normal; }
+
+.form-control {
+  margin-left: 5px; }
+  .form-control:focus {
+    box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.25); }
 
 .player-bio {
   color: #4A4A4A;
