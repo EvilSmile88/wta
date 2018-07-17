@@ -712,16 +712,23 @@ footer {
     color: #4A4A4A; }
     .stats-player-card .stats-player-ranking .player-first-name {
       font-style: italic;
-      font-size: 2em;
-      line-height: 35px;
+      overflow-x: hidden;
+      -o-text-overflow: ellipsis;
+         text-overflow: ellipsis;
+      line-height: 42px;
+      max-width: 100%;
       letter-spacing: -0.59px;
-      font-weight: bold; }
+      font-weight: bold;
+      font-size: 2em; }
     .stats-player-card .stats-player-ranking .player-last-name {
-      line-height: 50px;
+      line-height: 42px;
       font-weight: bold;
       letter-spacing: -0.59px;
+      overflow-x: hidden;
+      -o-text-overflow: ellipsis;
+         text-overflow: ellipsis;
       font-style: italic;
-      font-size: 3em; }
+      font-size: 2em; }
     .stats-player-card .stats-player-ranking .player-country {
       color: #6C1F7E;
       line-height: 50px;
@@ -772,9 +779,13 @@ footer {
             -ms-flex-align: end;
                 align-items: flex-end; }
         .stats-player-card .stats-player-ranking .player-name .player-last-name, .stats-player-card .stats-player-ranking .player-name .player-first-name {
+          max-width: none;
+          overflow-x: visible;
           font-size: 25px;
           line-height: 30px; }
         .stats-player-card .stats-player-ranking .player-name .player-last-name {
+          overflow-x: visible;
+          max-width: none;
           margin-left: 5px; }
       .stats-player-card .player-card__photo {
         width: 250px; }

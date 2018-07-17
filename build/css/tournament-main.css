@@ -1293,9 +1293,6 @@ footer {
              object-fit: contain;
           -o-object-position: top;
              object-position: top;
-          -webkit-box-flex: 1;
-              -ms-flex: 1;
-                  flex: 1;
           overflow: hidden;
           max-height: 250px; }
       .tournament-who-playing .swiper-container--who-playing .swiper-slide .player-photo--old {

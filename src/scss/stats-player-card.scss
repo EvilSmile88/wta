@@ -59,17 +59,22 @@
     color: #4A4A4A;
     .player-first-name {
       font-style: italic;
-      font-size: 2em;
-      line-height: 35px;
+      overflow-x: hidden;
+      text-overflow: ellipsis;
+      line-height: 42px;
+      max-width: 100%;
       letter-spacing: -0.59px;
       font-weight: bold;
+      font-size: 2em;
     }
     .player-last-name {
-      line-height: 50px;
+      line-height: 42px;
       font-weight: bold;
       letter-spacing: -0.59px;
+      overflow-x: hidden;
+      text-overflow: ellipsis;
       font-style: italic;
-      font-size: 3em;
+      font-size: 2em;
     }
     .player-country {
       color: #6C1F7E;
@@ -110,10 +115,14 @@
         flex-direction: row;
         align-items: flex-end;
         .player-last-name, .player-first-name {
+          max-width: none;
+          overflow-x: visible;
           font-size: 25px;
           line-height: 30px;
         }
         .player-last-name {
+          overflow-x: visible;
+          max-width: none;
           margin-left: 5px;
         }
       }
