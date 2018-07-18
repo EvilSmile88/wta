@@ -360,12 +360,14 @@ select, .custom-select {
     box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.25); }
 
 .videos {
+  padding-top: 20px;
   background-color: #33145B; }
   .videos header h2 {
     color: white;
     font-size: 40px;
     margin: 0px;
     padding: 10px 20px;
+    padding-top: 0px;
     font-weight: bold; }
   .videos .swiper-container--videos {
     width: 100%;
