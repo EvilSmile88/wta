@@ -194,7 +194,7 @@ select, .custom-select {
     min-width: 120px; }
   .player-card .player-card__info .info-height {
     min-width: 250px; }
-  .player-card .player-card__info h2 {
+  .player-card .player-card__info h1 {
     font-size: 4.1em;
     font-style: italic;
     font-weight: bold;
@@ -327,7 +327,7 @@ select, .custom-select {
       min-height: 200px; }
       .player-card .player-card__other {
         border-left: none; }
-      .player-card .player-card__info h2 {
+      .player-card .player-card__info h1 {
         font-size: 3em; } }
   @media (max-width: 767.98px) {
     .player-card {
@@ -3344,7 +3344,7 @@ body > main {
       margin: 0px;
       padding: 0px 60px;
       bottom: 5%; }
-      .common-card .common-card__main .common-card__main-title h3 {
+      .common-card .common-card__main .common-card__main-title h1 {
         filter: drop-shadow(0 0 5px rgba(0, 0, 0, 0.4));
         width: 100%;
         margin: 0px;
@@ -3387,7 +3387,7 @@ body > main {
           max-height: 350px; }
         .common-card .common-card__main .common-card__main-title {
           padding: 0 10px; }
-          .common-card .common-card__main .common-card__main-title h3 {
+          .common-card .common-card__main .common-card__main-title h1 {
             font-size: 3.2em; }
       .common-card .common-card__footer {
         font-size: 16px;
@@ -3708,7 +3708,7 @@ body > main {
       max-height: 415px;
       object-fit: cover;
       object-position: top; }
-    .tournament-card .tournament-card__main h3 {
+    .tournament-card .tournament-card__main h1 {
       filter: drop-shadow(0 0 5px rgba(0, 0, 0, 0.4));
       position: absolute;
       padding: 0px 60px;
@@ -3746,7 +3746,7 @@ body > main {
         min-height: 250px; }
         .tournament-card .tournament-card__main img {
           max-height: 250px; }
-        .tournament-card .tournament-card__main h3 {
+        .tournament-card .tournament-card__main h1 {
           font-size: 3.2em;
           padding: 0 10px; }
       .tournament-card .tournament-card__footer {
