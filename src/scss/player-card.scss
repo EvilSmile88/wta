@@ -20,282 +20,276 @@
   .main-row {
     height: 100%;
   }
-}
-.player-card__info {
-  &>.row>div {
-    min-width: 120px;
-  }
-  .info-height {
-    min-width: 250px;
-  }
-  h2 {
-    font-size: 4.1em;
-    font-style: italic;
-    font-weight: bold;
-    letter-spacing: -1.51px;
-  }
-}
-
-.player-card__photo {
-  display: flex;
-  position: relative;
-  align-items: flex-end;
-  overflow: hidden;
-  img {
-    object-fit: cover;
-    object-position: top;
-    overflow: hidden;
-    max-height: 350px;
-  }
-  .player-card__official-site {
-    display: flex;
-    width: 90%;
-    box-sizing: border-box;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-start;
-    position: absolute;
-    overflow: hidden;
-    height: 20%;
-    min-height: 55px;
-    margin: 0px 10px;
-    button {
-      width: 135px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      position: relative;
-      font-size: 12px;
-      font-weight: 600;
-      background-color: rgba(0,0,0,0.6);
-      border: 1px solid white;
-      letter-spacing: -0.03px;
-      padding: 5px 10px;
-      &:before, &:after {
-        display: block;
-        position: absolute;
-        width: 100%;
-        height: 1px;
-        content: '';
-        background-color: white;
-      }
-      &:before {
-        left: -100%;
-      }
-      &:after {
-        right: -100%;
-      }
-    }
-  }
-}
-.player-card__photo--old {
-  min-height: 200px;
-  justify-content: center;
-  .old-photo-container {
-    top: 30%;
-    position: absolute;
-    overflow: hidden;
-    border-radius: 15px 0;
-  }
-}
-.player-social {
-  .nav-item {
-    svg {
-      transition: opacity ease 0.3s;
-      fill: rgba(255,255,255, 1);
-      opacity: 0.6;
-      &:hover {
-        opacity: 1;
-      }
-    }
-  }
-}
-.player-flag {
-  width: 140px;
-}
-.player_ranking {
-  font-size: 15px;
-  .ranking-number {
-    display: flex;
-    align-items: center;
-    line-height: normal;
-    vertical-align: middle;
-    min-height: 130px;
-  }
-  .ranking-title {
-    position: absolute;
-    left: -10px;
-    transform: rotate(-90deg);
-    text-transform: uppercase;
-    font-weight: bold;
-    div:first-of-type {
-      line-height: 12px;
-      font-size: 12px;
-    }
-    div:last-of-type {
-      line-height: 20px;
-      font-size: 20px;
-    }
-  }
-  .singles-ranking, .doubles-ranking {
-    position: relative;
-    min-height: 100px;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-  }
-  .doubles-ranking--hide, .singles-ranking--hide {
-    display: none;
-  }
-  .player-ranking__switcher {
-    button[id="singles-ranking__btn"] {
-      visibility: hidden;
-    }
-    width: 150px;
-    border-radius: 0 15px 0 15px;
-    box-sizing: border-box;
-    border: 1px solid white;;
-    button {
-      font-size: 10px;
-      background-color: rgba(0,0,0,0.6);
-      font-family: 'Open Sans';
-    }
-  }
-}
-.player-card__info {
-  .info-title {
-    color: rgba(255,255,255,0.6);
-    line-height: 20px;
-    display: flex;
-    text-transform: uppercase;
-    border-bottom: 1px solid rgba(255,255,255,0.6);
-  }
-  .info-value--large {
-    font-size: 40px;
-    line-height: 44px;
-  }
-  .info-value--middle {
-    font-size: 28px;
-    line-height: 40px;
-  }
-  .info-value--small {
-    font-size: 18px;
-    line-height: 25px;
-  }
-  .info-age {
-    min-width: 100px;
-  }
-  .birth-date {
-    border-left: 1px solid rgba(255,255,255,0.6);
-    font-size: 11px;
-    word-spacing: 60px;
-    line-height: 10px;
-    font-weight: 100;
-  }
-}
-@media (max-width: $screen-lg-max-width) {
-  .player-card {
-    min-height: 200px;
-    .player-card__other {
-      border-left: none ;
-    }
-  }
   .player-card__info {
+    &>.row>div {
+      min-width: 120px;
+    }
+    .info-height {
+      min-width: 250px;
+    }
     h2 {
-      font-size: 3em;
+      font-size: 4.1em;
+      font-style: italic;
+      font-weight: bold;
+      letter-spacing: -1.51px;
     }
   }
-}
-@media (max-width: $screen-md-max-width) {
-  .player-card__other > .row {
-    padding-bottom: 15px;
-    border-bottom: 1px solid white;
-  }
-  .player-card {
-    font-size: 14px;
-    .info-title {
-      flex-grow: 1;
+
+  .player-card__photo {
+    display: flex;
+    position: relative;
+    align-items: flex-end;
+    overflow: hidden;
+    img {
+      object-fit: cover;
+      object-position: top;
+      overflow: hidden;
+      max-height: 350px;
     }
-  }
-  .player-card__info .info-title {
-    margin-right: 10px;
-  }
-  .player-card__info .info-value {
-    font-size: 15px;
-    line-height: 24px;
-  }
-  .player-card__photo--old {
-    min-height: 250px;
-    .old-photo-container {
-      top: 10%;
-      img {
-        width: 150px;
+    .player-card__official-site {
+      display: flex;
+      width: 90%;
+      box-sizing: border-box;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start;
+      position: absolute;
+      overflow: hidden;
+      height: 20%;
+      min-height: 55px;
+      margin: 0px 10px;
+      button {
+        width: 135px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        font-size: 12px;
+        font-weight: 600;
+        background-color: rgba(0,0,0,0.6);
+        border: 1px solid white;
+        letter-spacing: -0.03px;
+        padding: 5px 10px;
+        &:before, &:after {
+          display: block;
+          position: absolute;
+          width: 100%;
+          height: 1px;
+          content: '';
+          background-color: white;
+        }
+        &:before {
+          left: -100%;
+        }
+        &:after {
+          right: -100%;
+        }
       }
     }
   }
-}
-
-@media (max-width: $screen-sm-max-width) {
   .player-card__photo--old {
     min-height: 200px;
+    justify-content: center;
     .old-photo-container {
-      top: 10%;
-      img {
-        width: 120px;
-      }
+      top: 30%;
+      position: absolute;
+      overflow: hidden;
+      border-radius: 15px 0;
     }
   }
   .player-social {
-    svg {
-      width: 17px;
-      height: 17px;
+    .nav-item {
+      svg {
+        transition: opacity ease 0.3s;
+        fill: rgba(255,255,255, 1);
+        opacity: 0.6;
+        &:hover {
+          opacity: 1;
+        }
+      }
     }
   }
   .player-flag {
-    width: 100px;
+    width: 140px;
   }
-  .player-card__photo .player-card__official-site {
-    margin: 0px;
-  }
-  .flex-sm-row {
-    border-bottom: 1px solid rgba(255,255,255,0.6)!important;
-    flex-wrap: wrap !important;
-  }
-  .player-card {
-    .main-row {
-      height: auto;
+  .player_ranking {
+    font-size: 15px;
+    .ranking-number {
+      display: flex;
+      align-items: center;
+      line-height: normal;
+      vertical-align: middle;
+      min-height: 130px;
     }
-    .info-title {
-      border-bottom: none;
+    .ranking-title {
+      position: absolute;
+      left: -10px;
+      transform: rotate(-90deg);
+      text-transform: uppercase;
+      font-weight: bold;
+      div:first-of-type {
+        line-height: 12px;
+        font-size: 12px;
+      }
+      div:last-of-type {
+        line-height: 20px;
+        font-size: 20px;
+      }
+    }
+    .singles-ranking, .doubles-ranking {
+      position: relative;
+      min-height: 100px;
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+    }
+    .doubles-ranking--hide, .singles-ranking--hide {
+      display: none;
+    }
+    .player-ranking__switcher {
+      button[id="singles-ranking__btn"] {
+        visibility: hidden;
+      }
+      width: 150px;
+      border-radius: 0 15px 0 15px;
+      box-sizing: border-box;
+      border: 1px solid white;;
+      button {
+        font-size: 10px;
+        background-color: rgba(0,0,0,0.6);
+        font-family: 'Open Sans';
+      }
     }
   }
   .player-card__info {
-    .row > div {
-      padding-right: 5px;
-      align-items: center;
-      &:last-of-type {
-        margin-bottom: 10px;
-        border-bottom: none !important;
+    .info-title {
+      color: rgba(255,255,255,0.6);
+      line-height: 20px;
+      display: flex;
+      text-transform: uppercase;
+      border-bottom: 1px solid rgba(255,255,255,0.6);
+    }
+    .info-value--large {
+      font-size: 40px;
+      line-height: 44px;
+    }
+    .info-value--middle {
+      font-size: 28px;
+      line-height: 40px;
+    }
+    .info-value--small {
+      font-size: 18px;
+      line-height: 25px;
+    }
+    .info-age {
+      min-width: 100px;
+    }
+    .birth-date {
+      border-left: 1px solid rgba(255,255,255,0.6);
+      font-size: 11px;
+      word-spacing: 60px;
+      line-height: 10px;
+      font-weight: 100;
+    }
+  }
+  @media (max-width: $screen-lg-max-width) {
+      min-height: 200px;
+      .player-card__other {
+        border-left: none ;
+      }
+    .player-card__info {
+      h2 {
+        font-size: 3em;
       }
     }
-    h2 {
-      font-size: 2em;
+  }
+  @media (max-width: $screen-md-max-width) {
+    .player-card__other > .row {
+      padding-bottom: 15px;
+      border-bottom: 1px solid white;
     }
-    .info-height {
-      min-width: auto;
+      font-size: 14px;
+      .info-title {
+        flex-grow: 1;
+      }
+    .player-card__info .info-title {
+      margin-right: 10px;
+    }
+    .player-card__info .info-value {
+      font-size: 15px;
+      line-height: 24px;
+    }
+    .player-card__photo--old {
+      min-height: 250px;
+      .old-photo-container {
+        top: 10%;
+        img {
+          width: 150px;
+        }
+      }
     }
   }
-}
-@media (max-device-width: $screen-sm-max-width) {
-  .player-card {
-    font-size: 12px !important;
-    .info-title {
-      flex-grow: 1;
-      flex-basis: 20px;
+
+  @media (max-width: $screen-sm-max-width) {
+    .player-card__photo--old {
+      min-height: 200px;
+      .old-photo-container {
+        top: 10%;
+        img {
+          width: 120px;
+        }
+      }
+    }
+    .player-social {
+      svg {
+        width: 17px;
+        height: 17px;
+      }
+    }
+    .player-flag {
+      width: 100px;
+    }
+    .player-card__photo .player-card__official-site {
+      margin: 0px;
+    }
+    .flex-sm-row {
+      border-bottom: 1px solid rgba(255,255,255,0.6)!important;
+      flex-wrap: wrap !important;
+    }
+    .player-card {
+      .main-row {
+        height: auto;
+      }
+      .info-title {
+        border-bottom: none;
+      }
+    }
+    .player-card__info {
+      .row > div {
+        padding-right: 5px;
+        align-items: center;
+        &:last-of-type {
+          margin-bottom: 10px;
+          border-bottom: none !important;
+        }
+      }
+      h2 {
+        font-size: 2em;
+      }
+      .info-height {
+        min-width: auto;
+      }
     }
   }
-  .player-card__info .info-value {
-    font-size: 12px;
-    line-height: 24px;
+  @media (max-device-width: $screen-sm-max-width) {
+      font-size: 12px !important;
+      .info-title {
+        flex-grow: 1;
+        flex-basis: 20px;
+      }
+    .player-card__info .info-value {
+      font-size: 12px;
+      line-height: 24px;
+    }
   }
 }

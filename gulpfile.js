@@ -7,7 +7,7 @@ var gulp = require('gulp'),
 gulp.task('sass', function() {
   return gulp.src([
     'node_modules/bootstrap/scss/bootstrap.scss',
-    'src/scss/main.scss',
+    'src/scss/index.scss',
     'src/scss/stats-main.scss',
     'src/scss/tournament-main.scss',
     'src/scss/coach-profile-main.scss',
