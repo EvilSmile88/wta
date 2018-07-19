@@ -31,8 +31,8 @@
 
 html,
 body {
-  min-width: 100%;
   margin: 0px;
+  min-width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -42,7 +42,7 @@ body {
 body > main {
   height: auto;
   min-height: 90vh;
-  width: 98.7vw;
+  width: 97.2vw;
   box-sizing: border-box;
   max-width: 1400px;
 }

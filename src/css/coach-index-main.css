@@ -983,8 +983,6 @@ footer {
   .coach-index table {
     box-sizing: border-box;
     min-width: 700px; }
-    .coach-index table .coach-cell {
-      width: 50px; }
     .coach-index table th {
       max-width: 50px;
       padding-bottom: 0px;
@@ -1008,13 +1006,19 @@ footer {
         box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.1); }
     .coach-index table tbody .coach-cell__img {
       box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.1);
-      width: 80px;
       overflow: hidden;
       border-radius: 15px 0; }
     .coach-index table tbody .coach-cell__name {
       letter-spacing: 0.87px;
       font-style: italic;
       font-size: 25px; }
+    .coach-index table tbody .coach-cell {
+      min-width: 130px; }
+      .coach-index table tbody .coach-cell:hover .coach-cell__name {
+        color: #b72e72; }
+      .coach-index table tbody .coach-cell a {
+        color: #5B5B5B;
+        text-decoration: none; }
     .coach-index table tbody tr:first-of-type td {
       border-top: none; }
     .coach-index table tbody tr:hover {
@@ -1026,10 +1030,8 @@ footer {
         font-size: 12px;
         font-weight: bold;
         letter-spacing: -0.04px; }
-      .coach-index table tbody .coach-cell__img {
+      .coach-index table tbody .coach-cell__img img {
         width: 50px; }
-        .coach-index table tbody .coach-cell__img img {
-          width: 50px; }
       .coach-index table tbody td {
         font-size: 12px; }
       .coach-index table tbody .coach-cell__name {

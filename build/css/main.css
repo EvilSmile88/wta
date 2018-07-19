@@ -1862,7 +1862,7 @@ footer {
   .player-overview__btn {
     min-width: 150px;
     height: 28px;
-    line-height: 30px; }
+    line-height: 25px; }
     @media (max-width: 575.98px) {
       .player-overview__btn {
         min-width: 100px; } }
@@ -3127,8 +3127,8 @@ footer {
 
 html,
 body {
-  min-width: 100%;
   margin: 0px;
+  min-width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -3145,7 +3145,7 @@ body {
 body > main {
   height: auto;
   min-height: 90vh;
-  width: 98.7vw;
+  width: 97.2vw;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   max-width: 1400px; }
