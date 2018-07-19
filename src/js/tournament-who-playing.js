@@ -1,6 +1,7 @@
 var swiper = new Swiper('.swiper-container--who-playing', {
   slidesPerView: 4,
   spaceBetween: 10,
+  slidesPerGroup: 4,
   pagination: {
     clickable: true,
     el: '.swiper-pagination'
@@ -8,14 +9,17 @@ var swiper = new Swiper('.swiper-container--who-playing', {
   breakpoints: {
     1199.98: {
       slidesPerView: 3,
+      slidesPerGroup: 3,
     },
     991.98: {
       centeredSlides: false,
       slidesPerView: 2,
+      slidesPerGroup: 2,
     },
     576: {
       centeredSlides: true,
       slidesPerView: 1,
+      slidesPerGroup: 1,
     },
   },
 });
