@@ -48,6 +48,10 @@
   font-size: 12px;
   font-weight: 600;
   text-align: center; }
+  .wta-primary-button.btn-middle {
+    line-height: 20px; }
+  .wta-primary-button:hover {
+    color: #FFFFFF; }
   .wta-primary-button:hover:not(:disabled) {
     background-color: #33145B; }
 
@@ -73,6 +77,8 @@
   text-align: left;
   letter-spacing: -0.93px;
   word-spacing: 60px; }
+  .wta-live-scores-button:hover {
+    color: #502784; }
   .wta-live-scores-button:hover:not(:disabled) {
     background-color: rgba(0, 0, 0, 0.03); }
 
@@ -88,6 +94,10 @@
   font-weight: 600;
   color: #9B9B9B;
   text-align: center; }
+  .wta-default-button.btn-middle {
+    line-height: 20px; }
+  .wta-default-button:hover {
+    color: #9B9B9B; }
   .wta-default-button:hover:not(:disabled) {
     background-color: #e5e5e5; }
 
@@ -104,6 +114,10 @@
   color: #9B9B9B;
   border-color: #9B9B9B;
   text-align: center; }
+  .wta-default-transparent-button.btn-middle {
+    line-height: 20px; }
+  .wta-default-transparent-button:hover {
+    color: #9B9B9B; }
   .wta-default-transparent-button:hover:not(:disabled) {
     color: white;
     border-color: white;
@@ -122,6 +136,10 @@
   font-size: 12px;
   font-weight: 600;
   text-align: center; }
+  .wta-primary-light-button.btn-middle {
+    line-height: 20px; }
+  .wta-primary-light-button:hover {
+    color: #502784; }
   .wta-primary-light-button:hover:not(:disabled) {
     background-color: #e5e5e5; }
 
@@ -255,7 +273,7 @@ select, .custom-select {
       height: 20%;
       min-height: 55px;
       margin: 0px 10px; }
-      .player-card .player-card__photo .player-card__official-site button {
+      .player-card .player-card__photo .player-card__official-site .btn {
         width: 135px;
         display: -webkit-box;
         display: -ms-flexbox;
@@ -273,16 +291,16 @@ select, .custom-select {
         border: 1px solid white;
         letter-spacing: -0.03px;
         padding: 5px 10px; }
-        .player-card .player-card__photo .player-card__official-site button:before, .player-card .player-card__photo .player-card__official-site button:after {
+        .player-card .player-card__photo .player-card__official-site .btn:before, .player-card .player-card__photo .player-card__official-site .btn:after {
           display: block;
           position: absolute;
           width: 100%;
           height: 1px;
           content: '';
           background-color: white; }
-        .player-card .player-card__photo .player-card__official-site button:before {
+        .player-card .player-card__photo .player-card__official-site .btn:before {
           left: -100%; }
-        .player-card .player-card__photo .player-card__official-site button:after {
+        .player-card .player-card__photo .player-card__official-site .btn:after {
           right: -100%; }
   .player-card .player-card__photo--old {
     min-height: 200px;
@@ -1191,7 +1209,7 @@ footer {
     .player-compare .form-control::placeholder {
       font-size: 20px;
       font-weight: normal; }
-  .player-compare button {
+  .player-compare .btn {
     display: block;
     position: relative;
     height: 35px;
@@ -1200,7 +1218,7 @@ footer {
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
     font-size: 16px; }
-    .player-compare button img {
+    .player-compare .btn img {
       position: absolute;
       bottom: 7px;
       right: 25px; }
@@ -1605,12 +1623,11 @@ footer {
   .player-gear a {
     position: absolute;
     right: 25px;
-    bottom: 20px; }
-    .player-gear a button {
-      font-style: italic;
-      font-size: 12px;
-      padding: 3px;
-      width: 82px; }
+    bottom: 20px;
+    font-style: italic;
+    font-size: 12px;
+    padding: 3px;
+    width: 82px; }
 
 @font-face {
   font-family: 'Open Sans';
@@ -2163,10 +2180,10 @@ footer {
       background: rgba(0, 0, 0, 0.3); }
     .player-matches .player-matches__filters .row {
       margin: 0px; }
-    .player-matches .player-matches__filters button {
+    .player-matches .player-matches__filters .btn {
       height: 26.8px;
       width: 135.48px; }
-      .player-matches .player-matches__filters button:disabled {
+      .player-matches .player-matches__filters .btn:disabled {
         opacity: 1; }
   .player-matches .player-matches__match-header {
     background-color: #F0F0F0; }
@@ -2243,9 +2260,9 @@ footer {
     background-color: rgba(80, 39, 132, 0.05); }
   .player-matches table .td-md {
     min-width: 200px; }
-  .player-matches table button {
+  .player-matches table .btn {
     font-style: italic; }
-  .player-matches .player-matches__more button {
+  .player-matches .player-matches__more .btn {
     font-style: italic;
     font-size: 12px;
     height: 25.39px;
@@ -3556,7 +3573,7 @@ body > main {
   .stats-tabs .stats-tabs__filters .row {
     margin: 0px; }
 
-.stats-tabs .download-button button {
+.stats-tabs .download-button .btn {
   display: block;
   position: relative;
   height: 35px;
@@ -3566,7 +3583,7 @@ body > main {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   font-size: 16px; }
-  .stats-tabs .download-button button img {
+  .stats-tabs .download-button .btn img {
     position: absolute;
     bottom: 7px;
     right: 5px; }
@@ -3694,9 +3711,10 @@ body > main {
   body > main .load-more {
     position: relative;
     background-color: #F0F0F0; }
-    body > main .load-more button {
+    body > main .load-more .btn {
       width: 137px;
       z-index: 2;
+      line-height: 25px;
       height: 27.1px; }
     body > main .load-more .load-more__devider {
       position: absolute;
@@ -4952,10 +4970,10 @@ body > main {
     display: flex;
     width: 100%;
     min-width: 900px; }
-  .tournament-order-of-play .filters button {
+  .tournament-order-of-play .filters .btn {
     height: 26.8px;
     width: 135.48px; }
-    .tournament-order-of-play .filters button:disabled {
+    .tournament-order-of-play .filters .btn:disabled {
       opacity: 1; }
 
 .tournament-order-of-play .download-pdf {
@@ -4970,7 +4988,7 @@ body > main {
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
           flex-grow: 1; }
-  .tournament-order-of-play .download-pdf button {
+  .tournament-order-of-play .download-pdf .btn {
     width: 160.48px;
     font-size: 16px; }
 
@@ -5017,7 +5035,7 @@ body > main {
             justify-content: flex-end; }
     body > main .tabs--tournament .download-button img {
       margin-left: 10px; }
-    body > main .tabs--tournament .download-button button {
+    body > main .tabs--tournament .download-button .btn {
       min-width: 150px;
       font-size: 16px;
       height: 28.38px; }
@@ -5029,7 +5047,7 @@ body > main {
     border-bottom: none; }
   body > main .load-more {
     position: relative; }
-    body > main .load-more button {
+    body > main .load-more .btn {
       width: 137px;
       z-index: 2;
       height: 27.1px; }

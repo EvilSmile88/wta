@@ -37,9 +37,10 @@ body > main {
   .load-more{
     position: relative;
     background-color: $body-bg;
-    button {
+    .btn {
       width: 137px;
       z-index: 2;
+      line-height: 25px;
       height: 27.1px;
     }
     .load-more__devider {

@@ -28,7 +28,7 @@ body > main {
       img {
         margin-left: 10px;
       }
-      button {
+      .btn {
         min-width: 150px;
         font-size: 16px;
         height: 28.38px;
@@ -45,7 +45,7 @@ body > main {
   }
   .load-more{
     position: relative;
-    button {
+    .btn {
       width: 137px;
       z-index: 2;
       height: 27.1px;

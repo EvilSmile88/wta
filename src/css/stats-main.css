@@ -263,7 +263,7 @@
   .stats-tabs .stats-tabs__filters .row {
     margin: 0px; }
 
-.stats-tabs .download-button button {
+.stats-tabs .download-button .btn {
   display: block;
   position: relative;
   height: 35px;
@@ -272,7 +272,7 @@
   min-width: 130px;
   box-sizing: border-box;
   font-size: 16px; }
-  .stats-tabs .download-button button img {
+  .stats-tabs .download-button .btn img {
     position: absolute;
     bottom: 7px;
     right: 5px; }
@@ -385,9 +385,10 @@ body > main {
   body > main .load-more {
     position: relative;
     background-color: #F0F0F0; }
-    body > main .load-more button {
+    body > main .load-more .btn {
       width: 137px;
       z-index: 2;
+      line-height: 25px;
       height: 27.1px; }
     body > main .load-more .load-more__devider {
       position: absolute;

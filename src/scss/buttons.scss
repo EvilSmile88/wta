@@ -1,6 +1,9 @@
 @import "variables";
 
 .wta-primary-button {
+  &.btn-middle {
+    line-height: 20px;
+  }
   height: auto;
   min-height: 20px;
   padding: 1px 10px;
@@ -13,6 +16,9 @@
   font-size: 12px;
   font-weight: 600;
   text-align: center;
+  &:hover {
+  color: #FFFFFF;;
+}
   &:hover:not(:disabled) {
     background-color: $primary-color;
   }
@@ -36,6 +42,9 @@
   background-position: right;
   font-size: 12px;
   text-align: left;
+  &:hover {
+    color: $primary-color-light;
+  }
   letter-spacing: -0.93px;
   word-spacing: 60px;
   &:hover:not(:disabled) {
@@ -43,6 +52,9 @@
   }
 }
 .wta-default-button {
+  &.btn-middle {
+    line-height: 20px;
+  }
   height: auto;
   min-height: 20px;
   padding: 1px 10px;
@@ -54,12 +66,18 @@
   font-weight: 600;
   color: #9B9B9B;
   text-align: center;
+  &:hover {
+    color: #9B9B9B;
+  }
   &:hover:not(:disabled) {
     background-color: #e5e5e5;
   }
 }
 
 .wta-default-transparent-button {
+  &.btn-middle {
+    line-height: 20px;
+  }
   height: auto;
   min-height: 20px;
   padding: 1px 10px;
@@ -72,6 +90,9 @@
   color: #9B9B9B;
   border-color: #9B9B9B;
   text-align: center;
+  &:hover {
+    color: #9B9B9B;
+  }
   &:hover:not(:disabled) {
     color: white;
     border-color: white;
@@ -80,6 +101,9 @@
 }
 
 .wta-primary-light-button {
+  &.btn-middle {
+    line-height: 20px;
+  }
   height: auto;
   min-height: 20px;
   padding: 1px 10px;
@@ -92,6 +116,9 @@
   font-size: 12px;
   font-weight: 600;
   text-align: center;
+  &:hover {
+    color: $primary-color-light;
+  }
   &:hover:not(:disabled) {
     background-color: #e5e5e5;
   }

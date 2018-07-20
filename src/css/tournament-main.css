@@ -663,10 +663,10 @@
     display: flex;
     width: 100%;
     min-width: 900px; }
-  .tournament-order-of-play .filters button {
+  .tournament-order-of-play .filters .btn {
     height: 26.8px;
     width: 135.48px; }
-    .tournament-order-of-play .filters button:disabled {
+    .tournament-order-of-play .filters .btn:disabled {
       opacity: 1; }
 
 .tournament-order-of-play .download-pdf {
@@ -674,7 +674,7 @@
   flex-basis: 50px;
   justify-content: flex-end;
   flex-grow: 1; }
-  .tournament-order-of-play .download-pdf button {
+  .tournament-order-of-play .download-pdf .btn {
     width: 160.48px;
     font-size: 16px; }
 
@@ -711,7 +711,7 @@ body > main {
     justify-content: flex-end; }
     body > main .tabs--tournament .download-button img {
       margin-left: 10px; }
-    body > main .tabs--tournament .download-button button {
+    body > main .tabs--tournament .download-button .btn {
       min-width: 150px;
       font-size: 16px;
       height: 28.38px; }
@@ -723,7 +723,7 @@ body > main {
     border-bottom: none; }
   body > main .load-more {
     position: relative; }
-    body > main .load-more button {
+    body > main .load-more .btn {
       width: 137px;
       z-index: 2;
       height: 27.1px; }
